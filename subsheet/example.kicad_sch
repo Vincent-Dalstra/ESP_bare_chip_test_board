@@ -1,0 +1,18 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 950ba4b0-032a-4e94-afba-3d406b56f0b8)
+
+  (paper "A4")
+
+  (title_block
+    (title "Untitled 4-layer JLCPCB")
+    (date "1984/04/01")
+    (rev "v1.0.0")
+    (company "(c)")
+    (comment 1 "Drawn by:")
+  )
+
+  (lib_symbols
+  )
+
+)
