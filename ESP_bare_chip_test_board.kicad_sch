@@ -250,8 +250,8 @@
 		(uuid "ea974c44-d315-4b2a-a051-e8684b948e33")
 	)
 	(sheet
-		(at 208.28 30.48)
-		(size 63.5 58.42)
+		(at 218.44 38.1)
+		(size 53.34 50.8)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -262,7 +262,7 @@
 		)
 		(uuid "01bb46e3-d129-4909-82a1-6bb013dc8f71")
 		(property "Sheetname" "ESP32-C3"
-			(at 208.28 29.7684 0)
+			(at 218.44 37.3884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -271,13 +271,163 @@
 			)
 		)
 		(property "Sheetfile" "subsheet/ESP32-C3.kicad_sch"
-			(at 208.28 89.4846 0)
+			(at 218.44 89.4846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "GPIO18{slash}USB_D-" bidirectional
+			(at 218.44 55.88 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "16ccf93c-25d3-416c-a545-688a03d907fb")
+		)
+		(pin "GPIO19{slash}USB_D+" bidirectional
+			(at 218.44 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "eec9dc07-4ccb-4b66-8d0c-e9c5517ff573")
+		)
+		(pin "IO1" bidirectional
+			(at 271.78 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "863387f4-99a4-4ce0-82f6-099ee8e97e8a")
+		)
+		(pin "IO0" bidirectional
+			(at 271.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "82a7c398-9c87-40ec-aed9-44a0ea713172")
+		)
+		(pin "IO5" bidirectional
+			(at 271.78 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f6475948-4bf6-48d6-9e0b-ad7f6ab0b264")
+		)
+		(pin "IO3" bidirectional
+			(at 271.78 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b46539bf-1f65-4bba-a6d8-a0dcb4bcab02")
+		)
+		(pin "IO4" bidirectional
+			(at 271.78 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "407cf8c6-aa43-42a5-a913-138f83b882b7")
+		)
+		(pin "IO6" bidirectional
+			(at 271.78 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ab79befa-e40e-4da6-acc5-d66e28a25b58")
+		)
+		(pin "GPIO44{slash}UART0.Rx" bidirectional
+			(at 271.78 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "29182c6f-7a94-482d-9487-a63d9f1d3924")
+		)
+		(pin "GPIO43{slash}UART0.Tx" bidirectional
+			(at 271.78 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6796c8ed-3a29-4ad7-a184-ae0a671a60b1")
+		)
+		(pin "IO8{slash}STRAP^{PU}" output
+			(at 251.46 88.9 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "abeb2802-8c89-4cb9-add5-339c873854f7")
+		)
+		(pin "IO9{slash}BOOT^{PU}" output
+			(at 254 88.9 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "179e4b85-21ea-4e2c-a5b7-57a4fc03aab8")
+		)
+		(pin "IO2{slash}STRAP^{PU}" output
+			(at 248.92 88.9 270)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "88bcc773-b7cc-43f4-9ed1-df5496d56ab6")
+		)
+		(pin "IO7" bidirectional
+			(at 271.78 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6410b0c6-fa9c-486a-8414-f64a365624a0")
+		)
+		(pin "IO10" bidirectional
+			(at 271.78 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "777c34c9-9f57-4bf6-98be-47968da1eb94")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"

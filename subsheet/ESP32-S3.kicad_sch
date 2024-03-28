@@ -3069,10 +3069,22 @@
 		(uuid "992d7c5b-44d7-4f40-9c52-7c4d73c224cb")
 	)
 	(junction
+		(at 214.63 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a67ab25d-2d5a-4a08-8af4-0528fd412905")
+	)
+	(junction
 		(at 87.63 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba95a6f5-b952-4b34-b061-353ee62af3f1")
+	)
+	(junction
+		(at 213.36 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb2db698-cb4c-4fd9-b607-b29e39fd69b1")
 	)
 	(junction
 		(at 157.48 41.91)
@@ -3115,24 +3127,6 @@
 	(no_connect
 		(at 111.76 137.16)
 		(uuid "7dc0f96b-48b6-448a-8b9d-ae4f2b38712b")
-	)
-	(bus_entry
-		(at 45.72 38.1)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3baba163-8dd4-4917-9ee4-659d60d18d42")
-	)
-	(bus_entry
-		(at 45.72 40.64)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d488cc12-c034-4e77-92fc-f9985051070d")
 	)
 	(wire
 		(pts
@@ -3193,16 +3187,6 @@
 			(type default)
 		)
 		(uuid "13de4b51-79e7-493a-89b9-a04fdab58151")
-	)
-	(wire
-		(pts
-			(xy 33.02 40.64) (xy 45.72 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1548e9ab-4e49-4619-8a2c-c40b607cc714")
 	)
 	(wire
 		(pts
@@ -3294,16 +3278,6 @@
 		)
 		(uuid "26cadce4-8b06-4f04-a183-6658f4a5cc18")
 	)
-	(bus
-		(pts
-			(xy 48.26 40.64) (xy 48.26 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "280cafd4-f7c3-407f-99b9-aa2a29c03761")
-	)
 	(wire
 		(pts
 			(xy 43.18 77.47) (xy 30.48 77.47)
@@ -3363,6 +3337,16 @@
 			(type default)
 		)
 		(uuid "3d61d2dd-2624-461b-bf71-f0c4efc0f2cd")
+	)
+	(wire
+		(pts
+			(xy 214.63 81.28) (xy 223.52 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dce32eb-1e41-43b2-b1af-3d0028321718")
 	)
 	(wire
 		(pts
@@ -3436,16 +3420,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 38.1) (xy 45.72 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b9aeb2a-e001-4412-b84c-86fe20cef5f6")
-	)
-	(wire
-		(pts
 			(xy 162.56 44.45) (xy 162.56 41.91)
 		)
 		(stroke
@@ -3493,16 +3467,6 @@
 			(type solid)
 		)
 		(uuid "55d8017f-3d44-4c11-bbd4-5de448db8413")
-	)
-	(bus
-		(pts
-			(xy 147.32 35.56) (xy 223.52 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a5481dd-a1d7-4d4c-ae07-c98b50fb0bd8")
 	)
 	(wire
 		(pts
@@ -3573,26 +3537,6 @@
 			(type solid)
 		)
 		(uuid "64c0bd7e-169f-4e98-8e0f-2ec530ec048c")
-	)
-	(bus
-		(pts
-			(xy 48.26 45.72) (xy 147.32 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66fd94e6-1ea3-41a0-80db-18398b8706dc")
-	)
-	(bus
-		(pts
-			(xy 48.26 43.18) (xy 48.26 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c52b4f1-7644-4dbd-a914-dc8dee3d792f")
 	)
 	(wire
 		(pts
@@ -3774,16 +3718,6 @@
 		)
 		(uuid "9710ac7a-ad48-4a07-9a1d-15202f0e2841")
 	)
-	(bus
-		(pts
-			(xy 147.32 45.72) (xy 147.32 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ac7ef66-78a9-41bd-9994-e7c50e5afec2")
-	)
 	(wire
 		(pts
 			(xy 30.48 85.09) (xy 38.1 85.09)
@@ -3956,6 +3890,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 78.74) (xy 223.52 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e56e2f85-2e3b-4f8b-9387-e606512a954e")
+	)
+	(wire
+		(pts
 			(xy 243.84 15.24) (xy 243.84 19.05)
 		)
 		(stroke
@@ -4086,16 +4030,16 @@
 		)
 		(uuid "2374da3e-aeeb-4793-9465-992a4ff97dd5")
 	)
-	(text "Some pins are used for bootstrapping, and thus\nthey must have the correct state when booting:\nGPIO- state - reason\n0   - FLOAT - Allows code to be downloaded\n46  - LOW/FLOAT - Download boot mode\n		- Only checked if 0 is LOW\n45  - LOW/FLOAT - Flash voltage\n		- Can be disabled using by an eFuse\n\nADC1 (10 channels) available on GPIO's 1-10\nADC2 on GPIO's 11-18. Not available with WiFi\n\nFastest SPI uses GPIO's 9-14"
+	(text "Some pins are used for bootstrapping, and thus\nthey must have the correct state when booting:\nGPIO- state - reason\n0   - FLOAT - Allows code to be downloaded\n46  - LOW/FLOAT - Download boot mode\n		- Only checked if 0 is LOW\n45  - LOW/FLOAT - Flash voltage\n		- Can be disabled by burning an eFuse\n43	- OUTPUT (bootloader messages)\n		- Can be disabled by burning an eFuse\n\nADC1 (10 channels) available on GPIO's 1-10\nADC2 on GPIO's 11-18. Not available with WiFi"
 		(exclude_from_sim no)
-		(at 231.14 76.2 0)
+		(at 229.362 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "7d4b195d-f102-451f-834a-9160451b61fb")
+		(uuid "705a7de5-dd60-4b50-9265-07426df3402b")
 	)
 	(text "Gnd\nTx\nRx\n3v3\nEN\nBoot"
 		(exclude_from_sim no)
@@ -4578,6 +4522,18 @@
 		)
 		(uuid "bb95e8d3-dc8b-4776-84cd-d87b8a26140d")
 	)
+	(hierarchical_label "GPIO44{slash}UART0.Rx"
+		(shape bidirectional)
+		(at 223.52 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bf3bc9db-12ff-426b-8a17-56ece808d7c2")
+	)
 	(hierarchical_label "IO12"
 		(shape bidirectional)
 		(at 203.2 124.46 0)
@@ -4625,6 +4581,18 @@
 			(justify left)
 		)
 		(uuid "d4949c6b-cf08-4709-9c10-586a5c0cd94d")
+	)
+	(hierarchical_label "GPIO43{slash}UART0.Tx"
+		(shape bidirectional)
+		(at 223.52 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dac19fdf-a378-4ee3-9702-e94d843591e3")
 	)
 	(hierarchical_label "IO2"
 		(shape bidirectional)
