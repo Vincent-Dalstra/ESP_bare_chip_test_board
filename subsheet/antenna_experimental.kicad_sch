@@ -1,1394 +1,3397 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid e2bbeff9-48c2-46cc-b468-9541d249a8ab)
-
-  (paper "A4")
-
-  (lib_symbols
-    (symbol "Connector:Conn_Coaxial" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "J" (at 0.254 3.048 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Conn_Coaxial" (at 2.921 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" " ~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Conn_Coaxial_0_1"
-        (arc (start -1.778 -0.508) (mid 0.2311 -1.8066) (end 1.778 0)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.54 0)
-            (xy -0.508 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -2.54)
-            (xy 0 -1.778)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 0) (radius 0.508)
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-        (arc (start 1.778 0) (mid 0.2099 1.8101) (end -1.778 0.508)
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "Conn_Coaxial_1_1"
-        (pin passive line (at -5.08 0 0) (length 2.54)
-          (name "In" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -5.08 90) (length 2.54)
-          (name "Ext" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:Antenna_Chip" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "AE" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) (justify right))
-      )
-      (property "Value" "Antenna_Chip" (at 0 3.175 0)
-        (effects (font (size 1.27 1.27)) (justify right))
-      )
-      (property "Footprint" "" (at -2.54 4.445 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at -2.54 4.445 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "antenna" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Ceramic chip antenna with pin for PCB trace" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Antenna_Chip_0_1"
-        (polyline
-          (pts
-            (xy -2.54 0)
-            (xy -2.54 -0.635)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.54 0)
-            (xy -1.27 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 0)
-            (xy 2.54 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 1.27)
-            (xy 1.27 -1.27)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 -0.635)
-            (xy 2.54 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 6.985)
-            (xy 2.54 -1.905)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.27 1.27)
-            (xy -1.27 -1.27)
-            (xy -1.27 0)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.81 6.985)
-            (xy 2.54 1.905)
-            (xy 1.27 6.985)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.635 1.27)
-            (xy 0.635 1.27)
-            (xy 0.635 -1.27)
-            (xy -0.635 -1.27)
-            (xy -0.635 1.27)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "Antenna_Chip_1_1"
-        (pin input line (at -2.54 -2.54 90) (length 2.54)
-          (name "FEED" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 2.54 -2.54 90) (length 2.54)
-          (name "PCB_Trace" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:Antenna_Shield" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "AE" (at -1.905 4.445 0)
-        (effects (font (size 1.27 1.27)) (justify right))
-      )
-      (property "Value" "Antenna_Shield" (at -1.905 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify right))
-      )
-      (property "Footprint" "" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "antenna" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Antenna with extra pin for shielding" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Antenna_Shield_0_1"
-        (arc (start -0.508 -1.143) (mid -0.8429 -2.1194) (end 0 -2.667)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 0 -2.667) (mid 0.7989 -2.1052) (end 0.508 -1.143)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -2.54)
-            (xy 0 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 5.08)
-            (xy 0 -3.81)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0.762 -1.905)
-            (xy 2.54 -1.905)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 -2.54)
-            (xy 2.54 -1.905)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 1.27 5.08)
-            (xy 0 0)
-            (xy -1.27 5.08)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (circle (center 0.762 -1.905) (radius 0.1778)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-      (symbol "Antenna_Shield_1_1"
-        (pin input line (at 0 -5.08 90) (length 2.54)
-          (name "A" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at 2.54 -5.08 90) (length 2.54)
-          (name "Shield" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:C_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (at 0.254 1.778 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "C_Small" (at 0.254 -2.032 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "capacitor cap" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Unpolarized capacitor, small symbol" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "C_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "C_Small_0_1"
-        (polyline
-          (pts
-            (xy -1.524 -0.508)
-            (xy 1.524 -0.508)
-          )
-          (stroke (width 0.3302) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.524 0.508)
-            (xy 1.524 0.508)
-          )
-          (stroke (width 0.3048) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "C_Small_1_1"
-        (pin passive line (at 0 2.54 270) (length 2.032)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 2.032)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Device:L" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "L" (at -1.27 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "L" (at 1.905 0 90)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "inductor choke coil reactor magnetic" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Inductor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "L_0_1"
-        (arc (start 0 -2.54) (mid 0.6323 -1.905) (end 0 -1.27)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 0 -1.27) (mid 0.6323 -0.635) (end 0 0)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 0 0) (mid 0.6323 0.635) (end 0 1.27)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 0 1.27) (mid 0.6323 1.905) (end 0 2.54)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "L_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "2" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "RF_Switch:MASWSS0179" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -7.62 7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MASWSS0179" (at 3.81 7.62 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "https://cdn.macom.com/datasheets/MASWSS0179.pdf" (at 0 2.54 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "RF SWITCH SPDT" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Macom GaAs RF SPDT switch, DC-2GHz, 0.6/22dB loss/isolation, SOT-26 (SOT-23-6)" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "SOT?23*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MASWSS0179_0_1"
-        (circle (center -3.048 2.54) (radius 0.2794)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.175 -3.81)
-            (xy -2.54 -3.81)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.794 2.54)
-            (xy 2.921 5.207)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -1.905 -3.81)
-            (xy -1.27 -3.81)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -0.635 -3.81)
-            (xy 0 -3.81)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -3.175)
-            (xy 0 -2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -1.905)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -0.635)
-            (xy 0 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0.635)
-            (xy 0 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.905)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 3.175)
-            (xy 0 3.81)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 3.048 0) (radius 0.2794)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 3.175 5.207) (radius 0.2794)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (rectangle (start 7.62 -7.62) (end -7.62 6.35)
-          (stroke (width 0.254) (type default))
-          (fill (type background))
-        )
-      )
-      (symbol "MASWSS0179_1_1"
-        (pin passive line (at 10.16 5.08 180) (length 2.54)
-          (name "RF1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin power_in line (at 2.54 -10.16 90) (length 2.54)
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 10.16 0 180) (length 2.54)
-          (name "RF2" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -10.16 -5.08 0) (length 2.54)
-          (name "V2" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -10.16 2.54 0) (length 2.54)
-          (name "RFC" (effects (font (size 1.27 1.27))))
-          (number "5" (effects (font (size 1.27 1.27))))
-        )
-        (pin input line (at -10.16 -2.54 0) (length 2.54)
-          (name "V1" (effects (font (size 1.27 1.27))))
-          (number "6" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 132.08 86.36) (diameter 0) (color 0 0 0 0)
-    (uuid 0bc72807-16bd-4d8f-8105-fe0fe1bcc690)
-  )
-  (junction (at 91.44 86.36) (diameter 0) (color 0 0 0 0)
-    (uuid 203b2e50-30f5-4ec7-809f-6f4ac8aeafb9)
-  )
-  (junction (at 142.24 81.28) (diameter 0) (color 0 0 0 0)
-    (uuid 256f80f6-0bf0-43d6-91d9-2f2c65d96b13)
-  )
-  (junction (at 106.68 86.36) (diameter 0) (color 0 0 0 0)
-    (uuid 3921c785-b033-4c8e-a40f-2ebc1f8b866f)
-  )
-  (junction (at 182.88 76.2) (diameter 0) (color 0 0 0 0)
-    (uuid 5954ce90-7179-4ea1-a43d-63f26c64553c)
-  )
-  (junction (at 228.6 81.28) (diameter 0) (color 0 0 0 0)
-    (uuid 6d5796fc-8d3a-4b8f-8580-c8f2da8d9e8a)
-  )
-  (junction (at 139.7 76.2) (diameter 0) (color 0 0 0 0)
-    (uuid 9d85f466-9aca-4d68-8288-a2886ce90ac2)
-  )
-  (junction (at 73.66 86.36) (diameter 0) (color 0 0 0 0)
-    (uuid a964a9fb-076c-4d90-a398-143f43b2fe78)
-  )
-  (junction (at 223.52 76.2) (diameter 0) (color 0 0 0 0)
-    (uuid b0ee322a-cf11-4a00-ad91-142311d45dd7)
-  )
-  (junction (at 187.96 81.28) (diameter 0) (color 0 0 0 0)
-    (uuid fc9dab85-d5e7-419b-9a74-9b9e86b89f7a)
-  )
-
-  (wire (pts (xy 106.68 86.36) (xy 101.6 86.36))
-    (stroke (width 0) (type default))
-    (uuid 012cfd11-ebeb-4369-97c9-114d22d0574f)
-  )
-  (wire (pts (xy 187.96 81.28) (xy 195.58 81.28))
-    (stroke (width 0) (type default))
-    (uuid 1417a2f3-4318-4be9-a17f-03c0d0383f5f)
-  )
-  (wire (pts (xy 228.6 71.12) (xy 228.6 81.28))
-    (stroke (width 0) (type default))
-    (uuid 264a2480-5d4d-483f-9fde-cd5dc1ab655a)
-  )
-  (wire (pts (xy 228.6 81.28) (xy 236.22 81.28))
-    (stroke (width 0) (type default))
-    (uuid 44c80c1f-edfb-4ffa-a446-0fa7344fcd74)
-  )
-  (wire (pts (xy 73.66 86.36) (xy 91.44 86.36))
-    (stroke (width 0) (type default))
-    (uuid 508c1ec2-7db4-49cb-80b2-b16f9cc81996)
-  )
-  (wire (pts (xy 187.96 71.12) (xy 187.96 81.28))
-    (stroke (width 0) (type default))
-    (uuid 51c4ef4b-6ae1-4c11-a164-38252e38e386)
-  )
-  (wire (pts (xy 96.52 86.36) (xy 91.44 86.36))
-    (stroke (width 0) (type default))
-    (uuid 521e220a-5281-4af1-b1cb-b6c356a3af63)
-  )
-  (wire (pts (xy 228.6 81.28) (xy 228.6 88.9))
-    (stroke (width 0) (type default))
-    (uuid 61f53043-d25a-4c47-bff2-7cee9b8be617)
-  )
-  (wire (pts (xy 142.24 73.66) (xy 142.24 81.28))
-    (stroke (width 0) (type default))
-    (uuid 713e08ac-4075-4616-b890-d0f4873ceadc)
-  )
-  (wire (pts (xy 223.52 76.2) (xy 223.52 86.36))
-    (stroke (width 0) (type default))
-    (uuid 7a06b5a5-fa27-4b9c-88ab-f4055f1e1bc9)
-  )
-  (wire (pts (xy 142.24 81.28) (xy 149.86 81.28))
-    (stroke (width 0) (type default))
-    (uuid 823c922f-18a8-4de3-bcb8-2ce0f3724414)
-  )
-  (wire (pts (xy 205.74 86.36) (xy 223.52 86.36))
-    (stroke (width 0) (type default))
-    (uuid 8efdf0e3-8abd-4b51-bbc9-41520b7c0d4a)
-  )
-  (wire (pts (xy 91.44 86.36) (xy 91.44 87.63))
-    (stroke (width 0) (type default))
-    (uuid 90a0707d-1c75-4012-afd8-ae41f51f3592)
-  )
-  (wire (pts (xy 139.7 86.36) (xy 132.08 86.36))
-    (stroke (width 0) (type default))
-    (uuid 94bf9f04-8c20-4899-90f3-06649d8f64ea)
-  )
-  (wire (pts (xy 223.52 76.2) (xy 231.14 76.2))
-    (stroke (width 0) (type default))
-    (uuid a1b4fba0-11f6-4d8d-9202-44fac4f6287c)
-  )
-  (wire (pts (xy 132.08 86.36) (xy 132.08 88.9))
-    (stroke (width 0) (type default))
-    (uuid a21d2b7c-f9ed-49df-be12-d6a97062be2a)
-  )
-  (wire (pts (xy 139.7 76.2) (xy 139.7 86.36))
-    (stroke (width 0) (type default))
-    (uuid aa880fd0-f350-4b24-9931-ff2a53169a3f)
-  )
-  (wire (pts (xy 71.12 66.04) (xy 73.66 66.04))
-    (stroke (width 0) (type default))
-    (uuid abc2ecec-cd83-402d-95b4-63c77f65c17e)
-  )
-  (wire (pts (xy 223.52 66.04) (xy 223.52 76.2))
-    (stroke (width 0) (type default))
-    (uuid c4f1298f-8bda-442a-8543-6435b1473ecb)
-  )
-  (wire (pts (xy 182.88 76.2) (xy 190.5 76.2))
-    (stroke (width 0) (type default))
-    (uuid c50cd3bc-32b9-48f9-8cc1-f72a44029b8b)
-  )
-  (wire (pts (xy 60.96 86.36) (xy 73.66 86.36))
-    (stroke (width 0) (type default))
-    (uuid ca4e80cc-479d-425c-8af5-daca732d6937)
-  )
-  (wire (pts (xy 132.08 86.36) (xy 106.68 86.36))
-    (stroke (width 0) (type default))
-    (uuid cdf3a6b9-b3b6-4b47-827c-337943ed544b)
-  )
-  (wire (pts (xy 132.08 96.52) (xy 132.08 99.06))
-    (stroke (width 0) (type default))
-    (uuid cfedd665-ff8f-4dbf-bb21-819cb9a63e09)
-  )
-  (wire (pts (xy 91.44 95.25) (xy 91.44 96.52))
-    (stroke (width 0) (type default))
-    (uuid dc1fc589-00e3-4e2c-8eff-0fedee836ea0)
-  )
-  (wire (pts (xy 182.88 71.12) (xy 182.88 76.2))
-    (stroke (width 0) (type default))
-    (uuid e0b57fb9-1731-4e8a-ab58-cc04abeed75b)
-  )
-  (wire (pts (xy 187.96 81.28) (xy 187.96 88.9))
-    (stroke (width 0) (type default))
-    (uuid e4b307ae-b5b2-4c46-8f90-fabe0b312df4)
-  )
-  (wire (pts (xy 142.24 81.28) (xy 142.24 88.9))
-    (stroke (width 0) (type default))
-    (uuid e7549891-a5d1-47de-95e5-504d158ded93)
-  )
-  (wire (pts (xy 144.78 76.2) (xy 139.7 76.2))
-    (stroke (width 0) (type default))
-    (uuid e91f4d3e-b874-4933-b538-8d24af68e4c5)
-  )
-  (wire (pts (xy 182.88 76.2) (xy 182.88 86.36))
-    (stroke (width 0) (type default))
-    (uuid ef97b595-104f-4ebe-b7d6-fbd40967b449)
-  )
-  (wire (pts (xy 106.68 86.36) (xy 106.68 88.9))
-    (stroke (width 0) (type default))
-    (uuid f21b7998-5f00-4e96-89f1-020d9f235dbb)
-  )
-  (wire (pts (xy 73.66 66.04) (xy 73.66 86.36))
-    (stroke (width 0) (type default))
-    (uuid fba00191-ff65-41cc-9b99-a542e6152930)
-  )
-  (wire (pts (xy 106.68 93.98) (xy 106.68 96.52))
-    (stroke (width 0) (type default))
-    (uuid fd105a6f-a701-4dbb-aad0-48b65abebe6e)
-  )
-  (wire (pts (xy 139.7 73.66) (xy 139.7 76.2))
-    (stroke (width 0) (type default))
-    (uuid fe23838b-4503-47e2-9980-1a85d4b117c0)
-  )
-  (wire (pts (xy 182.88 86.36) (xy 170.18 86.36))
-    (stroke (width 0) (type default))
-    (uuid fe9167be-8761-4e97-a3a4-cdfcfe80edb6)
-  )
-
-  (rectangle (start 83.82 104.14) (end 114.3 78.74)
-    (stroke (width 0) (type dash_dot))
-    (fill (type none))
-    (uuid ebdd4ed4-5e5c-48d1-a83c-fd727eec66a5)
-  )
-
-  (text "TP (Chip Antenna)" (at 203.2 76.2 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 4221c01d-b608-4db1-b125-af4920202e99)
-  )
-  (text "https://datasheet.lcsc.com/lcsc/2109141830_Shenzhen-Fuman-Elec-FM1694C_C2857388.pdf"
-    (at 40.64 167.64 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 73085499-9b03-46d2-96e7-623082eb5635)
-  )
-  (text "https://datasheet.lcsc.com/lcsc/2109141830_Shenzhen-Fuman-Elec-FM8625H_C2857391.pdf"
-    (at 40.64 165.1 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 792b8134-0ba4-47e1-81ce-46285d5e06b6)
-  )
-  (text "https://datasheet.lcsc.com/lcsc/1912111437_Maxscend-MXD8546FA_C462321.pdf"
-    (at 40.64 160.02 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 7d745109-b313-4c17-9f29-d94493f2d1ff)
-  )
-  (text "Shape and values TBD" (at 109.22 76.2 0)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 964701cb-405e-4a86-abf4-f986e92025ed)
-  )
-  (text "π" (at 111.76 81.28 0)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid a05eb11d-89f5-4430-afed-2c989f37bc5e)
-  )
-  (text "https://datasheet.lcsc.com/lcsc/2004132010_WILLSEMI-Will-Semicon-WS7808QC-14-TR_C506160.pdf"
-    (at 40.64 162.56 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid a29b423c-d31e-4c42-999a-c71528953ff8)
-  )
-  (text "TP (Ext. Antenna)" (at 243.84 76.2 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid b3f76942-7a90-48c1-85e1-1b79f54163f8)
-  )
-  (text "https://datasheet.lcsc.com/lcsc/1804151811_Skyworks-Solutions-SKY13317-373LF_C129190.pdf"
-    (at 40.64 175.26 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid bc14deaa-b941-4d8b-a197-b26549311301)
-  )
-  (text "TP (Antenna)" (at 157.48 76.2 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid c3483511-771a-42c1-ad09-74d267fb23a1)
-  )
-  (text "https://datasheet.lcsc.com/lcsc/1804151811_Skyworks-Solutions-SKY13373-460LF_C150853.pdf"
-    (at 40.64 170.18 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid cf82cf7d-1392-4328-b1a4-380f07b27f3c)
-  )
-  (text "https://datasheet.lcsc.com/lcsc/1811081217_Maxscend-MXD8544A_C285579.pdf"
-    (at 40.64 172.72 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid dd5c3464-51cc-4950-8b95-a349a919ae1b)
-  )
-  (text "TP (ESP32)" (at 71.12 63.5 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid ec88b2e9-c724-4daf-9763-c0d5eba770c7)
-  )
-
-  (label "50Ω ANT" (at 127 86.36 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid d12726ba-b343-4fe8-81c3-74603f965b27)
-  )
-
-  (hierarchical_label "FEED" (shape passive) (at 60.96 86.36 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid c84c9114-2442-43a1-96c5-bb78da039b0c)
-  )
-
-  (symbol (lib_id "Device:L") (at 91.44 91.44 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 068d2bf2-ccec-4196-ba7b-3ce8b47e5a90)
-    (property "Reference" "L301" (at 92.964 89.789 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Value" "1.6nH" (at 92.964 94.869 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Footprint" "Inductor_SMD:L_0402_1005Metric" (at 91.44 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 91.44 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "" (at 91.44 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1f9616d0-3d0a-47ee-80aa-f377f998e2bf))
-    (pin "2" (uuid fbc1d874-e9f7-4012-9bde-3a28b7ef6f32))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "L301") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "L401") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_Coaxial") (at 66.04 66.04 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 08faed29-221b-4e25-bee5-861e31c29213)
-    (property "Reference" "J401" (at 62.23 65.0632 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Conn_Coaxial" (at 62.23 67.6032 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 66.04 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" " ~" (at 66.04 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9ff80d57-0766-4dd8-bb3d-c2ab009b8a43))
-    (pin "2" (uuid 2aa2f7bf-c863-46be-93dc-fb697ef785c0))
-    (instances
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "J401") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:Antenna_Chip") (at 185.42 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 14239059-bbdf-4e55-a88d-42a11d221c95)
-    (property "Reference" "AE401" (at 190.5 64.77 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Antenna_Chip" (at 190.5 67.31 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 182.88 64.135 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 182.88 64.135 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid edcc4ec6-3b83-4561-a052-07cb70d4f296))
-    (pin "2" (uuid 1d831603-92cc-4c30-99ea-fde532dcdc21))
-    (instances
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "AE401") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_Coaxial") (at 236.22 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 150538e2-5dcb-4302-810b-39a7f36345b9)
-    (property "Reference" "J405" (at 240.03 75.2232 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Conn_Coaxial" (at 240.03 77.7632 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 236.22 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" " ~" (at 236.22 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid cc17e34b-da43-4264-b6d9-d8ac34d57057))
-    (pin "2" (uuid cea0c0a7-abfb-4fe9-a6f5-78f50cc3e40c))
-    (instances
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "J405") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:L") (at 132.08 92.71 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
-    (uuid 29a672ee-6107-4e06-bd9a-450bc9a52ce8)
-    (property "Reference" "L301" (at 133.604 91.059 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Value" "TBD" (at 133.604 96.139 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Footprint" "Inductor_SMD:L_0402_1005Metric" (at 132.08 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 132.08 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "" (at 132.08 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fb175bc7-50cc-4efe-b083-59aebe90be46))
-    (pin "2" (uuid abaff6e3-491d-4756-b39f-0c549a7118de))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "L301") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "L402") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_Coaxial") (at 149.86 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 32b63b63-ede5-4e42-adb0-507b3327d79e)
-    (property "Reference" "J402" (at 153.67 75.2232 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Conn_Coaxial" (at 153.67 77.7632 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 149.86 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" " ~" (at 149.86 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3900c8a1-2565-439a-bffc-45e6eceab356))
-    (pin "2" (uuid b508a0ff-dc36-4ac4-b856-0126f12b4971))
-    (instances
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "J402") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 99.06 86.36 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 547b5d3a-3de1-43c8-afc1-bd1c8a4b63fe)
-    (property "Reference" "C301" (at 97.155 84.836 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "4.7pF" (at 100.965 84.836 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 99.06 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 99.06 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "" (at 99.06 86.36 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c78b8e55-116b-42e4-ab76-33f4c7d8c8e7))
-    (pin "2" (uuid 5ce40155-83a6-4cc5-ab28-22022ba876b9))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "C301") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "C401") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 106.68 96.52 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 579069e2-e9d9-4168-be9f-32dca4c8f4ee)
-    (property "Reference" "#PWR0302" (at 106.68 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 106.68 101.6 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 106.68 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 106.68 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6ba7c646-19d4-4f43-97c6-ecc3f2016ad0))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "#PWR0302") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "#PWR0403") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 106.68 91.44 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5b17164d-a6ba-4128-91e4-3ae7af5476c5)
-    (property "Reference" "C302" (at 108.204 89.535 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "2.7pF" (at 108.204 93.345 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 106.68 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 106.68 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "" (at 106.68 91.44 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 69d1b414-6780-41fb-a8d8-656cefe3886f))
-    (pin "2" (uuid f4f1ca73-87d2-4a68-9bce-75dd076612b2))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "C302") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "C402") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 66.04 71.12 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6abd0b73-4c53-4dd5-b5c8-6129d02a738d)
-    (property "Reference" "#PWR0401" (at 66.04 77.47 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 66.04 76.2 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 66.04 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 66.04 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3ba468ed-34bb-45d9-ac42-1a38512f2117))
-    (instances
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "#PWR0401") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 91.44 96.52 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 77a83459-03d7-4dbb-9484-062cbc5cbbf7)
-    (property "Reference" "#PWR0301" (at 91.44 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 91.44 101.6 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 91.44 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 91.44 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3aa14642-7704-4e5d-9126-060c0c357360))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "#PWR0301") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "#PWR0402") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 187.96 88.9 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 7a7a7836-fbdc-403d-82e4-c428be62c63e)
-    (property "Reference" "#PWR0303" (at 187.96 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 187.96 93.98 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 187.96 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 187.96 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9c0c5323-ceac-4903-af92-5d2b46fd973a))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "#PWR0303") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "#PWR0406") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_Coaxial") (at 195.58 76.2 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 8cb882a4-e0ef-47a9-a872-aad2a486df27)
-    (property "Reference" "J403" (at 199.39 75.2232 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Conn_Coaxial" (at 199.39 77.7632 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 195.58 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" " ~" (at 195.58 76.2 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 18d44298-2886-4bb4-87c7-84739054f33c))
-    (pin "2" (uuid 2c3ba938-b311-41a4-b61a-b1268ba45034))
-    (instances
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "J403") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 228.6 88.9 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 8d67be49-e74d-40f4-a65b-b1c991febd98)
-    (property "Reference" "#PWR0303" (at 228.6 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 228.6 93.98 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 228.6 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 228.6 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid bae0817d-8e0b-4590-b316-c0a877691fc3))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "#PWR0303") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "#PWR0407") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:C_Small") (at 132.08 101.6 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp yes)
-    (uuid a6f64be2-876d-44eb-a9d1-9daa355afd4f)
-    (property "Reference" "C302" (at 133.604 99.695 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "TBD" (at 138.684 103.505 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 132.08 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 132.08 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "" (at 132.08 101.6 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c246c95a-922b-4e5a-b3eb-a895b3135137))
-    (pin "2" (uuid 164e2af0-bcdb-4d1e-b67b-e4ce6939bf62))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "C302") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "C403") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "RF_Switch:MASWSS0179") (at 99.06 129.54 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c928383c-f974-46a0-92c3-87587039e0fc)
-    (property "Reference" "U401" (at 99.06 118.11 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "MASWSS0179" (at 99.06 120.65 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6" (at 99.06 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://cdn.macom.com/datasheets/MASWSS0179.pdf" (at 99.06 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c1b5dc23-8e5f-4360-a7a4-68c0d7102925))
-    (pin "2" (uuid a8c14de4-70c4-4b9d-83c7-4cf92992a7df))
-    (pin "3" (uuid 35407155-8be3-47ce-989e-c0193ce99e2f))
-    (pin "4" (uuid 411357e1-7ee3-4706-aa16-75278427a88e))
-    (pin "5" (uuid 63d93af1-5ad4-43c5-b796-e5f684d6262f))
-    (pin "6" (uuid 52127bc5-28da-4def-8f86-4680686eaf23))
-    (instances
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "U401") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_Coaxial") (at 228.6 66.04 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c989320a-9e8b-4ef9-b63c-4bd2f799f9e0)
-    (property "Reference" "J404" (at 232.41 65.0632 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Conn_Coaxial" (at 232.41 67.6032 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 228.6 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" " ~" (at 228.6 66.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 65e4f704-4818-4d28-b8f9-b0817ceadb9d))
-    (pin "2" (uuid 4e704ddf-9ea3-4a8c-973e-823ac4e69085))
-    (instances
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "J404") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 142.24 88.9 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid dcdb2f13-849d-406f-8208-8ef0b9147216)
-    (property "Reference" "#PWR0303" (at 142.24 95.25 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 142.24 93.98 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 142.24 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 142.24 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e418c473-49da-49f1-a0eb-9af949ee9c4f))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "#PWR0303") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "#PWR0405") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 132.08 104.14 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid eb0006e6-00af-4595-97b1-1f5da6dcdfa0)
-    (property "Reference" "#PWR0302" (at 132.08 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 132.08 109.22 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 132.08 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 132.08 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 329759ca-d51d-45df-8ce2-1fd8a7c6ebd3))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "#PWR0302") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "#PWR0404") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:Antenna_Shield") (at 139.7 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ff525cce-a4db-4b5c-8adc-4ca5bb86cfbb)
-    (property "Reference" "E301" (at 142.748 73.66 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom))
-    )
-    (property "Value" "ANTENNA-GROUNDEDTRACE-15.2MM" (at 142.748 75.946 0)
-      (effects (font (size 1.27 1.27)) (justify left bottom) hide)
-    )
-    (property "Footprint" "RF_Antenna_custom:Texas_SWRA117D_2.4GHz_Left" (at 139.7 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 139.7 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "JLCPCB_IGNORE" "1" (at 139.7 68.58 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6003c9a5-344a-4b2a-8b94-1f5ba44cb317))
-    (pin "2" (uuid 15c29b7d-70f4-4968-b385-d0fbf818ac79))
-    (instances
-      (project "Nokia-3310-ESP32"
-        (path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-          (reference "E301") (unit 1)
-        )
-      )
-      (project "ESP_bare_chip_test_board"
-        (path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-          (reference "E401") (unit 1)
-        )
-      )
-    )
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e2bbeff9-48c2-46cc-b468-9541d249a8ab")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Connector:Conn_Coaxial"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" " ~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(arc
+					(start -1.778 -0.508)
+					(mid 0.2311 -1.8066)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.2099 1.8101)
+					(end -1.778 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Antenna_Chip"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "AE"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "Antenna_Chip"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at -2.54 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at -2.54 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ceramic chip antenna with pin for PCB trace"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "antenna"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Antenna_Chip_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.54 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -0.635) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 6.985) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 6.985) (xy 2.54 1.905) (xy 1.27 6.985)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 1.27) (xy 0.635 1.27) (xy 0.635 -1.27) (xy -0.635 -1.27) (xy -0.635 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Antenna_Chip_1_1"
+				(pin input line
+					(at -2.54 -2.54 90)
+					(length 2.54)
+					(name "FEED"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 90)
+					(length 2.54)
+					(name "PCB_Trace"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:Antenna_Shield"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "AE"
+				(at -1.905 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "Antenna_Shield"
+				(at -1.905 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Antenna with extra pin for shielding"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "antenna"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Antenna_Shield_0_1"
+				(arc
+					(start -0.508 -1.143)
+					(mid -0.8429 -2.1194)
+					(end 0 -2.667)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -2.667)
+					(mid 0.7989 -2.1052)
+					(end 0.508 -1.143)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.905) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0 0) (xy -1.27 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.762 -1.905)
+					(radius 0.1778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Antenna_Shield_1_1"
+				(pin input line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "Shield"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:L"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 -2.54)
+					(mid 0.6323 -1.905)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 0.635)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 1.905)
+					(end 0 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "RF_Switch:MASWSS0179"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MASWSS0179"
+				(at 3.81 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn.macom.com/datasheets/MASWSS0179.pdf"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Macom GaAs RF SPDT switch, DC-2GHz, 0.6/22dB loss/isolation, SOT-26 (SOT-23-6)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RF SWITCH SPDT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MASWSS0179_0_1"
+				(circle
+					(center -3.048 2.54)
+					(radius 0.2794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -3.81) (xy -2.54 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.794 2.54) (xy 2.921 5.207)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -3.81) (xy -1.27 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -3.81) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.175) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.905) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.635) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.635) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.905) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.175) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.048 0)
+					(radius 0.2794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.175 5.207)
+					(radius 0.2794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 7.62 -7.62)
+					(end -7.62 6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MASWSS0179_1_1"
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "RF1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "RF2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "V2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "RFC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "V1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 132.08 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0bc72807-16bd-4d8f-8105-fe0fe1bcc690")
+	)
+	(junction
+		(at 91.44 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "203b2e50-30f5-4ec7-809f-6f4ac8aeafb9")
+	)
+	(junction
+		(at 142.24 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "256f80f6-0bf0-43d6-91d9-2f2c65d96b13")
+	)
+	(junction
+		(at 106.68 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3921c785-b033-4c8e-a40f-2ebc1f8b866f")
+	)
+	(junction
+		(at 182.88 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5954ce90-7179-4ea1-a43d-63f26c64553c")
+	)
+	(junction
+		(at 228.6 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d5796fc-8d3a-4b8f-8580-c8f2da8d9e8a")
+	)
+	(junction
+		(at 139.7 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d85f466-9aca-4d68-8288-a2886ce90ac2")
+	)
+	(junction
+		(at 73.66 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a964a9fb-076c-4d90-a398-143f43b2fe78")
+	)
+	(junction
+		(at 223.52 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0ee322a-cf11-4a00-ad91-142311d45dd7")
+	)
+	(junction
+		(at 187.96 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc9dab85-d5e7-419b-9a74-9b9e86b89f7a")
+	)
+	(wire
+		(pts
+			(xy 106.68 86.36) (xy 101.6 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "012cfd11-ebeb-4369-97c9-114d22d0574f")
+	)
+	(wire
+		(pts
+			(xy 187.96 81.28) (xy 195.58 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1417a2f3-4318-4be9-a17f-03c0d0383f5f")
+	)
+	(wire
+		(pts
+			(xy 228.6 71.12) (xy 228.6 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "264a2480-5d4d-483f-9fde-cd5dc1ab655a")
+	)
+	(wire
+		(pts
+			(xy 228.6 81.28) (xy 236.22 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44c80c1f-edfb-4ffa-a446-0fa7344fcd74")
+	)
+	(wire
+		(pts
+			(xy 73.66 86.36) (xy 91.44 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "508c1ec2-7db4-49cb-80b2-b16f9cc81996")
+	)
+	(wire
+		(pts
+			(xy 187.96 71.12) (xy 187.96 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51c4ef4b-6ae1-4c11-a164-38252e38e386")
+	)
+	(wire
+		(pts
+			(xy 96.52 86.36) (xy 91.44 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "521e220a-5281-4af1-b1cb-b6c356a3af63")
+	)
+	(wire
+		(pts
+			(xy 228.6 81.28) (xy 228.6 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61f53043-d25a-4c47-bff2-7cee9b8be617")
+	)
+	(wire
+		(pts
+			(xy 142.24 73.66) (xy 142.24 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "713e08ac-4075-4616-b890-d0f4873ceadc")
+	)
+	(wire
+		(pts
+			(xy 223.52 76.2) (xy 223.52 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a06b5a5-fa27-4b9c-88ab-f4055f1e1bc9")
+	)
+	(wire
+		(pts
+			(xy 142.24 81.28) (xy 149.86 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "823c922f-18a8-4de3-bcb8-2ce0f3724414")
+	)
+	(wire
+		(pts
+			(xy 205.74 86.36) (xy 223.52 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8efdf0e3-8abd-4b51-bbc9-41520b7c0d4a")
+	)
+	(wire
+		(pts
+			(xy 91.44 86.36) (xy 91.44 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90a0707d-1c75-4012-afd8-ae41f51f3592")
+	)
+	(wire
+		(pts
+			(xy 139.7 86.36) (xy 132.08 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94bf9f04-8c20-4899-90f3-06649d8f64ea")
+	)
+	(wire
+		(pts
+			(xy 223.52 76.2) (xy 231.14 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1b4fba0-11f6-4d8d-9202-44fac4f6287c")
+	)
+	(wire
+		(pts
+			(xy 132.08 86.36) (xy 132.08 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a21d2b7c-f9ed-49df-be12-d6a97062be2a")
+	)
+	(wire
+		(pts
+			(xy 139.7 76.2) (xy 139.7 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa880fd0-f350-4b24-9931-ff2a53169a3f")
+	)
+	(wire
+		(pts
+			(xy 71.12 66.04) (xy 73.66 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abc2ecec-cd83-402d-95b4-63c77f65c17e")
+	)
+	(wire
+		(pts
+			(xy 223.52 66.04) (xy 223.52 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4f1298f-8bda-442a-8543-6435b1473ecb")
+	)
+	(wire
+		(pts
+			(xy 182.88 76.2) (xy 190.5 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c50cd3bc-32b9-48f9-8cc1-f72a44029b8b")
+	)
+	(wire
+		(pts
+			(xy 60.96 86.36) (xy 73.66 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca4e80cc-479d-425c-8af5-daca732d6937")
+	)
+	(wire
+		(pts
+			(xy 132.08 86.36) (xy 106.68 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdf3a6b9-b3b6-4b47-827c-337943ed544b")
+	)
+	(wire
+		(pts
+			(xy 132.08 96.52) (xy 132.08 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfedd665-ff8f-4dbf-bb21-819cb9a63e09")
+	)
+	(wire
+		(pts
+			(xy 91.44 95.25) (xy 91.44 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc1fc589-00e3-4e2c-8eff-0fedee836ea0")
+	)
+	(wire
+		(pts
+			(xy 182.88 71.12) (xy 182.88 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0b57fb9-1731-4e8a-ab58-cc04abeed75b")
+	)
+	(wire
+		(pts
+			(xy 187.96 81.28) (xy 187.96 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4b307ae-b5b2-4c46-8f90-fabe0b312df4")
+	)
+	(wire
+		(pts
+			(xy 142.24 81.28) (xy 142.24 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7549891-a5d1-47de-95e5-504d158ded93")
+	)
+	(wire
+		(pts
+			(xy 144.78 76.2) (xy 139.7 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e91f4d3e-b874-4933-b538-8d24af68e4c5")
+	)
+	(wire
+		(pts
+			(xy 182.88 76.2) (xy 182.88 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef97b595-104f-4ebe-b7d6-fbd40967b449")
+	)
+	(wire
+		(pts
+			(xy 106.68 86.36) (xy 106.68 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f21b7998-5f00-4e96-89f1-020d9f235dbb")
+	)
+	(wire
+		(pts
+			(xy 73.66 66.04) (xy 73.66 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fba00191-ff65-41cc-9b99-a542e6152930")
+	)
+	(wire
+		(pts
+			(xy 106.68 93.98) (xy 106.68 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd105a6f-a701-4dbb-aad0-48b65abebe6e")
+	)
+	(wire
+		(pts
+			(xy 139.7 73.66) (xy 139.7 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe23838b-4503-47e2-9980-1a85d4b117c0")
+	)
+	(wire
+		(pts
+			(xy 182.88 86.36) (xy 170.18 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe9167be-8761-4e97-a3a4-cdfcfe80edb6")
+	)
+	(rectangle
+		(start 83.82 104.14)
+		(end 114.3 78.74)
+		(stroke
+			(width 0)
+			(type dash_dot)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ebdd4ed4-5e5c-48d1-a83c-fd727eec66a5)
+	)
+	(text "TP (Chip Antenna)"
+		(exclude_from_sim no)
+		(at 203.2 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4221c01d-b608-4db1-b125-af4920202e99")
+	)
+	(text "https://datasheet.lcsc.com/lcsc/2109141830_Shenzhen-Fuman-Elec-FM1694C_C2857388.pdf"
+		(exclude_from_sim no)
+		(at 40.64 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73085499-9b03-46d2-96e7-623082eb5635")
+	)
+	(text "https://datasheet.lcsc.com/lcsc/2109141830_Shenzhen-Fuman-Elec-FM8625H_C2857391.pdf"
+		(exclude_from_sim no)
+		(at 40.64 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "792b8134-0ba4-47e1-81ce-46285d5e06b6")
+	)
+	(text "https://datasheet.lcsc.com/lcsc/1912111437_Maxscend-MXD8546FA_C462321.pdf"
+		(exclude_from_sim no)
+		(at 40.64 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d745109-b313-4c17-9f29-d94493f2d1ff")
+	)
+	(text "Shape and values TBD"
+		(exclude_from_sim no)
+		(at 109.22 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "964701cb-405e-4a86-abf4-f986e92025ed")
+	)
+	(text "π"
+		(exclude_from_sim no)
+		(at 111.76 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a05eb11d-89f5-4430-afed-2c989f37bc5e")
+	)
+	(text "https://datasheet.lcsc.com/lcsc/2004132010_WILLSEMI-Will-Semicon-WS7808QC-14-TR_C506160.pdf"
+		(exclude_from_sim no)
+		(at 40.64 162.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a29b423c-d31e-4c42-999a-c71528953ff8")
+	)
+	(text "TP (Ext. Antenna)"
+		(exclude_from_sim no)
+		(at 243.84 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3f76942-7a90-48c1-85e1-1b79f54163f8")
+	)
+	(text "https://datasheet.lcsc.com/lcsc/1804151811_Skyworks-Solutions-SKY13317-373LF_C129190.pdf"
+		(exclude_from_sim no)
+		(at 40.64 175.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc14deaa-b941-4d8b-a197-b26549311301")
+	)
+	(text "TP (Antenna)"
+		(exclude_from_sim no)
+		(at 157.48 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c3483511-771a-42c1-ad09-74d267fb23a1")
+	)
+	(text "https://datasheet.lcsc.com/lcsc/1804151811_Skyworks-Solutions-SKY13373-460LF_C150853.pdf"
+		(exclude_from_sim no)
+		(at 40.64 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf82cf7d-1392-4328-b1a4-380f07b27f3c")
+	)
+	(text "https://datasheet.lcsc.com/lcsc/1811081217_Maxscend-MXD8544A_C285579.pdf"
+		(exclude_from_sim no)
+		(at 40.64 172.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dd5c3464-51cc-4950-8b95-a349a919ae1b")
+	)
+	(text "TP (ESP32)"
+		(exclude_from_sim no)
+		(at 71.12 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec88b2e9-c724-4daf-9763-c0d5eba770c7")
+	)
+	(label "50Ω ANT"
+		(at 127 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d12726ba-b343-4fe8-81c3-74603f965b27")
+	)
+	(hierarchical_label "FEED"
+		(shape passive)
+		(at 60.96 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c84c9114-2442-43a1-96c5-bb78da039b0c")
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 91.44 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "068d2bf2-ccec-4196-ba7b-3ce8b47e5a90")
+		(property "Reference" "L301"
+			(at 92.964 89.789 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1.6nH"
+			(at 92.964 94.869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+			(at 91.44 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 91.44 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f9616d0-3d0a-47ee-80aa-f377f998e2bf")
+		)
+		(pin "2"
+			(uuid "fbc1d874-e9f7-4012-9bde-3a28b7ef6f32")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "L301")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "L401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 66.04 66.04 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "08faed29-221b-4e25-bee5-861e31c29213")
+		(property "Reference" "J401"
+			(at 62.23 65.0632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 62.23 67.6032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" " ~"
+			(at 66.04 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ff80d57-0766-4dd8-bb3d-c2ab009b8a43")
+		)
+		(pin "2"
+			(uuid "2aa2f7bf-c863-46be-93dc-fb697ef785c0")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "J401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Antenna_Chip")
+		(at 185.42 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14239059-bbdf-4e55-a88d-42a11d221c95")
+		(property "Reference" "AE401"
+			(at 190.5 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Antenna_Chip"
+			(at 190.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 185.42 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "edcc4ec6-3b83-4561-a052-07cb70d4f296")
+		)
+		(pin "2"
+			(uuid "1d831603-92cc-4c30-99ea-fde532dcdc21")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "AE401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 236.22 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "150538e2-5dcb-4302-810b-39a7f36345b9")
+		(property "Reference" "J405"
+			(at 240.03 75.2232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 240.03 77.7632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" " ~"
+			(at 236.22 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc17e34b-da43-4264-b6d9-d8ac34d57057")
+		)
+		(pin "2"
+			(uuid "cea0c0a7-abfb-4fe9-a6f5-78f50cc3e40c")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "J405")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 132.08 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "29a672ee-6107-4e06-bd9a-450bc9a52ce8")
+		(property "Reference" "L301"
+			(at 133.604 91.059 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "TBD"
+			(at 133.604 96.139 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
+			(at 132.08 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 132.08 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb175bc7-50cc-4efe-b083-59aebe90be46")
+		)
+		(pin "2"
+			(uuid "abaff6e3-491d-4756-b39f-0c549a7118de")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "L301")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "L402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 149.86 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "32b63b63-ede5-4e42-adb0-507b3327d79e")
+		(property "Reference" "J402"
+			(at 153.67 75.2232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 153.67 77.7632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" " ~"
+			(at 149.86 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 149.86 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3900c8a1-2565-439a-bffc-45e6eceab356")
+		)
+		(pin "2"
+			(uuid "b508a0ff-dc36-4ac4-b856-0126f12b4971")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "J402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 99.06 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "547b5d3a-3de1-43c8-afc1-bd1c8a4b63fe")
+		(property "Reference" "C301"
+			(at 97.155 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7pF"
+			(at 100.965 84.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 99.06 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 99.06 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c78b8e55-116b-42e4-ab76-33f4c7d8c8e7")
+		)
+		(pin "2"
+			(uuid "5ce40155-83a6-4cc5-ab28-22022ba876b9")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "C301")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "C401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 106.68 96.52 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "579069e2-e9d9-4168-be9f-32dca4c8f4ee")
+		(property "Reference" "#PWR0302"
+			(at 106.68 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ba7c646-19d4-4f43-97c6-ecc3f2016ad0")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "#PWR0302")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR0403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 106.68 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5b17164d-a6ba-4128-91e4-3ae7af5476c5")
+		(property "Reference" "C302"
+			(at 108.204 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.7pF"
+			(at 108.204 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 106.68 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 106.68 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69d1b414-6780-41fb-a8d8-656cefe3886f")
+		)
+		(pin "2"
+			(uuid "f4f1ca73-87d2-4a68-9bce-75dd076612b2")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "C302")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "C402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6abd0b73-4c53-4dd5-b5c8-6129d02a738d")
+		(property "Reference" "#PWR0401"
+			(at 66.04 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ba468ed-34bb-45d9-ac42-1a38512f2117")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR0401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 91.44 96.52 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77a83459-03d7-4dbb-9484-062cbc5cbbf7")
+		(property "Reference" "#PWR0301"
+			(at 91.44 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.44 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 91.44 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3aa14642-7704-4e5d-9126-060c0c357360")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "#PWR0301")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR0402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 88.9 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a7a7836-fbdc-403d-82e4-c428be62c63e")
+		(property "Reference" "#PWR0303"
+			(at 187.96 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c0c5323-ceac-4903-af92-5d2b46fd973a")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "#PWR0303")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR0406")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 195.58 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8cb882a4-e0ef-47a9-a872-aad2a486df27")
+		(property "Reference" "J403"
+			(at 199.39 75.2232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 199.39 77.7632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" " ~"
+			(at 195.58 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "18d44298-2886-4bb4-87c7-84739054f33c")
+		)
+		(pin "2"
+			(uuid "2c3ba938-b311-41a4-b61a-b1268ba45034")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "J403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 228.6 88.9 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d67be49-e74d-40f4-a65b-b1c991febd98")
+		(property "Reference" "#PWR0303"
+			(at 228.6 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 228.6 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bae0817d-8e0b-4590-b316-c0a877691fc3")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "#PWR0303")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR0407")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 132.08 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "a6f64be2-876d-44eb-a9d1-9daa355afd4f")
+		(property "Reference" "C302"
+			(at 133.604 99.695 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TBD"
+			(at 138.684 103.505 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 132.08 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 132.08 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c246c95a-922b-4e5a-b3eb-a895b3135137")
+		)
+		(pin "2"
+			(uuid "164e2af0-bcdb-4d1e-b67b-e4ce6939bf62")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "C302")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "C403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RF_Switch:MASWSS0179")
+		(at 99.06 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c928383c-f974-46a0-92c3-87587039e0fc")
+		(property "Reference" "U401"
+			(at 99.06 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MASWSS0179"
+			(at 99.06 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 99.06 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.macom.com/datasheets/MASWSS0179.pdf"
+			(at 99.06 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c1b5dc23-8e5f-4360-a7a4-68c0d7102925")
+		)
+		(pin "2"
+			(uuid "a8c14de4-70c4-4b9d-83c7-4cf92992a7df")
+		)
+		(pin "3"
+			(uuid "35407155-8be3-47ce-989e-c0193ce99e2f")
+		)
+		(pin "4"
+			(uuid "411357e1-7ee3-4706-aa16-75278427a88e")
+		)
+		(pin "5"
+			(uuid "63d93af1-5ad4-43c5-b796-e5f684d6262f")
+		)
+		(pin "6"
+			(uuid "52127bc5-28da-4def-8f86-4680686eaf23")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "U401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 228.6 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c989320a-9e8b-4ef9-b63c-4bd2f799f9e0")
+		(property "Reference" "J404"
+			(at 232.41 65.0632 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 232.41 67.6032 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" " ~"
+			(at 228.6 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65e4f704-4818-4d28-b8f9-b0817ceadb9d")
+		)
+		(pin "2"
+			(uuid "4e704ddf-9ea3-4a8c-973e-823ac4e69085")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "J404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 142.24 88.9 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dcdb2f13-849d-406f-8208-8ef0b9147216")
+		(property "Reference" "#PWR0303"
+			(at 142.24 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e418c473-49da-49f1-a0eb-9af949ee9c4f")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "#PWR0303")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR0405")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 104.14 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb0006e6-00af-4595-97b1-1f5da6dcdfa0")
+		(property "Reference" "#PWR0302"
+			(at 132.08 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 132.08 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "329759ca-d51d-45df-8ce2-1fd8a7c6ebd3")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "#PWR0302")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR0404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Antenna_Shield")
+		(at 139.7 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff525cce-a4db-4b5c-8adc-4ca5bb86cfbb")
+		(property "Reference" "E301"
+			(at 142.748 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "ANTENNA-GROUNDEDTRACE-15.2MM"
+			(at 142.748 75.946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "RF_Antenna_custom:Texas_SWRA117D_2.4GHz_Left"
+			(at 139.7 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
+			(at 139.7 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6003c9a5-344a-4b2a-8b94-1f5ba44cb317")
+		)
+		(pin "2"
+			(uuid "15c29b7d-70f4-4968-b385-d0fbf818ac79")
+		)
+		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
+					(reference "E301")
+					(unit 1)
+				)
+			)
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "E401")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
