@@ -503,10 +503,7 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "/USB_D+": "USB_DIFF",
-      "/USB_D-": "USB_DIFF"
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -655,6 +652,10 @@
     [
       "01bb46e3-d129-4909-82a1-6bb013dc8f71",
       "ESP32-C3"
+    ],
+    [
+      "9be7d96f-e7c5-43f0-93fa-5964acc52bec",
+      "ESP32-C3-core"
     ]
   ],
   "text_variables": {}

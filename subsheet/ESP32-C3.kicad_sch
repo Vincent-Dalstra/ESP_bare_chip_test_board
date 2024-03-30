@@ -2105,12 +2105,6 @@
 		)
 	)
 	(junction
-		(at 172.72 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3bbe8b33-296b-4d23-92dc-bab2bbcfce3f")
-	)
-	(junction
 		(at 210.82 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2343,16 +2337,6 @@
 			(type solid)
 		)
 		(uuid "4044baa2-d669-4a3c-a8bd-2e175397c386")
-	)
-	(wire
-		(pts
-			(xy 172.72 83.82) (xy 208.28 83.82)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "49a0d320-aecb-484d-89e9-737b2a2b798c")
 	)
 	(wire
 		(pts
@@ -2736,7 +2720,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 83.82) (xy 172.72 83.82)
+			(xy 60.96 83.82) (xy 208.28 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3144,7 +3128,7 @@
 	)
 	(symbol
 		(lib_id "Espressif:ESP32-C3-MINI-1")
-		(at 172.72 111.76 0)
+		(at 172.72 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3153,7 +3137,7 @@
 		(fields_autoplaced yes)
 		(uuid "14dd28c8-116f-4708-8029-9774cc94f4c1")
 		(property "Reference" "U601"
-			(at 174.9141 81.28 0)
+			(at 174.9141 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3162,7 +3146,7 @@
 			)
 		)
 		(property "Value" "ESP32-C3-MINI-1"
-			(at 174.9141 83.82 0)
+			(at 174.9141 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3171,7 +3155,7 @@
 			)
 		)
 		(property "Footprint" "Espressif:ESP32-C3-MINI-1"
-			(at 172.72 147.32 0)
+			(at 172.72 213.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3180,7 +3164,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf"
-			(at 172.72 149.86 0)
+			(at 172.72 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3189,7 +3173,7 @@
 			)
 		)
 		(property "Description" "ESP32-C3-MINI-1 family is an ultra-low-power MCU-based SoC solution that supports 2.4 GHz Wi-Fi and Bluetooth®Low Energy (Bluetooth LE)."
-			(at 172.72 111.76 0)
+			(at 172.72 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4458,6 +4442,214 @@
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
 					(reference "#PWR0606")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 144.78 86.36)
+		(size 55.88 50.8)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 229 191 1.0000)
+		)
+		(uuid "9be7d96f-e7c5-43f0-93fa-5964acc52bec")
+		(property "Sheetname" "ESP32-C3-core"
+			(at 144.78 85.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32-C3-core.kicad_sch"
+			(at 144.78 137.7446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO7" bidirectional
+			(at 200.66 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9756c625-41a3-447b-88c7-57561a00ee4e")
+		)
+		(pin "3v3" input
+			(at 172.72 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "65e640f6-f5f8-42eb-83a0-facd74570e12")
+		)
+		(pin "GPIO0{slash}ADC1_CH0{slash}XTAL_32K_P" bidirectional
+			(at 144.78 93.98 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "69d7bf26-d70d-44ab-b434-49f03203b9cc")
+		)
+		(pin "GPIO1{slash}ADC1_CH1{slash}XTAL_32K_N" bidirectional
+			(at 144.78 96.52 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cab8d6ee-1c11-49d5-b899-b0b1963099dd")
+		)
+		(pin "EN{slash}CHIP_PU" bidirectional
+			(at 144.78 88.9 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a29285f0-9487-415c-93b8-4115b9421d4f")
+		)
+		(pin "GPIO4{slash}ADC1_CH4" bidirectional
+			(at 200.66 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "21ac4691-25b1-4cb4-a414-8449ab66a107")
+		)
+		(pin "GPIO5{slash}ADC2_CH0" bidirectional
+			(at 200.66 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ac7b0de4-9f7a-4f80-ac74-e0622da6e102")
+		)
+		(pin "GPIO6" bidirectional
+			(at 200.66 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f285f43f-7e8e-4f6b-be08-704832efe773")
+		)
+		(pin "GPIO18{slash}USB_D-" bidirectional
+			(at 200.66 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "1197675e-eb53-41ec-926c-180bf5238eb3")
+		)
+		(pin "U0RXD{slash}GPIO20" bidirectional
+			(at 200.66 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "56257e79-a1ad-447c-9887-73207ab8ece1")
+		)
+		(pin "GPIO19{slash}USB_D+" bidirectional
+			(at 200.66 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6c564b8d-54ed-4455-a79f-9992a0e4a7a3")
+		)
+		(pin "U0TXD{slash}GPIO21" bidirectional
+			(at 200.66 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "da17a177-89dc-42ab-a845-7194a7ec3749")
+		)
+		(pin "GPIO10" bidirectional
+			(at 200.66 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "abb683bb-9fa5-483b-af81-d116e7627d65")
+		)
+		(pin "GPIO3{slash}ADC1_CH3" bidirectional
+			(at 200.66 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "86168d47-4f87-46e8-aac6-087d72fb864b")
+		)
+		(pin "GPIO9{slash}BOOT" bidirectional
+			(at 200.66 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d0138b4b-9307-4956-a378-0de1f04ccf5e")
+		)
+		(pin "GPIO2{slash}ADC1_CH2" bidirectional
+			(at 200.66 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "26dd47f0-3bb8-42b1-846e-1f68bee6073a")
+		)
+		(pin "GPIO8" bidirectional
+			(at 200.66 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ec94fd76-b93f-48d4-a14e-1c71acfd61de")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
+					(page "7")
 				)
 			)
 		)
