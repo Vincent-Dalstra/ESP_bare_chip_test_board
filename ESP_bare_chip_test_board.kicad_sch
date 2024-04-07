@@ -49,6 +49,16 @@
 		)
 		(uuid "917d7285-099a-4a17-b04f-56a18331cf8b")
 	)
+	(wire
+		(pts
+			(xy 15.24 33.02) (xy 15.24 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "078e2077-9252-43b3-a1c5-748e855968cc")
+	)
 	(bus
 		(pts
 			(xy 96.52 30.48) (xy 96.52 33.02)
@@ -68,6 +78,26 @@
 			(type default)
 		)
 		(uuid "216f01e3-c644-4184-bd2b-6153471b2b55")
+	)
+	(wire
+		(pts
+			(xy 17.78 33.02) (xy 15.24 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24fab25d-247f-4336-9834-0eeac012acfe")
+	)
+	(wire
+		(pts
+			(xy 15.24 162.56) (xy 20.32 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d8cfa2a-9a70-4bc6-bb76-cd5fc45f014f")
 	)
 	(bus
 		(pts
@@ -101,6 +131,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 27.94) (xy 40.64 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aade6407-953a-4eb0-9149-1c51f9db78b4")
+	)
+	(wire
+		(pts
 			(xy 99.06 33.02) (xy 109.22 33.02)
 		)
 		(stroke
@@ -108,6 +148,26 @@
 			(type default)
 		)
 		(uuid "bfc9726f-19b8-4c13-9c3d-ea11d0009ac0")
+	)
+	(wire
+		(pts
+			(xy 38.1 33.02) (xy 40.64 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cec61a39-81ef-41db-9977-12a2fe6a1d63")
+	)
+	(wire
+		(pts
+			(xy 38.1 30.48) (xy 40.64 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d818eb-f371-42ef-b5af-b245f4d2bf5a")
 	)
 	(wire
 		(pts
@@ -163,7 +223,7 @@
 	)
 	(text "Todo:\n\n- Finish USB-C PD circuit\n- Add Current measurement IC\n- Add temperature measurment IC\nAll of the above as I2C devices :)\n- Debug MUX on USB port?\n- Add ESP32-C3 co-processor?\n- W5500 Ethernet.\n- RS485?\n- Audio?"
 		(exclude_from_sim no)
-		(at 19.05 194.056 0)
+		(at 175.26 279.4 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -248,6 +308,72 @@
 			(justify left bottom)
 		)
 		(uuid "ea974c44-d315-4b2a-a051-e8684b948e33")
+	)
+	(global_label "I2C0.INT"
+		(shape output)
+		(at 40.64 33.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7a246ddf-f765-49df-85c3-cdfd2593d8f4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 51.4267 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C0.SDA"
+		(shape bidirectional)
+		(at 40.64 27.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ae9b5de2-f14a-48ba-ba04-c39f92550b16")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.2032 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C0.SCL"
+		(shape bidirectional)
+		(at 40.64 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f78bfb4d-0b39-4ff2-a494-36a955eb6285")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.1427 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(sheet
 		(at 218.44 38.1)
@@ -846,8 +972,8 @@
 		)
 	)
 	(sheet
-		(at 33.02 25.4)
-		(size 20.32 25.4)
+		(at 20.32 160.02)
+		(size 22.86 22.86)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -856,9 +982,97 @@
 		(fill
 			(color 255 229 191 1.0000)
 		)
-		(uuid "b79e2e7b-795b-42a1-aada-eba1841a56dc")
+		(uuid "28425a28-8968-4679-b18b-58814452f93f")
+		(property "Sheetname" "Power"
+			(at 20.32 159.3084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "subsheet/Power.kicad_sch"
+			(at 20.32 183.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_VBUS" bidirectional
+			(at 20.32 162.56 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c1cc0a23-8df8-4a60-b864-7ecd4cc6f7df")
+		)
+		(pin "~{USB_SRC}" input
+			(at 43.18 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b22b0b10-a472-4f80-8a29-35d5006d57ec")
+		)
+		(pin "~{USB_SNK}_{PD}" input
+			(at 43.18 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "af3675b5-d692-491d-a2df-3ccf996a58ef")
+		)
+		(pin "I_{LIM}_B" input
+			(at 43.18 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7721bca7-9711-493b-96d2-524a27a14891")
+		)
+		(pin "I_{LIM}_A" input
+			(at 43.18 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6758db43-4947-4b71-bcaa-9435c4c87d4a")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 17.78 17.78)
+		(size 20.32 17.78)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 229 191 1.0000)
+		)
+		(uuid "e324977a-58a1-4f1d-a668-70aacbf37a3e")
 		(property "Sheetname" "USB"
-			(at 33.02 24.6884 0)
+			(at 17.78 17.0684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -867,7 +1081,7 @@
 			)
 		)
 		(property "Sheetfile" "subsheet/usb.kicad_sch"
-			(at 33.02 51.3846 0)
+			(at 17.78 36.1446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -876,69 +1090,69 @@
 			)
 		)
 		(pin "D+" bidirectional
-			(at 53.34 33.02 0)
+			(at 38.1 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a14ab4b0-41e2-4f97-ac79-fbb9049102b5")
+			(uuid "373189d2-e427-436c-a817-f09ced38b264")
 		)
 		(pin "D-" bidirectional
-			(at 53.34 35.56 0)
+			(at 38.1 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "41eca765-567f-46a2-a1b6-ad03c15e4e0c")
+			(uuid "0b6e3284-94aa-49e7-910c-7c965d309569")
 		)
 		(pin "PD_~{INT}" output
-			(at 53.34 45.72 0)
+			(at 38.1 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ae523701-2843-418a-87b9-db1630f6eb29")
-		)
-		(pin "PD_SCL" bidirectional
-			(at 53.34 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "a53acec3-fb56-47e7-846e-99875e9be4b1")
+			(uuid "dc16c464-5807-46e0-81a5-bf07782bd9ce")
 		)
 		(pin "PD_SDA" bidirectional
-			(at 53.34 40.64 0)
+			(at 38.1 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6b433ae4-0af0-4ae8-b15b-ac5bf8e7f062")
+			(uuid "e42e5c24-19e1-4af3-b9a3-84229adea1d4")
 		)
-		(pin "VBUS" output
-			(at 33.02 45.72 180)
+		(pin "VBUS" bidirectional
+			(at 17.78 33.02 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e1f26663-4719-4388-93c9-9cdc9c890973")
+			(uuid "9a3cd13c-977a-4032-b9c1-b6dc22c5ebc4")
+		)
+		(pin "PD_SCL" input
+			(at 38.1 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "72933d49-d7f3-4671-b9b1-c9de9bdb9302")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15"
-					(page "5")
+					(page "8")
 				)
 			)
 		)
