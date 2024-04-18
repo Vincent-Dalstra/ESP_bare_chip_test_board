@@ -59,8 +59,8 @@
 		(uuid "0cafda25-a14e-4929-9dcf-cb8cd11b938a")
 	)
 	(bus_entry
-		(at 63.5 33.02)
-		(size 2.54 -2.54)
+		(at 55.88 22.86)
+		(size 2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
@@ -77,8 +77,8 @@
 		(uuid "8362e2b2-f3a9-46f4-91cc-ecc81b8c860d")
 	)
 	(bus_entry
-		(at 63.5 35.56)
-		(size 2.54 -2.54)
+		(at 55.88 20.32)
+		(size 2.54 2.54)
 		(stroke
 			(width 0)
 			(type default)
@@ -134,16 +134,6 @@
 			(type default)
 		)
 		(uuid "1d7d4606-a2ff-45cd-a4f7-0fac6e4839a5")
-	)
-	(wire
-		(pts
-			(xy 53.34 35.56) (xy 63.5 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "216f01e3-c644-4184-bd2b-6153471b2b55")
 	)
 	(wire
 		(pts
@@ -227,7 +217,7 @@
 	)
 	(bus
 		(pts
-			(xy 66.04 30.48) (xy 66.04 27.94)
+			(xy 58.42 25.4) (xy 58.42 27.94)
 		)
 		(stroke
 			(width 0)
@@ -264,6 +254,16 @@
 			(type default)
 		)
 		(uuid "509827ec-2f1a-423d-a8b0-dd6736c9e8bb")
+	)
+	(wire
+		(pts
+			(xy 38.1 22.86) (xy 55.88 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d618183-2ecb-42bf-852f-bbcc0053215f")
 	)
 	(bus
 		(pts
@@ -315,16 +315,6 @@
 		)
 		(uuid "8c137fa9-4027-49f6-96fa-0ed037ab17ac")
 	)
-	(bus
-		(pts
-			(xy 66.04 27.94) (xy 96.52 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d76c268-ba1f-44de-8b30-4d8e5db1a13a")
-	)
 	(wire
 		(pts
 			(xy 88.9 91.44) (xy 88.9 121.92)
@@ -334,6 +324,16 @@
 			(type default)
 		)
 		(uuid "9593b5f1-28ce-4c20-88ee-8f5d1199a906")
+	)
+	(bus
+		(pts
+			(xy 58.42 27.94) (xy 96.52 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2763701-f020-4505-bf58-247e8c6ae5b3")
 	)
 	(wire
 		(pts
@@ -437,6 +437,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 20.32) (xy 55.88 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0853998-6d2f-46c5-8f18-f2752802acd1")
+	)
+	(wire
+		(pts
 			(xy 88.9 121.92) (xy 88.9 134.62)
 		)
 		(stroke
@@ -467,16 +477,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 33.02) (xy 63.5 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e64cef02-7468-48eb-85d2-b5ae44acc86d")
-	)
-	(wire
-		(pts
 			(xy 99.06 35.56) (xy 109.22 35.56)
 		)
 		(stroke
@@ -497,7 +497,7 @@
 	)
 	(bus
 		(pts
-			(xy 66.04 33.02) (xy 66.04 30.48)
+			(xy 58.42 22.86) (xy 58.42 25.4)
 		)
 		(stroke
 			(width 0)
@@ -527,7 +527,7 @@
 		)
 		(uuid "66c7bdd0-b018-425d-9b4e-adbf6547b788")
 	)
-	(text "~~ GPIO count ~~\nUnrestricted = 31\nSpecial = 6s (0, 45, 46, Tx, Rx)\nUnused if possible = 1u (26)\n\nGPIB = 16\n\nI2C-internal = 2s (Rx, Tx)\n- FUSB302 = 1s (45)\n- INT (TBD) = 1s (IO46)\n\nUSB-PD = 2\n\nSPI = 3\n- Ethernet CS/INT/RST = 3\n- NOR flash (16MB) = 1\n\nTotal (remaining) = 25 + 4s (6 +2s)\n\n?? USB alt mode = 2-10\n?? Piicodev connector = 2 each\n?? 4pin JST connector = 2 each\n  "
+	(text "~~ GPIO count ~~\nUnrestricted = 31\nSpecial = 6s (0, 45, 46, Tx, Rx)\nUnused if possible = 1u (26)\n\nGPIB = 16\n\nI2C-internal = 2s (Rx, Tx)\n- FUSB302 = 1s (45)\n- INT (TBD) = 1s (IO46)\n\nUSB-PD = 2\n\nSPI common = 3\n- Ethernet CS/INT/RST = 3\n- NOR flash (16MB) = 1\n\nTotal (remaining) = 25 + 4s (6 +2s)\n\n?? USB alt mode = 2-10\n?? Piicodev connector = 2 each\n?? 4pin JST connector = 2 each\n  "
 		(exclude_from_sim no)
 		(at 134.62 7.62 0)
 		(effects
@@ -572,7 +572,7 @@
 		(uuid "f37a34be-d063-4674-8a91-1f90e87ee81e")
 	)
 	(label "USB_D+"
-		(at 55.88 35.56 0)
+		(at 48.26 20.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -770,7 +770,7 @@
 		(uuid "e87597df-a8d2-4128-b770-44db094b142d")
 	)
 	(label "USB_D-"
-		(at 55.88 33.02 0)
+		(at 48.26 22.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
