@@ -2147,6 +2147,18 @@
 		(uuid "bbdd29be-972c-4cb7-8485-5d2d215796fe")
 	)
 	(junction
+		(at 172.72 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c28380f4-a9b6-4b85-a72a-fd3ebd06e7fe")
+	)
+	(junction
+		(at 177.8 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5bddc0b-8845-4c92-9e8f-5817bba7510b")
+	)
+	(junction
 		(at 228.6 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2157,6 +2169,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eba7a727-9296-4939-ad82-eeb4537433ae")
+	)
+	(wire
+		(pts
+			(xy 177.8 54.61) (xy 193.04 54.61)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "045c242e-e318-4c0a-b929-e7cf62d7cd04")
 	)
 	(wire
 		(pts
@@ -2197,6 +2219,16 @@
 			(type default)
 		)
 		(uuid "08bd86ae-9a91-4ed2-ae9e-3fcbcdefe7f2")
+	)
+	(wire
+		(pts
+			(xy 172.72 33.02) (xy 172.72 54.61)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "0954d300-e8cb-4cfe-abac-7b36e2b052f8")
 	)
 	(polyline
 		(pts
@@ -2350,6 +2382,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 57.15) (xy 177.8 54.61)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "4bd0b10f-5253-4480-bda5-c1ced9116f50")
+	)
+	(wire
+		(pts
 			(xy 33.02 137.16) (xy 41.91 137.16)
 		)
 		(stroke
@@ -2478,6 +2520,16 @@
 		)
 		(uuid "8a1df67f-412a-4ee4-82d7-84d6eb52af3e")
 	)
+	(wire
+		(pts
+			(xy 193.04 62.23) (xy 193.04 63.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "8dbc2477-f12c-4e95-9470-931cf513f4df")
+	)
 	(polyline
 		(pts
 			(xy 13.97 93.98) (xy 19.05 93.98)
@@ -2540,6 +2592,26 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 57.15) (xy 193.04 54.61)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "aa8ad25d-0c26-4459-8bff-ad5b002a8a52")
+	)
+	(wire
+		(pts
+			(xy 172.72 54.61) (xy 172.72 86.36)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "aff6c842-a40f-454f-b37d-bd9f89da6e72")
+	)
+	(wire
+		(pts
 			(xy 228.6 121.92) (xy 228.6 127)
 		)
 		(stroke
@@ -2547,6 +2619,16 @@
 			(type default)
 		)
 		(uuid "b0f2660c-35bf-4da0-bde0-183e7843d432")
+	)
+	(wire
+		(pts
+			(xy 177.8 62.23) (xy 177.8 63.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "b6c30e36-63af-4ab2-a86d-ab207b3e90da")
 	)
 	(wire
 		(pts
@@ -2720,6 +2802,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 54.61) (xy 177.8 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e99e65e3-e13c-4576-b313-4102939172ce")
+	)
+	(wire
+		(pts
 			(xy 60.96 83.82) (xy 208.28 83.82)
 		)
 		(stroke
@@ -2881,6 +2973,28 @@
 		)
 		(uuid "f125517e-09d0-450c-981b-c3c8d1a1c830")
 	)
+	(global_label "3v3_{AUX}"
+		(shape input)
+		(at 172.72 33.02 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3ffa7cf4-ed8e-4507-81be-0ea2bf49a5c4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.72 23.6945 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(hierarchical_label "IO0"
 		(shape bidirectional)
 		(at 144.78 93.98 180)
@@ -2893,7 +3007,7 @@
 		)
 		(uuid "0f94c60a-1723-452d-9889-e56a596c1336")
 	)
-	(hierarchical_label "GPIO44{slash}UART0.Rx"
+	(hierarchical_label "GPIO20{slash}UART0.Rx"
 		(shape bidirectional)
 		(at 220.98 96.52 0)
 		(fields_autoplaced yes)
@@ -3001,7 +3115,7 @@
 		)
 		(uuid "84536318-8008-482a-a075-df4a3f82b314")
 	)
-	(hierarchical_label "GPIO43{slash}UART0.Tx"
+	(hierarchical_label "GPIO21{slash}UART0.Tx"
 		(shape bidirectional)
 		(at 220.98 93.98 0)
 		(fields_autoplaced yes)
@@ -3127,13 +3241,78 @@
 		)
 	)
 	(symbol
-		(lib_id "Espressif:ESP32-C3-MINI-1")
-		(at 172.72 177.8 0)
+		(lib_id "power:GND")
+		(at 193.04 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(uuid "130c94e6-1eaf-4ee9-8667-c112e210bb85")
+		(property "Reference" "#PWR0612"
+			(at 193.04 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 193.167 67.8942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b32b3aeb-cf79-44cf-b7dd-882511769092")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
+					(reference "#PWR0612")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Espressif:ESP32-C3-MINI-1")
+		(at 172.72 177.8 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "14dd28c8-116f-4708-8029-9774cc94f4c1")
 		(property "Reference" "U601"
@@ -3415,6 +3594,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 177.8 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31911b2f-f3b7-4671-a10d-28435e405277")
+		(property "Reference" "#PWR0611"
+			(at 177.8 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.927 67.8942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 177.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6352cd78-4dc7-46f6-a239-cc7d25068500")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
+					(reference "#PWR0611")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 73.66 113.03 0)
 		(unit 1)
@@ -3566,6 +3810,162 @@
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
 					(reference "R602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 193.04 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e0891c4-9eaa-4f63-b13c-77a018a49582")
+		(property "Reference" "C603"
+			(at 195.3768 58.5216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF/6.3V"
+			(at 195.3768 60.833 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 193.04 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C59461"
+			(at 193.04 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9678e4de-db4c-4ea0-90e2-4258de8ff7e9")
+		)
+		(pin "2"
+			(uuid "c291652e-027a-416e-ab17-5fb9dcffd74b")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
+					(reference "C603")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 177.8 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f96ca0f-8fb5-446a-9cd2-27c4d88cbdfc")
+		(property "Reference" "C602"
+			(at 180.1368 58.5216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF/50V"
+			(at 180.1368 60.833 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 177.8 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 177.8 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C14663"
+			(at 177.8 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34b4f5c6-ec3a-4a46-8a1e-49cda68b0827")
+		)
+		(pin "2"
+			(uuid "2457e319-11fe-4ced-82e3-3b5b63106c2f")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
+					(reference "C602")
 					(unit 1)
 				)
 			)

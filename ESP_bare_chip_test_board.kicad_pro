@@ -187,6 +187,7 @@
         0.09,
         0.127,
         0.2,
+        0.3424,
         0.4,
         0.6,
         1.0,
@@ -503,7 +504,10 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/USB/D+": "USB_DIFF",
+      "/USB/D-": "USB_DIFF"
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -672,6 +676,22 @@
     [
       "f2eaccf6-891f-4f8c-bb6d-39d189e94a7d",
       "step-down-12v-5v"
+    ],
+    [
+      "3ac85730-69ac-49b3-9a57-3b8bd09542e4",
+      "connector_GPIB"
+    ],
+    [
+      "55308f0d-6d1f-4d67-a924-a225ca5de0ad",
+      "Ethernet"
+    ],
+    [
+      "d37d0921-0af2-43fb-b20d-bf592b897b4a",
+      "flash_nor"
+    ],
+    [
+      "04b60eee-d553-4abe-8b22-3fc74b6351bd",
+      "piicodev_connectors"
     ]
   ],
   "text_variables": {}

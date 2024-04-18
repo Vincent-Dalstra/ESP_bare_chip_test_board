@@ -1306,7 +1306,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b1aef9e-212f-4624-a201-cfc827fc9815")
-		(property "Reference" "C903"
+		(property "Reference" "C1803"
 			(at 136.9568 62.3316 0)
 			(effects
 				(font
@@ -1361,19 +1361,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "53c101bf-c2b7-44d7-86a1-1244042417a8")
+			(uuid "8888c3e0-5f41-45fc-a7d9-b19734e46f91")
 		)
 		(pin "2"
-			(uuid "1dc7e901-d08d-4441-bb1f-c00fdd4af7f7")
+			(uuid "b6aa0661-438a-41f0-a443-bc43b3f04660")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/ed6f4ea4-2fc2-4f57-9b20-06c5785a7384"
-					(reference "C903")
+					(reference "C1803")
 					(unit 1)
 				)
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/cab84238-ee51-476d-8b41-60559ed008d0"
-					(reference "C1003")
+					(reference "C1803")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/4bb5c589-ebbf-42a1-af33-7c273c73680b"
+					(reference "C1803")
+					(unit 1)
+				)
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/1067c906-482e-4c74-a717-42efa4aea55f"
+					(reference "C1703")
 					(unit 1)
 				)
 			)
@@ -1389,7 +1399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23a063b2-09a2-4dd6-a578-37418d5d5f05")
-		(property "Reference" "L901"
+		(property "Reference" "L1801"
 			(at 102.87 45.72 90)
 			(effects
 				(font
@@ -1442,19 +1452,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "241fce9f-3b48-4e40-b974-825bb54a25cc")
+			(uuid "10c11c2f-e970-4d2d-a94f-cddbfe203f96")
 		)
 		(pin "2"
-			(uuid "bef7a815-d86e-4f2b-80aa-58ddb606f8eb")
+			(uuid "fbbfcb45-f054-4d2a-80d8-5d3df23f599e")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/ed6f4ea4-2fc2-4f57-9b20-06c5785a7384"
-					(reference "L901")
+					(reference "L1801")
 					(unit 1)
 				)
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/cab84238-ee51-476d-8b41-60559ed008d0"
-					(reference "L1001")
+					(reference "L1801")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/4bb5c589-ebbf-42a1-af33-7c273c73680b"
+					(reference "L1801")
+					(unit 1)
+				)
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/1067c906-482e-4c74-a717-42efa4aea55f"
+					(reference "L1701")
 					(unit 1)
 				)
 			)
@@ -1470,7 +1490,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c3ddf65-628a-48b0-9ccf-3e0d65c82fb8")
-		(property "Reference" "C902"
+		(property "Reference" "C1802"
 			(at 104.14 57.1563 0)
 			(effects
 				(font
@@ -1525,19 +1545,29 @@
 			)
 		)
 		(pin "2"
-			(uuid "2fd6ae3a-5740-44ad-b1fe-0a364df6ade9")
+			(uuid "47a5b835-ffe3-4398-905b-19e40bdfb564")
 		)
 		(pin "1"
-			(uuid "28885f02-6eea-4ef9-8d02-1d93d31fad05")
+			(uuid "e45d0027-fa54-4fad-bd97-8ca7ff3f25db")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/ed6f4ea4-2fc2-4f57-9b20-06c5785a7384"
-					(reference "C902")
+					(reference "C1802")
 					(unit 1)
 				)
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/cab84238-ee51-476d-8b41-60559ed008d0"
-					(reference "C1002")
+					(reference "C1802")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/4bb5c589-ebbf-42a1-af33-7c273c73680b"
+					(reference "C1802")
+					(unit 1)
+				)
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/1067c906-482e-4c74-a717-42efa4aea55f"
+					(reference "C1702")
 					(unit 1)
 				)
 			)
@@ -1552,7 +1582,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "344c049d-6d96-4bb4-ad6f-1f305ca56c89")
-		(property "Reference" "R901"
+		(property "Reference" "R1701"
 			(at 113.4872 57.2516 0)
 			(effects
 				(font
@@ -1607,19 +1637,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "8812078d-3d47-4f32-ad36-da661719a784")
+			(uuid "da8822e5-7c06-41ec-8900-63171a092718")
 		)
 		(pin "2"
-			(uuid "0d18e9da-bf74-4216-8a35-13a88502cf1f")
+			(uuid "b13e379b-474f-4fc5-bba1-952ff4e8a7f4")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/ed6f4ea4-2fc2-4f57-9b20-06c5785a7384"
-					(reference "R901")
+					(reference "R1701")
 					(unit 1)
 				)
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/cab84238-ee51-476d-8b41-60559ed008d0"
-					(reference "R1001")
+					(reference "R1701")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/1067c906-482e-4c74-a717-42efa4aea55f"
+					(reference "R1701")
+					(unit 1)
+				)
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/4bb5c589-ebbf-42a1-af33-7c273c73680b"
+					(reference "R1801")
 					(unit 1)
 				)
 			)
@@ -1635,7 +1675,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "466a5ccd-68f0-49b1-8d62-99ef2721c5e4")
-		(property "Reference" "U901"
+		(property "Reference" "U1801"
 			(at 83.82 43.18 0)
 			(effects
 				(font
@@ -1699,28 +1739,38 @@
 			)
 		)
 		(pin "4"
-			(uuid "1459ae13-5d9f-4c48-9be6-4b49855078de")
+			(uuid "b2d10dec-ff79-4c9b-a9ea-2fa6c1a6b1d9")
 		)
 		(pin "2"
-			(uuid "49b85eab-e611-4910-bcca-35da2993cbbb")
+			(uuid "2dac0e3e-593b-4477-8e2f-accebe830b77")
 		)
 		(pin "3"
-			(uuid "9676e189-b52b-4696-9531-0b4d4e2bd217")
+			(uuid "7d6146a3-b232-486e-9f1d-cd234fd42fea")
 		)
 		(pin "5"
-			(uuid "3d9ba74a-cb52-4181-b17c-8771739fc20c")
+			(uuid "1ca43b94-ad4f-4430-9901-7a839066e172")
 		)
 		(pin "1"
-			(uuid "21f7351b-882f-4b14-8b91-90f52fcc2e33")
+			(uuid "8de84277-a5d7-48b1-a21a-fc56d382482c")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/ed6f4ea4-2fc2-4f57-9b20-06c5785a7384"
-					(reference "U901")
+					(reference "U1801")
 					(unit 1)
 				)
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/cab84238-ee51-476d-8b41-60559ed008d0"
-					(reference "U1001")
+					(reference "U1801")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/4bb5c589-ebbf-42a1-af33-7c273c73680b"
+					(reference "U1801")
+					(unit 1)
+				)
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/1067c906-482e-4c74-a717-42efa4aea55f"
+					(reference "U1701")
 					(unit 1)
 				)
 			)
@@ -1736,7 +1786,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71c7a286-1ec7-45dc-9625-9f40cd1f492a")
-		(property "Reference" "#FLG0901"
+		(property "Reference" "#FLG01701"
 			(at 134.62 48.895 0)
 			(effects
 				(font
@@ -1781,16 +1831,26 @@
 			)
 		)
 		(pin "1"
-			(uuid "942f624a-123c-40d7-ab59-d668010682da")
+			(uuid "5c743b13-7e45-4920-8542-27322d59f55f")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/ed6f4ea4-2fc2-4f57-9b20-06c5785a7384"
-					(reference "#FLG0901")
+					(reference "#FLG01701")
 					(unit 1)
 				)
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/cab84238-ee51-476d-8b41-60559ed008d0"
-					(reference "#FLG01001")
+					(reference "#FLG01701")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/1067c906-482e-4c74-a717-42efa4aea55f"
+					(reference "#FLG01701")
+					(unit 1)
+				)
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/4bb5c589-ebbf-42a1-af33-7c273c73680b"
+					(reference "#FLG01801")
 					(unit 1)
 				)
 			)
@@ -1806,7 +1866,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97525de6-853f-4ab9-aeb2-4fc010b8388e")
-		(property "Reference" "#PWR0901"
+		(property "Reference" "#PWR01801"
 			(at 83.82 82.55 0)
 			(effects
 				(font
@@ -1851,16 +1911,26 @@
 			)
 		)
 		(pin "1"
-			(uuid "a3f5c2de-c98d-4942-8c2e-764d53fd8431")
+			(uuid "61808552-a0b5-46aa-a7f9-cac8ce786220")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/ed6f4ea4-2fc2-4f57-9b20-06c5785a7384"
-					(reference "#PWR0901")
+					(reference "#PWR01801")
 					(unit 1)
 				)
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/cab84238-ee51-476d-8b41-60559ed008d0"
-					(reference "#PWR01001")
+					(reference "#PWR01801")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/4bb5c589-ebbf-42a1-af33-7c273c73680b"
+					(reference "#PWR01801")
+					(unit 1)
+				)
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/1067c906-482e-4c74-a717-42efa4aea55f"
+					(reference "#PWR01701")
 					(unit 1)
 				)
 			)
@@ -1875,7 +1945,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a0a0aca0-32aa-46cd-bc43-85e72a76f1b8")
-		(property "Reference" "R902"
+		(property "Reference" "R1702"
 			(at 113.4872 67.4116 0)
 			(effects
 				(font
@@ -1930,19 +2000,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "5177889a-27e2-4475-9268-90239abf6db7")
+			(uuid "83e00db6-faef-400f-a86f-ac7e2219c5f3")
 		)
 		(pin "2"
-			(uuid "7c8439b2-13d1-47e5-b31d-83e6fba5600e")
+			(uuid "699497af-53df-413d-bdea-98bda0a18b1a")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/ed6f4ea4-2fc2-4f57-9b20-06c5785a7384"
-					(reference "R902")
+					(reference "R1702")
 					(unit 1)
 				)
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/cab84238-ee51-476d-8b41-60559ed008d0"
-					(reference "R1002")
+					(reference "R1702")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/1067c906-482e-4c74-a717-42efa4aea55f"
+					(reference "R1702")
+					(unit 1)
+				)
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/4bb5c589-ebbf-42a1-af33-7c273c73680b"
+					(reference "R1802")
 					(unit 1)
 				)
 			)
@@ -1957,7 +2037,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d3aa590b-f7a0-43bb-8b78-084c74b5c78a")
-		(property "Reference" "C901"
+		(property "Reference" "C1801"
 			(at 72.644 61.595 0)
 			(effects
 				(font
@@ -2012,19 +2092,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "1bdc0bfb-c7aa-470d-9246-c5ead0ad3f74")
+			(uuid "95649125-a297-45fa-ad0b-133a2ebbd084")
 		)
 		(pin "2"
-			(uuid "fc1a972e-c48b-4a6a-9d1e-1e1d6be8587a")
+			(uuid "02839a96-d580-43e1-bbeb-06cfb22d7ac3")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/ed6f4ea4-2fc2-4f57-9b20-06c5785a7384"
-					(reference "C901")
+					(reference "C1801")
 					(unit 1)
 				)
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/cab84238-ee51-476d-8b41-60559ed008d0"
-					(reference "C1001")
+					(reference "C1801")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/4bb5c589-ebbf-42a1-af33-7c273c73680b"
+					(reference "C1801")
+					(unit 1)
+				)
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/1067c906-482e-4c74-a717-42efa4aea55f"
+					(reference "C1701")
 					(unit 1)
 				)
 			)

@@ -1395,6 +1395,17 @@
 		)
 		(uuid "ef74ea76-3a06-44f9-a9c7-ed3262d8258e")
 	)
+	(text "Note: Be careful about how close the Boot capacitor and\nFB resistor are to each other! If the high-frequency switching\ncouples from BOOT to the FB pin, it will mess up the voltage regulation\n\nI encountered this while tesing v4.0.0: I touched them\nwith my (dry) fingertip, causing an AC short between BOOT\nthe FB pins on the resistors. The inductor would buzz, \nand board would stop working after 2 or 3 times.\n\nForum post that explains the issue:\nhttps://e2e.ti.com/support/power-management-group/power-management/f/power-management-forum/623443/tps563200-output-spike-when-touched-part-toasted\n\n"
+		(exclude_from_sim no)
+		(at 22.86 187.96 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "125a837b-cc04-4f26-968e-2ae7c7153923")
+	)
 	(text "When selecting inductor, consider\nmax current AND saturation current\n\nI_{PEAK} = I_{MAX} + (I_{RIPPLE} / 2)\n      = 3A + 0.5*1.5A\n      = 3.75A"
 		(exclude_from_sim no)
 		(at 134.62 81.28 0)
@@ -1516,7 +1527,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0fceb017-3af3-49d8-b8dc-5660331a1675")
-		(property "Reference" "C1106"
+		(property "Reference" "C?"
 			(at 202.184 102.235 0)
 			(effects
 				(font
@@ -1571,15 +1582,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "051a2d28-e8b3-424e-b73c-8f18b45a1f0a")
+			(uuid "421e0873-f2e5-4e0e-86a4-668c0f0ae8ba")
 		)
 		(pin "2"
-			(uuid "1414cdf8-1f13-46c4-b1a5-a6c249758d56")
+			(uuid "5fa5c400-83bc-4e9a-9436-24ed52e41faa")
 		)
 		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/a8e9a14a-6d9a-4a33-90ba-a3291f378bd4"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "C1106")
+					(reference "C?")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "C1606")
 					(unit 1)
 				)
 			)
@@ -1595,7 +1618,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "403afe41-14fc-4990-a191-ca79d533f5b1")
-		(property "Reference" "#PWR01101"
+		(property "Reference" "#PWR01601"
 			(at 119.38 123.19 0)
 			(effects
 				(font
@@ -1640,12 +1663,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "8552ed0f-aece-4b3e-bb27-69915646533b")
+			(uuid "0169c034-bcc1-4e6c-97da-1232782c8d9a")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "#PWR01101")
+					(reference "#PWR01601")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "#PWR01601")
 					(unit 1)
 				)
 			)
@@ -1660,7 +1689,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5ffa180f-2368-4f9e-9409-3f414fa9d746")
-		(property "Reference" "C1101"
+		(property "Reference" "C1601"
 			(at 75.9968 100.4316 0)
 			(effects
 				(font
@@ -1715,15 +1744,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "4b2c9174-9959-448e-849c-1ca35f9621f3")
+			(uuid "aebbc392-cbdb-4b08-9eb9-00c001a45f55")
 		)
 		(pin "2"
-			(uuid "36d53714-db3f-4be6-92ca-fcdeb391a8cc")
+			(uuid "3d1198c7-b09d-48a6-b2df-945147357bbf")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "C1101")
+					(reference "C1601")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "C1601")
 					(unit 1)
 				)
 			)
@@ -1738,7 +1773,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d0ff027-cdbf-4817-8cd4-2d7abfb900e5")
-		(property "Reference" "C1105"
+		(property "Reference" "C?"
 			(at 186.944 102.235 0)
 			(effects
 				(font
@@ -1793,15 +1828,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "82691a14-8ac2-4c59-8e0b-c05824978afa")
+			(uuid "349379fd-7e49-451d-a4bf-722df2aa25d8")
 		)
 		(pin "2"
-			(uuid "48705571-633c-4727-9654-6b5eeea05f8c")
+			(uuid "a1612654-a113-4298-972f-61d7f131603f")
 		)
 		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/a8e9a14a-6d9a-4a33-90ba-a3291f378bd4"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "C1105")
+					(reference "C?")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "C1605")
 					(unit 1)
 				)
 			)
@@ -1816,7 +1863,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "90313e24-9eb1-40bd-8273-afb57b093d56")
-		(property "Reference" "C1102"
+		(property "Reference" "C1602"
 			(at 91.2368 100.4316 0)
 			(effects
 				(font
@@ -1871,15 +1918,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "7d62a3a7-077a-4acb-a760-dd57d610d523")
+			(uuid "ce2d4f0e-d3ff-4c3a-a6a4-d8b6aa8e753b")
 		)
 		(pin "2"
-			(uuid "866b45e3-c955-4819-bd51-ebc64efa7c12")
+			(uuid "aa703717-74f8-4fa3-ba8f-8620b0280fc0")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "C1102")
+					(reference "C1602")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "C1602")
 					(unit 1)
 				)
 			)
@@ -1894,7 +1947,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "925792b2-f23b-4a67-bca0-20d23e2a1de1")
-		(property "Reference" "C1107"
+		(property "Reference" "C?"
 			(at 217.424 102.235 0)
 			(effects
 				(font
@@ -1949,15 +2002,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "98112680-21e8-462f-b47b-fb68b1c415fa")
+			(uuid "ec514ac9-d9ca-4a56-90c1-cee968de0706")
 		)
 		(pin "2"
-			(uuid "06e96d6b-b71c-47ed-a8ea-fd8f6ad4667c")
+			(uuid "062bed82-3735-4301-b932-22f333ff9018")
 		)
 		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/a8e9a14a-6d9a-4a33-90ba-a3291f378bd4"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "C1107")
+					(reference "C?")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "C1607")
 					(unit 1)
 				)
 			)
@@ -1973,7 +2038,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97895733-4f54-4018-8a46-c1be87fe3a25")
-		(property "Reference" "C1103"
+		(property "Reference" "C1603"
 			(at 142.0368 95.3516 0)
 			(effects
 				(font
@@ -2028,15 +2093,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "468ee12e-0f0f-479e-8818-90d3447bc501")
+			(uuid "5f046f6e-b573-4340-9904-e99f57f113de")
 		)
 		(pin "2"
-			(uuid "e7fc25da-cca2-40cd-a498-12524bcec9ca")
+			(uuid "7edd0881-be7d-4fe1-af0d-ba84463b7f4f")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "C1103")
+					(reference "C1603")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "C1603")
 					(unit 1)
 				)
 			)
@@ -2051,7 +2122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a8706fb7-c4a3-4d97-ae7f-6c4c851d2df6")
-		(property "Reference" "R1101"
+		(property "Reference" "R1601"
 			(at 154.1272 97.8916 0)
 			(effects
 				(font
@@ -2106,15 +2177,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "1eecde39-77d9-4d76-9e06-617a0480fd4b")
+			(uuid "df424063-dff5-4f5d-a988-84027522f6b3")
 		)
 		(pin "2"
-			(uuid "0e03d5ba-219c-4cbc-baa5-fa0fbcfd434d")
+			(uuid "6a6e6df8-8f6e-4e28-bc2b-8285d5eb3ebf")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "R1101")
+					(reference "R1601")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "R1601")
 					(unit 1)
 				)
 			)
@@ -2130,7 +2207,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9ccd93b-4093-4952-8e03-54ba5c8d77d1")
-		(property "Reference" "L1101"
+		(property "Reference" "L1601"
 			(at 146.05 86.36 90)
 			(effects
 				(font
@@ -2183,15 +2260,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "02c2c3f7-ea1b-40ef-9c00-23b1decf06ab")
+			(uuid "bc91cce2-6f43-4b29-b45f-acc28fce7e94")
 		)
 		(pin "2"
-			(uuid "3013b58b-6f82-490f-a556-fb91a20287df")
+			(uuid "3fc667d8-26df-4427-bbe3-34bcb2403400")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "L1101")
+					(reference "L1601")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "L1601")
 					(unit 1)
 				)
 			)
@@ -2206,7 +2289,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aee2e6df-2a71-479a-ab27-5b3d3686fdff")
-		(property "Reference" "R1102"
+		(property "Reference" "R1602"
 			(at 154.1272 108.0516 0)
 			(effects
 				(font
@@ -2261,15 +2344,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "ca0831cb-dac0-4e21-8f67-034208304514")
+			(uuid "57927052-5fa0-418d-a90f-c0e6b43af2ae")
 		)
 		(pin "2"
-			(uuid "7df40669-8bc5-4c6d-9468-0267a225190f")
+			(uuid "df9aaee5-8829-4f59-b744-f8f877f36bd8")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "R1102")
+					(reference "R1602")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "R1602")
 					(unit 1)
 				)
 			)
@@ -2284,7 +2373,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d86c2cca-e475-4398-9baa-5484afc12217")
-		(property "Reference" "C1104"
+		(property "Reference" "C?"
 			(at 171.704 102.235 0)
 			(effects
 				(font
@@ -2339,15 +2428,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "0445e6db-d5a4-4c1f-aef1-fc0106273afe")
+			(uuid "cac500c0-7491-4208-ac97-81ed8dd206b8")
 		)
 		(pin "2"
-			(uuid "016a56b4-ba53-49e7-99aa-9c3a43b00c1c")
+			(uuid "bd1ba7d1-f9d3-43b3-832c-416cafd513b0")
 		)
 		(instances
+			(project "Nokia-3310-ESP32"
+				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/a8e9a14a-6d9a-4a33-90ba-a3291f378bd4"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "C1104")
+					(reference "C?")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "C1604")
 					(unit 1)
 				)
 			)
@@ -2363,7 +2464,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa6d542a-d810-4e1b-beed-917984a803db")
-		(property "Reference" "U1101"
+		(property "Reference" "U1601"
 			(at 119.38 83.82 0)
 			(effects
 				(font
@@ -2426,27 +2527,33 @@
 			)
 		)
 		(pin "3"
-			(uuid "1f225fe6-66e1-4a74-ba26-1eac0db4c44f")
+			(uuid "127f429b-b37c-4c77-aa89-d14d190a53fd")
 		)
 		(pin "1"
-			(uuid "8949856e-f0fc-42dc-b918-f08642198446")
+			(uuid "17f12a82-3fe5-4702-955b-2187e028b097")
 		)
 		(pin "2"
-			(uuid "db501903-b0d5-47fe-8d47-956723ded6c6")
+			(uuid "e7252f9b-4f87-4451-a416-77dcb4e417a4")
 		)
 		(pin "5"
-			(uuid "a490ba81-33c7-47f3-9ac5-feb37ae812b0")
+			(uuid "20dd0131-ba32-4887-b5fb-d38842b10eb8")
 		)
 		(pin "4"
-			(uuid "e31a17cb-c932-4cc5-8a8a-8191d78c2fa5")
+			(uuid "44ccbe77-8b50-4d92-8ea6-5d102fa48c5d")
 		)
 		(pin "6"
-			(uuid "08dbd50b-6ab0-4d4c-9553-a7128ba3b0fc")
+			(uuid "833ae581-f0d9-45ad-b735-afcad1616512")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f/f2eaccf6-891f-4f8c-bb6d-39d189e94a7d"
-					(reference "U1101")
+					(reference "U1601")
+					(unit 1)
+				)
+			)
+			(project "puzzle-shield-ESP32"
+				(path "/7f264da7-ad23-4f41-956f-57553b2e7107/5a6cdf82-c956-4eb3-893f-6bfd5dd30cf7/642e6ca5-36c0-4ff3-900b-bea7baeb62cc"
+					(reference "U1601")
 					(unit 1)
 				)
 			)

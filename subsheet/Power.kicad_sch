@@ -2130,6 +2130,12 @@
 		(color 0 0 0 0)
 		(uuid "f8ffbc49-f04c-4364-954d-c3589801fe50")
 	)
+	(junction
+		(at 71.12 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f95d76e1-9691-4dd4-9fb0-d46e3ad503cb")
+	)
 	(no_connect
 		(at 124.46 63.5)
 		(uuid "1e0bb636-0c21-46b7-99d9-f2ed7759ecec")
@@ -2147,6 +2153,16 @@
 			(type default)
 		)
 		(uuid "00198365-00d0-4e0b-8e13-6b529b7e7679")
+	)
+	(wire
+		(pts
+			(xy 71.12 40.64) (xy 71.12 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "058d00fb-2ed8-4a14-9341-1157bb7040ff")
 	)
 	(wire
 		(pts
@@ -2310,7 +2326,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 40.64) (xy 55.88 40.64)
+			(xy 50.8 40.64) (xy 71.12 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2950,7 +2966,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 22.86) (xy 71.12 60.96)
+			(xy 71.12 22.86) (xy 71.12 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3370,28 +3386,6 @@
 			)
 		)
 	)
-	(global_label "SHUNT1.3-"
-		(shape input)
-		(at 55.88 40.64 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2c36ef66-660d-4347-a191-50c9d5db5d3b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.63 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "3v3_{LED}"
 		(shape input)
 		(at 106.68 175.26 180)
@@ -3432,28 +3426,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SHUNT1.3+"
-		(shape input)
-		(at 71.12 38.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "78cb827a-017b-4b22-b27b-cb23e8d41f85")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.37 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
