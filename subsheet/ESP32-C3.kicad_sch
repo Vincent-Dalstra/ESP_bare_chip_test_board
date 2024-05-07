@@ -3249,7 +3249,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "130c94e6-1eaf-4ee9-8667-c112e210bb85")
-		(property "Reference" "#PWR0612"
+		(property "Reference" "#PWR0609"
 			(at 193.04 69.85 0)
 			(effects
 				(font
@@ -3299,7 +3299,7 @@
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
-					(reference "#PWR0612")
+					(reference "#PWR0609")
 					(unit 1)
 				)
 			)
@@ -3602,7 +3602,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "31911b2f-f3b7-4671-a10d-28435e405277")
-		(property "Reference" "#PWR0611"
+		(property "Reference" "#PWR0608"
 			(at 177.8 69.85 0)
 			(effects
 				(font
@@ -3652,7 +3652,7 @@
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
-					(reference "#PWR0611")
+					(reference "#PWR0608")
 					(unit 1)
 				)
 			)
@@ -3981,7 +3981,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "509cfd50-0b45-4837-8940-c69a6564dcb4")
-		(property "Reference" "#PWR0608"
+		(property "Reference" "#PWR0611"
 			(at 241.3 120.65 0)
 			(effects
 				(font
@@ -4031,7 +4031,7 @@
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
-					(reference "#PWR0608")
+					(reference "#PWR0611")
 					(unit 1)
 				)
 			)
@@ -4202,7 +4202,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "701ff28d-0dfe-4332-80ef-92411f73c121")
-		(property "Reference" "#PWR0607"
+		(property "Reference" "#PWR0610"
 			(at 228.6 120.65 0)
 			(effects
 				(font
@@ -4252,7 +4252,7 @@
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
-					(reference "#PWR0607")
+					(reference "#PWR0610")
 					(unit 1)
 				)
 			)
@@ -4506,7 +4506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0eb5c0d-8e68-438d-9336-a82977dc9573")
-		(property "Reference" "#PWR0609"
+		(property "Reference" "#PWR0607"
 			(at 172.72 146.05 0)
 			(effects
 				(font
@@ -4556,7 +4556,7 @@
 		(instances
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/01bb46e3-d129-4909-82a1-6bb013dc8f71"
-					(reference "#PWR0609")
+					(reference "#PWR0607")
 					(unit 1)
 				)
 			)
