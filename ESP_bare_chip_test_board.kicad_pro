@@ -225,6 +225,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.2
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false,
@@ -654,20 +662,8 @@
       "Power"
     ],
     [
-      "01bb46e3-d129-4909-82a1-6bb013dc8f71",
-      "ESP32-C3"
-    ],
-    [
-      "9be7d96f-e7c5-43f0-93fa-5964acc52bec",
-      "ESP32-C3-core"
-    ],
-    [
       "e324977a-58a1-4f1d-a668-70aacbf37a3e",
       "USB"
-    ],
-    [
-      "ed6f4ea4-2fc2-4f57-9b20-06c5785a7384",
-      "step-down-5v-3v3_AUX"
     ],
     [
       "cab84238-ee51-476d-8b41-60559ed008d0",
