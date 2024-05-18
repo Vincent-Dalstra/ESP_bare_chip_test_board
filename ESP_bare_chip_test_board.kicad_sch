@@ -862,7 +862,7 @@
 		)
 		(uuid "a98d76a0-0171-4b63-bbce-6d1bfed9ae1f")
 	)
-	(text "Todo:\n\n- Finish USB-C PD circuit\n- Add Current measurement IC\n- Add temperature measurment IC\nAll of the above as I2C devices :)\n- Debug MUX on USB port?\n- Add ESP32-C3 co-processor?\n- W5500 Ethernet.\n- RS485?\n- Audio?"
+	(text "Todo (old)\n\n- Finish USB-C PD circuit\n- Add Current measurement IC\n- Add temperature measurment IC\nAll of the above as I2C devices :)\n- Debug MUX on USB port?\n- Add ESP32-C3 co-processor?\n- W5500 Ethernet.\n- RS485?\n- Audio?"
 		(exclude_from_sim no)
 		(at 175.26 279.4 0)
 		(effects
@@ -883,6 +883,17 @@
 			(justify left bottom)
 		)
 		(uuid "e54e08d4-570b-4481-ac3a-7ae6e7274d91")
+	)
+	(text "Todo list:\n\n[] - Replace 5v buck-regulator with newer type\n[] - Devise a protection circuit so that a high voltage on USB will not\n	kill the 5v buck-regulator (see lighting-controller-8M [2.0.0]\n	- 2 ideal-diodes to mux the 5v?\n	- ideal diode from Vbus to Vin?\n	- Comparator to detect when VBus > 5V?\n	- Turn off USB load-switch (input) whenever 5V regulator is active?\n		- Be careful of the load switch (output)! Don't want that turning on if\n		output is higher! Software can check, but is that trustworthy enough?\n	- [BEST OPTION] Replace the 5V buck regulator with a buck-boost regulator!\n		- e.g. TPS63070 (4sw, ~ $0.50)\n			- 4th switch means it can block reverse voltages!\n			- Also means it can operate with a much lower voltage - 2.0V\n				- 3-4V when accounting for the input bridge rectifier"
+		(exclude_from_sim no)
+		(at -2.54 264.16 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "efacf57b-8de5-4680-9085-975b93a884a6")
 	)
 	(text "Avoid using GPIO 26\n(unavailable when PSRAM is used)"
 		(exclude_from_sim no)

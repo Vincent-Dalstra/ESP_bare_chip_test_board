@@ -564,7 +564,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -583,11 +583,53 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Comment",
+          "name": "Comment",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "I2C address",
+          "name": "I2C address",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB_CORRECTION",
+          "name": "JLCPCB_CORRECTION",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB_IGNORE",
+          "name": "JLCPCB_IGNORE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
-      "filter_string": "",
+      "filter_string": "C*",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -670,12 +712,12 @@
       "step-down-5v-3v3_ESP32"
     ],
     [
-      "f2eaccf6-891f-4f8c-bb6d-39d189e94a7d",
-      "step-down-12v-5v"
-    ],
-    [
       "3ac85730-69ac-49b3-9a57-3b8bd09542e4",
       "connector_GPIB"
+    ],
+    [
+      "a569503a-4f7e-494d-9487-0f55aaa1ce0a",
+      "buck-boost-5v"
     ],
     [
       "55308f0d-6d1f-4d67-a924-a225ca5de0ad",

@@ -2438,7 +2438,7 @@
 		(uuid "51a3222d-dce0-4a92-965f-a180f7743a66")
 	)
 	(junction
-		(at 109.22 175.26)
+		(at 101.6 234.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "53926e05-7faf-4ebb-8136-b5bc04aae616")
@@ -2931,7 +2931,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 175.26) (xy 109.22 175.26)
+			(xy 99.06 234.95) (xy 101.6 234.95)
 		)
 		(stroke
 			(width 0)
@@ -2991,7 +2991,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 182.88) (xy 149.86 175.26)
+			(xy 142.24 242.57) (xy 142.24 234.95)
 		)
 		(stroke
 			(width 0)
@@ -3001,7 +3001,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 165.1) (xy 119.38 167.64)
+			(xy 111.76 224.79) (xy 111.76 227.33)
 		)
 		(stroke
 			(width 0)
@@ -3031,7 +3031,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 172.72) (xy 119.38 177.8)
+			(xy 111.76 232.41) (xy 111.76 237.49)
 		)
 		(stroke
 			(width 0)
@@ -3051,7 +3051,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 172.72) (xy 160.02 177.8)
+			(xy 152.4 232.41) (xy 152.4 237.49)
 		)
 		(stroke
 			(width 0)
@@ -3181,7 +3181,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 182.88) (xy 151.13 182.88)
+			(xy 142.24 242.57) (xy 143.51 242.57)
 		)
 		(stroke
 			(width 0)
@@ -3441,7 +3441,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 175.26) (xy 109.22 175.26)
+			(xy 142.24 234.95) (xy 101.6 234.95)
 		)
 		(stroke
 			(width 0)
@@ -3491,7 +3491,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 182.88) (xy 109.22 182.88)
+			(xy 102.87 242.57) (xy 101.6 242.57)
 		)
 		(stroke
 			(width 0)
@@ -3621,7 +3621,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 165.1) (xy 160.02 167.64)
+			(xy 152.4 224.79) (xy 152.4 227.33)
 		)
 		(stroke
 			(width 0)
@@ -3631,7 +3631,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 175.26) (xy 109.22 182.88)
+			(xy 101.6 234.95) (xy 101.6 242.57)
 		)
 		(stroke
 			(width 0)
@@ -3917,7 +3917,7 @@
 	)
 	(text "Supply turns off\nduring DARK_MODE"
 		(exclude_from_sim no)
-		(at 88.9 172.72 0)
+		(at 81.28 232.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3972,7 +3972,7 @@
 	)
 	(text "Resistors target for\napprox. 0.1mA"
 		(exclude_from_sim no)
-		(at 132.08 170.18 0)
+		(at 124.46 229.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4136,7 +4136,7 @@
 	)
 	(global_label "3v3_{LED}"
 		(shape input)
-		(at 106.68 175.26 180)
+		(at 99.06 234.95 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4146,7 +4146,7 @@
 		)
 		(uuid "403216b1-9d11-46dc-b5a4-01869459f726")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 97.4997 175.26 0)
+			(at 89.8797 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4866,7 +4866,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 160.02 187.96 0)
+		(at 152.4 247.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4875,7 +4875,7 @@
 		(fields_autoplaced yes)
 		(uuid "27053a1f-68ed-478c-9a35-7302a2bbde2e")
 		(property "Reference" "#PWR0515"
-			(at 160.02 194.31 0)
+			(at 152.4 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4884,7 +4884,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.02 193.04 0)
+			(at 152.4 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4892,7 +4892,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 187.96 0)
+			(at 152.4 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4901,7 +4901,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 187.96 0)
+			(at 152.4 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4910,7 +4910,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 160.02 187.96 0)
+			(at 152.4 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5134,7 +5134,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 160.02 157.48 0)
+		(at 152.4 217.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5143,7 +5143,7 @@
 		(fields_autoplaced yes)
 		(uuid "39c02ead-d4f9-4ddc-95ec-7c05ef64a9df")
 		(property "Reference" "#PWR0514"
-			(at 160.02 161.29 0)
+			(at 152.4 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5152,7 +5152,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 160.02 152.4 0)
+			(at 152.4 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5160,7 +5160,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 157.48 0)
+			(at 152.4 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5169,7 +5169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 157.48 0)
+			(at 152.4 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5178,7 +5178,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 160.02 157.48 0)
+			(at 152.4 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5266,7 +5266,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 119.38 157.48 0)
+		(at 111.76 217.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5275,7 +5275,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cf8054d-b0f9-4007-867b-f66c707e6f27")
 		(property "Reference" "#PWR0508"
-			(at 119.38 161.29 0)
+			(at 111.76 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5284,7 +5284,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 119.38 152.4 0)
+			(at 111.76 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5292,7 +5292,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 157.48 0)
+			(at 111.76 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5301,7 +5301,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 157.48 0)
+			(at 111.76 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5310,7 +5310,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 157.48 0)
+			(at 111.76 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5535,7 +5535,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:DTC114E")
-		(at 157.48 182.88 0)
+		(at 149.86 242.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5544,7 +5544,7 @@
 		(fields_autoplaced yes)
 		(uuid "54071fe0-2885-4ff0-a23b-4c2ec4535466")
 		(property "Reference" "Q502"
-			(at 162.56 181.61 0)
+			(at 154.94 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5553,7 +5553,7 @@
 			)
 		)
 		(property "Value" "DTC114E"
-			(at 162.56 184.15 0)
+			(at 154.94 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5562,7 +5562,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
-			(at 157.48 182.88 0)
+			(at 149.86 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5572,7 +5572,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 182.88 0)
+			(at 149.86 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5582,7 +5582,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 157.48 182.88 0)
+			(at 149.86 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5591,7 +5591,7 @@
 			)
 		)
 		(property "LCSC" "C177021"
-			(at 157.48 182.88 0)
+			(at 149.86 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5600,7 +5600,7 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;270"
-			(at 157.48 182.88 0)
+			(at 149.86 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5799,7 +5799,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 119.38 170.18 0)
+		(at 111.76 229.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5808,7 +5808,7 @@
 		(fields_autoplaced yes)
 		(uuid "6846be88-0242-4b47-bab2-97f02e6ea6ba")
 		(property "Reference" "R503"
-			(at 116.84 168.91 0)
+			(at 109.22 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5817,7 +5817,7 @@
 			)
 		)
 		(property "Value" "100kΩ"
-			(at 116.84 171.45 0)
+			(at 109.22 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5826,7 +5826,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 119.38 170.18 0)
+			(at 111.76 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5835,7 +5835,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 170.18 0)
+			(at 111.76 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5844,7 +5844,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 170.18 0)
+			(at 111.76 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5853,7 +5853,7 @@
 			)
 		)
 		(property "LCSC" "C25803"
-			(at 119.38 170.18 90)
+			(at 111.76 229.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6033,7 +6033,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:DTC114E")
-		(at 116.84 182.88 0)
+		(at 109.22 242.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6042,7 +6042,7 @@
 		(fields_autoplaced yes)
 		(uuid "7df1d7e1-fc45-479c-9ada-7e7c029ef488")
 		(property "Reference" "Q501"
-			(at 121.92 181.61 0)
+			(at 114.3 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6051,7 +6051,7 @@
 			)
 		)
 		(property "Value" "DTC114E"
-			(at 121.92 184.15 0)
+			(at 114.3 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6060,7 +6060,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
-			(at 116.84 182.88 0)
+			(at 109.22 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6070,7 +6070,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 182.88 0)
+			(at 109.22 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6080,7 +6080,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 116.84 182.88 0)
+			(at 109.22 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6089,7 +6089,7 @@
 			)
 		)
 		(property "LCSC" "C177021"
-			(at 116.84 182.88 0)
+			(at 109.22 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6098,7 +6098,7 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;270"
-			(at 116.84 182.88 0)
+			(at 109.22 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7665,7 +7665,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 160.02 161.29 90)
+		(at 152.4 220.98 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7673,7 +7673,7 @@
 		(dnp no)
 		(uuid "d5b8bb73-c4a9-486e-a58c-68f689b70ea0")
 		(property "Reference" "D507"
-			(at 165.1 162.7505 90)
+			(at 157.48 222.4405 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7681,7 +7681,7 @@
 			)
 		)
 		(property "Value" "GREEN"
-			(at 165.1 160.2105 90)
+			(at 157.48 219.9005 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7689,7 +7689,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 160.02 161.29 0)
+			(at 152.4 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7698,7 +7698,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 161.29 0)
+			(at 152.4 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7707,7 +7707,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 160.02 161.29 0)
+			(at 152.4 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7716,7 +7716,7 @@
 			)
 		)
 		(property "LCSC" "C779453"
-			(at 160.02 161.29 0)
+			(at 152.4 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7725,7 +7725,7 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 160.02 161.29 0)
+			(at 152.4 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8057,7 +8057,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 119.38 161.29 90)
+		(at 111.76 220.98 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8065,7 +8065,7 @@
 		(dnp no)
 		(uuid "eeee4467-29fd-4ac5-85d5-631e80770b48")
 		(property "Reference" "D506"
-			(at 124.46 162.7505 90)
+			(at 116.84 222.4405 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8073,7 +8073,7 @@
 			)
 		)
 		(property "Value" "GREEN"
-			(at 124.46 160.2105 90)
+			(at 116.84 219.9005 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8081,7 +8081,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 119.38 161.29 0)
+			(at 111.76 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8090,7 +8090,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 161.29 0)
+			(at 111.76 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8099,7 +8099,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 161.29 0)
+			(at 111.76 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8108,7 +8108,7 @@
 			)
 		)
 		(property "LCSC" "C779453"
-			(at 119.38 161.29 0)
+			(at 111.76 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8117,7 +8117,7 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;0"
-			(at 119.38 161.29 0)
+			(at 111.76 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8219,7 +8219,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 160.02 170.18 0)
+		(at 152.4 229.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8227,7 +8227,7 @@
 		(dnp no)
 		(uuid "f3ba0307-eeea-4092-889a-e80ce948af57")
 		(property "Reference" "R506"
-			(at 161.7472 169.0116 0)
+			(at 154.1272 228.7016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8236,7 +8236,7 @@
 			)
 		)
 		(property "Value" "33kΩ"
-			(at 161.7472 171.323 0)
+			(at 154.1272 231.013 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8245,7 +8245,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 161.036 170.434 90)
+			(at 153.416 230.124 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8254,7 +8254,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 170.18 0)
+			(at 152.4 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8263,7 +8263,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 160.02 170.18 0)
+			(at 152.4 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8272,7 +8272,7 @@
 			)
 		)
 		(property "LCSC" "C4216"
-			(at 160.02 170.18 0)
+			(at 152.4 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8377,7 +8377,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 119.38 187.96 0)
+		(at 111.76 247.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8386,7 +8386,7 @@
 		(fields_autoplaced yes)
 		(uuid "f91b3a2f-c8a9-43d3-b64d-fc98e535e493")
 		(property "Reference" "#PWR0509"
-			(at 119.38 194.31 0)
+			(at 111.76 254 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8395,7 +8395,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 193.04 0)
+			(at 111.76 252.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8403,7 +8403,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 187.96 0)
+			(at 111.76 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8412,7 +8412,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 187.96 0)
+			(at 111.76 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8421,7 +8421,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 119.38 187.96 0)
+			(at 111.76 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8585,6 +8585,64 @@
 		)
 	)
 	(sheet
+		(at 144.78 129.54)
+		(size 12.7 15.24)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 229 191 1.0000)
+		)
+		(uuid "a569503a-4f7e-494d-9487-0f55aaa1ce0a")
+		(property "Sheetname" "buck-boost-5v"
+			(at 144.78 128.8284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "buck-boost-5v.kicad_sch"
+			(at 144.78 145.3646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "5v" output
+			(at 157.48 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6b0f677b-3803-4e4e-8f6e-7157d800984f")
+		)
+		(pin "V_{IN}" input
+			(at 144.78 132.08 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "fe2a0314-2906-4c00-81c4-ee508e024777")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 233.68 144.78)
 		(size 15.24 10.16)
 		(fields_autoplaced yes)
@@ -8638,64 +8696,6 @@
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f"
 					(page "10")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 144.78 129.54)
-		(size 12.7 13.97)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 229 191 1.0000)
-		)
-		(uuid "f2eaccf6-891f-4f8c-bb6d-39d189e94a7d")
-		(property "Sheetname" "step-down-12v-5v"
-			(at 144.78 128.8284 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "step-down-12v-5v.kicad_sch"
-			(at 144.78 144.0946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "5v" output
-			(at 157.48 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "adeba757-ef07-4959-98c8-8f3bc91028b9")
-		)
-		(pin "12v" input
-			(at 144.78 132.08 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "6db17f72-911d-44fe-966c-4a2b808888bf")
-		)
-		(instances
-			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f"
-					(page "11")
 				)
 			)
 		)
