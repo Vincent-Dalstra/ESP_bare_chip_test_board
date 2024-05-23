@@ -3277,6 +3277,17 @@
 		)
 		(uuid "2374da3e-aeeb-4793-9465-992a4ff97dd5")
 	)
+	(text "Small capacitor redundant,\nlots of them internally"
+		(exclude_from_sim no)
+		(at 162.56 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e72f4b9-8e4b-4f61-95a0-36ac55571b3a")
+	)
 	(text "Some pins are used for bootstrapping, and thus\nthey must have the correct state when booting:\nGPIO- state - reason\n0   - FLOAT - Allows code to be downloaded\n46  - LOW/FLOAT - Download boot mode\n		- Only checked if 0 is LOW\n45  - LOW/FLOAT - Flash voltage\n		- Can be disabled by burning an eFuse\n43	- OUTPUT (bootloader messages)\n		- Can be disabled by burning an eFuse\n\nADC1 (10 channels) available on GPIO's 1-10\nADC2 on GPIO's 11-18. Not available with WiFi"
 		(exclude_from_sim no)
 		(at 229.362 73.66 0)
@@ -5062,10 +5073,10 @@
 		(lib_id "Device:C_Small")
 		(at 162.56 46.99 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "df79ba8e-a755-4e28-91b6-2d07548ae632")
 		(property "Reference" "C202"
 			(at 164.8968 45.8216 0)
