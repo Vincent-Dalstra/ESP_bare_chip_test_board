@@ -2267,26 +2267,6 @@
 			)
 			(uuid "0b6e3284-94aa-49e7-910c-7c965d309569")
 		)
-		(pin "PD_~{INT}" output
-			(at 38.1 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "dc16c464-5807-46e0-81a5-bf07782bd9ce")
-		)
-		(pin "PD_SDA" bidirectional
-			(at 38.1 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "e42e5c24-19e1-4af3-b9a3-84229adea1d4")
-		)
 		(pin "VBUS" bidirectional
 			(at 17.78 33.02 180)
 			(effects
@@ -2296,16 +2276,6 @@
 				(justify left)
 			)
 			(uuid "9a3cd13c-977a-4032-b9c1-b6dc22c5ebc4")
-		)
-		(pin "PD_SCL" input
-			(at 38.1 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "72933d49-d7f3-4671-b9b1-c9de9bdb9302")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
