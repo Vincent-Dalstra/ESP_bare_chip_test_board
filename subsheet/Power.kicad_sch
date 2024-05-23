@@ -3369,6 +3369,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 43.18 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31b82b36-d20b-4b0c-b6cb-f4057add9067")
+		(property "Reference" "C501"
+			(at 40.64 44.4562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10uF/25v"
+			(at 40.64 46.9962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C96446"
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6fdde42-4737-4ea6-9d80-d16fbc2aa199")
+		)
+		(pin "2"
+			(uuid "f9b1f72d-366f-4064-8342-9a19685a2f83")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f"
+					(reference "C501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 100.33 93.98 180)
 		(unit 1)
@@ -4075,84 +4154,6 @@
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f"
 					(reference "Q501")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 43.18 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7e9e8bce-26b8-4145-81f7-a3214850b79f")
-		(property "Reference" "C501"
-			(at 40.8432 44.5516 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1uF/25V"
-			(at 40.8432 46.863 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 43.18 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 43.18 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 43.18 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C52923"
-			(at 43.18 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "41946c01-37d7-48ba-90b0-20850c569559")
-		)
-		(pin "2"
-			(uuid "2cc55f9e-8ced-4ba2-b84e-4d33758014b8")
-		)
-		(instances
-			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/28425a28-8968-4679-b18b-58814452f93f"
-					(reference "C501")
 					(unit 1)
 				)
 			)
