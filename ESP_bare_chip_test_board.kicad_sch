@@ -20,6 +20,12 @@
 		(uuid "00f5921d-6b8d-492e-ba7d-1c803cbaac5d")
 	)
 	(junction
+		(at 172.72 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5bb4ca1c-18fb-42e3-8c2b-3d8d019fb12f")
+	)
+	(junction
 		(at 63.5 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -36,6 +42,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c7cdaf4-e4ef-442a-ae25-2fe5d78e2a3c")
+	)
+	(junction
+		(at 170.18 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc7efaf6-b902-4b02-81b5-cfb1faa7c756")
 	)
 	(junction
 		(at 66.04 91.44)
@@ -271,6 +283,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 71.12) (xy 220.98 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42bb193d-defb-40e5-a694-ee077a04c78b")
+	)
+	(wire
+		(pts
 			(xy 160.02 50.8) (xy 165.1 50.8)
 		)
 		(stroke
@@ -288,6 +310,16 @@
 			(type default)
 		)
 		(uuid "46bec408-a7bd-403d-a009-ff0b2f5dad2a")
+	)
+	(wire
+		(pts
+			(xy 226.06 60.96) (xy 231.14 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4832de62-0967-4118-8b0f-2a52b1451e25")
 	)
 	(wire
 		(pts
@@ -338,6 +370,16 @@
 			(type default)
 		)
 		(uuid "6192ca2b-9b73-4539-88a8-b1721ed1331d")
+	)
+	(wire
+		(pts
+			(xy 172.72 73.66) (xy 226.06 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6209617c-16e1-464e-88a2-5d6201201766")
 	)
 	(wire
 		(pts
@@ -508,6 +550,16 @@
 			(type default)
 		)
 		(uuid "a2763701-f020-4505-bf58-247e8c6ae5b3")
+	)
+	(wire
+		(pts
+			(xy 220.98 58.42) (xy 231.14 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4192ead-9154-4165-962b-fd79ab18c54d")
 	)
 	(wire
 		(pts
@@ -771,6 +823,16 @@
 	)
 	(wire
 		(pts
+			(xy 226.06 73.66) (xy 226.06 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec04bdb8-bc5e-43d0-99dd-364540d4bc50")
+	)
+	(wire
+		(pts
 			(xy 76.2 35.56) (xy 86.36 35.56)
 		)
 		(stroke
@@ -788,6 +850,16 @@
 			(type default)
 		)
 		(uuid "ef474b51-d329-40ff-ae9e-2df85f48a892")
+	)
+	(wire
+		(pts
+			(xy 220.98 71.12) (xy 220.98 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f44b2027-8750-467f-bc38-b8bc821f022a")
 	)
 	(wire
 		(pts
@@ -1718,12 +1790,12 @@
 			(uuid "eca4464b-1a17-4a58-a6e0-d9632f6464e4")
 		)
 		(pin "IO26" passive
-			(at 116.84 30.48 90)
+			(at 86.36 109.22 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "e71403ef-6963-4b71-be94-fa02f7232012")
 		)
@@ -2130,6 +2202,84 @@
 				(justify right)
 			)
 			(uuid "041bbdf5-74bd-4dd7-b334-8693c99aa212")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 231.14 43.18)
+		(size 20.32 22.86)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 229 191 1.0000)
+		)
+		(uuid "85479e45-442b-480f-b0b0-1d208a9e4cfc")
+		(property "Sheetname" "4pin_connector"
+			(at 231.14 42.4684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "subsheet/4pin_connector.kicad_sch"
+			(at 231.14 66.6246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "J0_pin3" bidirectional
+			(at 231.14 60.96 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "985f0ad6-d472-412f-af63-badaeec8b21a")
+		)
+		(pin "J0_pin4" bidirectional
+			(at 231.14 58.42 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ccfa3760-410c-4b5e-b93d-928c3278445c")
+		)
+		(pin "J1_pin3" bidirectional
+			(at 231.14 53.34 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cafeca9d-996c-430b-9849-bd8b22a70371")
+		)
+		(pin "J1_pin4" bidirectional
+			(at 231.14 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "bcff8ec0-dd0e-441e-817c-4d2a91080a12")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"

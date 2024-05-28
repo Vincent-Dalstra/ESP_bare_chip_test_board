@@ -724,6 +724,10 @@
       "Ethernet"
     ],
     [
+      "85479e45-442b-480f-b0b0-1d208a9e4cfc",
+      "4pin_connector"
+    ],
+    [
       "d37d0921-0af2-43fb-b20d-bf592b897b4a",
       "flash_nor"
     ],
