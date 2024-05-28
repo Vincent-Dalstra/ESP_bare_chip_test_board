@@ -2544,14 +2544,6 @@
 		(uuid "f9debdb7-0252-444c-961f-6bc1d8b80eb1")
 	)
 	(no_connect
-		(at 111.76 139.7)
-		(uuid "0eb008f7-6131-49cf-89dc-75ed2c0bbb1d")
-	)
-	(no_connect
-		(at 111.76 142.24)
-		(uuid "168f0cd8-6e3a-4579-984c-b96ee430adb1")
-	)
-	(no_connect
 		(at 111.76 137.16)
 		(uuid "7dc0f96b-48b6-448a-8b9d-ae4f2b38712b")
 	)

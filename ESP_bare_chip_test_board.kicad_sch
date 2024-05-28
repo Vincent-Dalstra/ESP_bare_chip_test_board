@@ -1478,32 +1478,32 @@
 			(uuid "890abac7-914b-4d87-bd19-f1355dd1cbbf")
 		)
 		(pin "IO14" bidirectional
-			(at 160.02 101.6 0)
+			(at 86.36 83.82 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "95d27fc0-ab6b-46c8-b96a-46f64c3a6471")
 		)
 		(pin "IO17" bidirectional
-			(at 160.02 93.98 0)
+			(at 86.36 76.2 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "08182399-8d4f-40de-a8dd-30ad770b3474")
 		)
 		(pin "IO18" bidirectional
-			(at 160.02 91.44 0)
+			(at 86.36 73.66 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "5962924b-a005-49e9-a6b9-78c9c2e60391")
 		)
@@ -1638,17 +1638,17 @@
 			(uuid "43ed8d4f-f7ab-4e53-9120-0706b2765687")
 		)
 		(pin "IO21" bidirectional
-			(at 160.02 88.9 0)
+			(at 86.36 71.12 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "3f3e76fd-8eb4-4528-a951-c7c7ed0de6c9")
 		)
 		(pin "IO38" bidirectional
-			(at 160.02 58.42 0)
+			(at 160.02 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1678,27 +1678,27 @@
 			(uuid "23f0969d-ff4c-4872-b852-3bea4da7d9c8")
 		)
 		(pin "IO15" bidirectional
-			(at 160.02 99.06 0)
+			(at 86.36 81.28 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "f24c4981-31d6-4d1b-85cc-d7a105991c8c")
 		)
 		(pin "IO16" bidirectional
-			(at 160.02 96.52 0)
+			(at 86.36 78.74 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 			(uuid "3a4e61a7-1f72-4baa-8255-e27cae2108a9")
 		)
 		(pin "IO39" bidirectional
-			(at 160.02 53.34 0)
+			(at 160.02 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1708,7 +1708,7 @@
 			(uuid "116ccfa4-3551-411c-b5df-c869a4724671")
 		)
 		(pin "IO37" bidirectional
-			(at 160.02 60.96 0)
+			(at 160.02 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1728,7 +1728,7 @@
 			(uuid "6fdff542-895f-4a29-adc7-cf75596d9dac")
 		)
 		(pin "IO35" bidirectional
-			(at 160.02 68.58 0)
+			(at 160.02 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1738,7 +1738,7 @@
 			(uuid "2622c08f-ed79-4956-aa63-0bb45c49f6c6")
 		)
 		(pin "IO36" bidirectional
-			(at 160.02 66.04 0)
+			(at 160.02 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1758,7 +1758,7 @@
 			(uuid "153eaeda-babc-4573-8005-a334126e2f81")
 		)
 		(pin "IO40" bidirectional
-			(at 160.02 50.8 0)
+			(at 160.02 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
