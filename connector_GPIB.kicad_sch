@@ -1197,6 +1197,28 @@
 		)
 		(uuid "fc1e22e2-8507-430a-bd99-015a02d0e914")
 	)
+	(text "Shield"
+		(exclude_from_sim no)
+		(at 132.08 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6bfa6ac3-8f1b-4499-aa86-6214d9ff1146")
+	)
+	(text "LOGIC_GND"
+		(exclude_from_sim no)
+		(at 144.78 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bcda24cc-d298-463a-b5a9-3a94efc5db9e")
+	)
 	(hierarchical_label "NDAC"
 		(shape bidirectional)
 		(at 132.08 86.36 180)
