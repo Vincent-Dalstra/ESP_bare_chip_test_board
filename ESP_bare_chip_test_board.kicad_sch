@@ -964,14 +964,14 @@
 		)
 		(uuid "e54e08d4-570b-4481-ac3a-7ae6e7274d91")
 	)
-	(text "Todo list:\n\n[] - Replace 5v buck-regulator with newer type\n[] - Devise a protection circuit so that a high voltage on USB will not\n	kill the 5v buck-regulator (see lighting-controller-8M [2.0.0]\n	- 2 ideal-diodes to mux the 5v?\n	- ideal diode from Vbus to Vin?\n	- Comparator to detect when VBus > 5V?\n	- Turn off USB load-switch (input) whenever 5V regulator is active?\n		- Be careful of the load switch (output)! Don't want that turning on if\n		output is higher! Software can check, but is that trustworthy enough?\n	- [BEST OPTION] Replace the 5V buck regulator with a buck-boost regulator!\n		- e.g. TPS63070 (4sw, ~ $0.50)\n			- 4th switch means it can block reverse voltages!\n			- Also means it can operate with a much lower voltage - 2.0V\n				- 3-4V when accounting for the input bridge rectifier"
+	(text "Todo list:\n\n[] - Replace 5v buck-regulator with newer type\n[] - Devise a protection circuit so that a high voltage on USB will not\n	kill the 5v buck-regulator (see lighting-controller-8M [2.0.0]\n	- 2 ideal-diodes to mux the 5v?\n	- ideal diode from Vbus to Vin?\n	- Comparator to detect when VBus > 5V?\n	- Turn off USB load-switch (input) whenever 5V regulator is active?\n		- Be careful of the load switch (output)! Don't want that turning on if\n		output is higher! Software can check, but is that trustworthy enough?\n	- [BEST OPTION] Replace the 5V buck regulator with a buck-boost regulator!\n		- e.g. TPS63070 (4sw, ~ $0.50)\n			- 4th switch means it can block reverse voltages!\n			- Also means it can operate with a much lower voltage - 2.0V\n				- 3-4V when accounting for the input bridge rectifier\n\n[] - Replace 0603 0.1uF with 0402 version (already on board)"
 		(exclude_from_sim no)
-		(at -2.54 264.16 0)
+		(at 2.54 215.9 0)
 		(effects
 			(font
 				(size 2.54 2.54)
 			)
-			(justify left bottom)
+			(justify left top)
 		)
 		(uuid "efacf57b-8de5-4680-9085-975b93a884a6")
 	)
@@ -1954,7 +1954,7 @@
 			)
 		)
 		(pin "ATN" bidirectional
-			(at 198.12 121.92 180)
+			(at 198.12 124.46 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1964,7 +1964,7 @@
 			(uuid "056dd9b2-cc95-472a-99a5-248c0c32d4de")
 		)
 		(pin "NRFD" bidirectional
-			(at 198.12 111.76 180)
+			(at 198.12 114.3 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1974,7 +1974,7 @@
 			(uuid "1db06aa3-acf8-4b2e-b332-95b01c368f4d")
 		)
 		(pin "IFC" bidirectional
-			(at 198.12 116.84 180)
+			(at 198.12 119.38 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1984,7 +1984,7 @@
 			(uuid "bd3c778b-513a-4a11-90ab-69ec749bf73e")
 		)
 		(pin "NDAC" bidirectional
-			(at 198.12 114.3 180)
+			(at 198.12 116.84 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1994,7 +1994,7 @@
 			(uuid "26500f53-ab1a-4233-9fe3-3f7bf74d3af4")
 		)
 		(pin "SRQ" bidirectional
-			(at 198.12 119.38 180)
+			(at 198.12 121.92 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2004,7 +2004,7 @@
 			(uuid "6f78852e-e568-41e3-b746-5db218b369c4")
 		)
 		(pin "EOI" bidirectional
-			(at 198.12 106.68 180)
+			(at 198.12 109.22 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2014,7 +2014,7 @@
 			(uuid "1ca2abf2-7b67-4504-a5af-6fef69fa3e2f")
 		)
 		(pin "DAV" bidirectional
-			(at 198.12 109.22 180)
+			(at 198.12 111.76 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2024,7 +2024,7 @@
 			(uuid "9f7968ed-d004-4d52-bdba-2956372b6171")
 		)
 		(pin "REN" bidirectional
-			(at 198.12 124.46 180)
+			(at 198.12 106.68 180)
 			(effects
 				(font
 					(size 1.27 1.27)
