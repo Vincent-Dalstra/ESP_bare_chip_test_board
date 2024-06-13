@@ -2712,7 +2712,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1972946"
+		(property "LCSC" "C2905637"
 			(at 50.8 46.99 0)
 			(effects
 				(font
@@ -3321,7 +3321,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_IGNORE" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 22.86 147.32 0)
 			(effects
 				(font
@@ -4167,7 +4167,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_IGNORE" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 22.86 132.08 0)
 			(effects
 				(font

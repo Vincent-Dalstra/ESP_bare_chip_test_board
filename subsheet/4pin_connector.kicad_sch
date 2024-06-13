@@ -1646,7 +1646,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_IGNORE" ""
+		(property "JLCPCB_IGNORE" "1"
 			(at 121.92 152.4 0)
 			(effects
 				(font

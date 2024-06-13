@@ -2175,6 +2175,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB_IGNORE" "1"
+			(at 121.92 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0119af89-8e01-4bb4-abf6-04f603374553")
 		)
@@ -2285,6 +2294,15 @@
 			)
 		)
 		(property "I2C address" ""
+			(at 154.94 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
 			(at 154.94 86.36 0)
 			(effects
 				(font
