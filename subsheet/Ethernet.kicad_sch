@@ -1747,6 +1747,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 187.96 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cf977d31-dfeb-4619-821d-608619f67b2d")
 		)
@@ -1882,6 +1891,15 @@
 			)
 		)
 		(property "JLCPCB_IGNORE" "1"
+			(at 137.16 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 137.16 87.63 0)
 			(effects
 				(font
@@ -2148,6 +2166,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 121.92 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0119af89-8e01-4bb4-abf6-04f603374553")
 		)
@@ -2257,6 +2284,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 154.94 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7184e673-221a-4428-a1ee-7f290fe94c47")
 		)
@@ -2303,7 +2339,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1.5k"
+		(property "Value" "1.5kΩ"
 			(at 187.96 100.3299 0)
 			(effects
 				(font
@@ -2341,6 +2377,15 @@
 		)
 		(property "LCSC" "C22843 "
 			(at 185.42 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 185.42 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2418,6 +2463,15 @@
 			)
 		)
 		(property "LCSC" "C59461"
+			(at 172.72 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 172.72 78.74 0)
 			(effects
 				(font

@@ -1994,6 +1994,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 73.66 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "711c3356-8a0a-409f-9544-fa1a09d72cc9")
 		)
@@ -2064,8 +2073,17 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25822"
 			(at 137.16 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 137.16 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2151,6 +2169,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 152.4 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f8936acf-4fca-4914-83bb-147f29b0baa5")
 		)
@@ -2221,8 +2248,17 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22795"
 			(at 137.16 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 137.16 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2290,6 +2326,24 @@
 			)
 		)
 		(property "Description" "Net tie, 2 pins"
+			(at 99.06 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 99.06 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
 			(at 99.06 157.48 0)
 			(effects
 				(font
@@ -2368,6 +2422,15 @@
 			)
 		)
 		(property "LCSC" "C96446"
+			(at 58.42 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 58.42 101.6 0)
 			(effects
 				(font
@@ -2455,6 +2518,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 93.98 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fc22b455-4881-4f81-bc4d-9f5578520b42")
 		)
@@ -2516,6 +2588,24 @@
 		)
 		(property "Description" "Buck-Boost Converter, 2-16V Input Voltage, 3.6A Switch Current, Adjustable 2.5-9.0V Output Voltage, VQFN-15-HR"
 			(at 109.22 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 111.76 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C109322"
+			(at 111.76 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2641,6 +2731,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 91.44 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "54ff5538-d732-4eef-93b5-08302bf0b56a")
 		)
@@ -2718,6 +2817,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 110.49 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f50db926-b581-4dfa-92ff-5b7996a41264")
 		)
@@ -2788,6 +2896,15 @@
 			)
 		)
 		(property "LCSC" "C19702"
+			(at 172.72 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 172.72 106.68 0)
 			(effects
 				(font
@@ -2940,6 +3057,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 162.56 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b59167e6-71a9-460e-b933-c9433c1fb896")
 		)
@@ -3076,6 +3202,15 @@
 			)
 		)
 		(property "LCSC" "C19702"
+			(at 182.88 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 182.88 106.68 0)
 			(effects
 				(font

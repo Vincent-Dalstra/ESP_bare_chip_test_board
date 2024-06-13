@@ -1925,6 +1925,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 81.28 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9155dfe9-5476-4644-8b77-e1ce51f27411")
 		)
@@ -1992,6 +2001,15 @@
 			)
 		)
 		(property "LCSC" "C25804"
+			(at 175.26 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 175.26 147.32 0)
 			(effects
 				(font
@@ -2142,6 +2160,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 190.5 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4673d5d3-2138-42cf-9b2a-861b38c5c5a5")
 		)
@@ -2220,6 +2247,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 190.5 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "292d6b52-729f-4364-b7b1-2fcbb71e7207")
 		)
@@ -2288,6 +2324,15 @@
 			)
 		)
 		(property "LCSC" "C72038"
+			(at 175.26 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 175.26 138.43 0)
 			(effects
 				(font
@@ -2422,6 +2467,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 81.28 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 81.28 66.04 0)
 			(effects
 				(font

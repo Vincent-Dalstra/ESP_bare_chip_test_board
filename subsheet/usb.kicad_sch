@@ -3121,6 +3121,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at -5.08 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "ed43145a-ce99-40ae-a874-75a8c8b1f6be")
 		)
@@ -3202,6 +3211,15 @@
 			)
 		)
 		(property "LCSC" "C2938600"
+			(at 27.94 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 27.94 63.5 0)
 			(effects
 				(font
@@ -3379,7 +3397,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5.1kΩ"
 			(at 167.64 68.5799 0)
 			(effects
 				(font
@@ -3417,6 +3435,15 @@
 		)
 		(property "LCSC" "C23186"
 			(at 165.1 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 165.1 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3644,6 +3671,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 86.36 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "e4c0e550-955f-4161-a6ba-ddb981a9e54e")
 		)
@@ -3756,7 +3792,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "5.1k"
+		(property "Value" "5.1kΩ"
 			(at 157.48 68.5799 0)
 			(effects
 				(font
@@ -3794,6 +3830,15 @@
 		)
 		(property "LCSC" "C23186"
 			(at 154.94 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 154.94 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4011,6 +4056,15 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;-0.375;0"
+			(at -40.64 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at -40.64 63.5 0)
 			(effects
 				(font

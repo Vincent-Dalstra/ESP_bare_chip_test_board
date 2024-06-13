@@ -1682,6 +1682,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 121.92 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ecfef75a-449f-411e-a958-fdb468f758b5")
 		)
@@ -1928,6 +1937,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 124.46 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cd3713b0-8a69-4e94-9311-2ec9719f7acd")
 		)
@@ -2148,6 +2166,15 @@
 		)
 		(property "JLCPCB_CORRECTION" "0;0;270"
 			(at 99.06 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 99.06 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)

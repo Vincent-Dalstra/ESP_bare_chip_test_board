@@ -1530,6 +1530,24 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 137.16 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
+			(at 137.16 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "01f36bce-a0c4-4d3e-941d-a0c25566032a")
 		)
