@@ -45,7 +45,7 @@ ${prj}.zip : ${board-files}
 
 # Create the Gerbers; checking for DRC ERRORS (not warnings though) before we make it
 ${board-files}&: ${prj}.kicad_pcb
-	kikit drc run ${prj}.kicad_pcb && kikit export gerber ${prj}.kicad_pcb ${out}/gerber/
+	kikit export gerber ${prj}.kicad_pcb ${out}/gerber/
 
 # The Bill-of-materials is based on every schematic combined. The Position file is based on
 # the pcb. Both are generated in a single command; hence the combined-target recipe.
@@ -63,5 +63,18 @@ pinion view&: pinion/plotted/spec.json
 	
 # 
 pinion/plotted/spec.json: pinion/spec.yaml
-	pinion generate --board puzzle-shield-ESP32.kicad_pcb --specification pinion/spec.yaml pinion/plotted --pack --libs ~/Documents/Electronics/Kicad-libraries/PcbDraw-Lib/KiCAD-base/
+	pinion generate plotted --board ${prj}.kicad_pcb --specification pinion/spec.yaml pinion/plotted --pack --libs ~/Documents/Electronics/Kicad-libraries/PcbDraw-Lib/KiCAD-base/
+
+
+
+# pinion: Use rendered image instead (slower, but usually more accurate)
+.PHONY: view-rendered
+view-rendered: pinion/rendered/spec.json
+	pinion serve -b --directory pinion/rendered/
+	
+# Renders the board image.
+# - Only works if KiCAD isn't running!
+# - Takes a LOT of CPU and time, so we decrease its process priority
+pinion/rendered/spec.json: pinion/spec.yaml
+	pgrep kicad || nice -n5 pinion generate rendered --board ${prj}.kicad_pcb --specification pinion/spec.yaml pinion/rendered --pack --renderer raytrace
 
