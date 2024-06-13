@@ -6272,7 +6272,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESP32-S3"
+		(property "Value" "ESP32-S3R8"
 			(at 146.9741 160.02 0)
 			(effects
 				(font
@@ -6317,7 +6317,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2913192"
+		(property "LCSC" "C2913194"
 			(at 144.78 116.84 0)
 			(effects
 				(font
