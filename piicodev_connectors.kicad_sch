@@ -1138,6 +1138,12 @@
 		(uuid "0b9bd796-8f59-4204-b3a1-81e7b1e5f466")
 	)
 	(junction
+		(at 93.98 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26f9f04b-4996-4a26-aa61-f91c76baa06e")
+	)
+	(junction
 		(at 81.28 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1150,10 +1156,26 @@
 		(uuid "47177da7-20db-4e5e-8a4a-cc0648443463")
 	)
 	(junction
+		(at 76.2 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78090cc0-32e4-45e0-8e29-8b084efebb8f")
+	)
+	(junction
 		(at 81.28 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2b32558-6289-4eee-8bbb-54cfbf4f2f49")
+	)
+	(wire
+		(pts
+			(xy 76.2 101.6) (xy 93.98 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08652b89-a940-46be-ab74-96ee809d5234")
 	)
 	(wire
 		(pts
@@ -1344,6 +1366,16 @@
 			(type default)
 		)
 		(uuid "96b3d8f7-4d90-4018-816f-6b6095c658b5")
+	)
+	(wire
+		(pts
+			(xy 93.98 101.6) (xy 93.98 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a198e02-b09e-4ab8-b247-e5cead6ee326")
 	)
 	(wire
 		(pts
@@ -1991,10 +2023,10 @@
 		(lib_id "Power_Protection_custom:D1213A-04TS-7")
 		(at 76.2 132.08 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "98a6fa36-183d-491a-a4cd-6c726910c996")
 		(property "Reference" "U1501"
@@ -2092,10 +2124,10 @@
 		(at 101.6 114.3 0)
 		(mirror x)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a6b5b103-e1d4-4de7-b314-690426bea9c2")
 		(property "Reference" "J1502"

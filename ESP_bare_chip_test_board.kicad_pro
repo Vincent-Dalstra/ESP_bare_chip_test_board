@@ -447,8 +447,8 @@
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
       "missing_unit": "warning",
-      "multiple_net_names": "ignore",
-      "net_not_bus_member": "error",
+      "multiple_net_names": "warning",
+      "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
@@ -503,6 +503,23 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "via_diameter": 0.45,
+        "via_drill": 0.2,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.09,
+        "diff_pair_gap": 0.1016,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.127,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB_DIFF",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.09,
         "via_diameter": 0.45,
         "via_drill": 0.2,
         "wire_width": 6
@@ -642,7 +659,7 @@
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
-      "intersheets_ref_short": false,
+      "intersheets_ref_short": true,
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
@@ -730,6 +747,10 @@
     [
       "d37d0921-0af2-43fb-b20d-bf592b897b4a",
       "flash_nor"
+    ],
+    [
+      "46d0c642-89b8-4065-a9ca-91ebde06cf7e",
+      "connector_misc"
     ],
     [
       "04b60eee-d553-4abe-8b22-3fc74b6351bd",
