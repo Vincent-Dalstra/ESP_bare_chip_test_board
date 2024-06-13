@@ -247,6 +247,141 @@
 				)
 			)
 		)
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Power_Protection_custom:D1213A-04TS-7"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -1156,6 +1291,12 @@
 		(uuid "47177da7-20db-4e5e-8a4a-cc0648443463")
 	)
 	(junction
+		(at 35.56 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "702e3e27-64a5-40b3-b5b1-3c8c2f351a6d")
+	)
+	(junction
 		(at 76.2 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1186,6 +1327,16 @@
 			(type default)
 		)
 		(uuid "1144e127-347b-4c3c-86fb-e7911eb8b988")
+	)
+	(wire
+		(pts
+			(xy 35.56 106.68) (xy 35.56 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "180bc1d1-2ba7-4f47-b6c5-2c79f3378c64")
 	)
 	(wire
 		(pts
@@ -1299,7 +1450,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 106.68) (xy 50.8 106.68)
+			(xy 27.94 106.68) (xy 35.56 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1386,6 +1537,16 @@
 			(type default)
 		)
 		(uuid "9b515965-0ec8-469a-8b3b-ceb60bb4fd82")
+	)
+	(wire
+		(pts
+			(xy 35.56 106.68) (xy 50.8 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a295d347-6b14-4766-a868-a7707635b2b9")
 	)
 	(wire
 		(pts
@@ -1641,6 +1802,84 @@
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/04b60eee-d553-4abe-8b22-3fc74b6351bd"
 					(reference "#PWR01506")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 35.56 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e4c0632-1cf7-4004-aa2b-4183e42e6ad2")
+		(property "Reference" "C1402"
+			(at 37.8968 113.1316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF/6.3V"
+			(at 37.8968 115.443 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 35.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C59461"
+			(at 35.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74ba3c35-08ad-4b36-b8a8-c925de2e99ee")
+		)
+		(pin "2"
+			(uuid "f90fd310-d1a2-4021-b5b3-3461b729ad5d")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/04b60eee-d553-4abe-8b22-3fc74b6351bd"
+					(reference "C1402")
 					(unit 1)
 				)
 			)
@@ -2221,6 +2460,72 @@
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/04b60eee-d553-4abe-8b22-3fc74b6351bd"
 					(reference "J1502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 35.56 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4a33583-f9a9-4f74-8616-b02591461198")
+		(property "Reference" "#PWR01404"
+			(at 35.56 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 35.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 35.56 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d47c06f-9e56-4016-be01-4daabb9f4c8e")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/04b60eee-d553-4abe-8b22-3fc74b6351bd"
+					(reference "#PWR01404")
 					(unit 1)
 				)
 			)

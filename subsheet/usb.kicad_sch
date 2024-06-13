@@ -2130,6 +2130,12 @@
 		(uuid "62edc810-514d-48e5-b843-a810767180b3")
 	)
 	(junction
+		(at 154.94 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "855870cc-72f9-4e9b-9c81-5326cd624354")
+	)
+	(junction
 		(at -17.78 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2146,6 +2152,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae8be75a-31af-4ab8-8088-e299723387a9")
+	)
+	(junction
+		(at 165.1 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1ca847b-9d0e-475c-8b63-99f56a388ff9")
 	)
 	(junction
 		(at -20.32 55.88)
@@ -2301,6 +2313,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 55.88) (xy 177.8 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0df00238-6aa7-4b41-aa34-9d02c1e6c134")
+	)
+	(wire
+		(pts
 			(xy 53.34 38.1) (xy 53.34 25.4)
 		)
 		(stroke
@@ -2358,6 +2380,16 @@
 			(type default)
 		)
 		(uuid "286f5df8-bb1a-4a9c-8361-db6732b6a1c7")
+	)
+	(wire
+		(pts
+			(xy 154.94 58.42) (xy 177.8 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32325a7b-4030-4774-8bf5-c192556cabad")
 	)
 	(wire
 		(pts
@@ -2944,6 +2976,30 @@
 			(justify left)
 		)
 		(uuid "3cf162cc-9601-4446-804d-d5e0c3f387c0")
+	)
+	(hierarchical_label "CC1"
+		(shape output)
+		(at 177.8 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b88c4e1f-2bae-474e-ac18-e1459ed20766")
+	)
+	(hierarchical_label "CC2"
+		(shape output)
+		(at 177.8 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d201f1e6-4f2e-465a-9b56-f546bb7a5925")
 	)
 	(netclass_flag ""
 		(length 2.54)
