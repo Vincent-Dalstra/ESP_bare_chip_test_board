@@ -6,9 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "Untitled 4-layer JLCPCB")
-		(date "1984/04/01")
-		(rev "v1.0.0")
-		(company "(c)")
+		(date "2024-06-14")
+		(rev "1.0.0")
+		(company "(c) Vincent Dalstra")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x10"

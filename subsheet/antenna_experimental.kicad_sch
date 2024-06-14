@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "e2bbeff9-48c2-46cc-b468-9541d249a8ab")
 	(paper "A4")
+	(title_block
+		(title "Untitled 4-layer JLCPCB")
+		(date "2024-06-14")
+		(rev "1.0.0")
+		(company "(c) Vincent Dalstra")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names

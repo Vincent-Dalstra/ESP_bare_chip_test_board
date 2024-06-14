@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "3cac52c7-243a-41f8-9485-f1aac23e9a4e")
 	(paper "A4")
+	(title_block
+		(title "Untitled 4-layer JLCPCB")
+		(date "2024-06-14")
+		(rev "1.0.0")
+		(company "(c) Vincent Dalstra")
+	)
 	(lib_symbols
 		(symbol "Connector:Barrel_Jack_MountingPin"
 			(pin_names hide)

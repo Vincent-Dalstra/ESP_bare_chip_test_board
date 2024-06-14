@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "Untitled 4-layer JLCPCB")
-		(date "1984/04/01")
-		(rev "v1.0.0")
-		(company "(c)")
-		(comment 1 "Drawn by:")
+		(date "2024-06-14")
+		(rev "1.0.0")
+		(company "(c) Vincent Dalstra")
+		(comment 1 "Drawn by: VGD")
 		(comment 2 "Check by:")
 	)
 	(lib_symbols
