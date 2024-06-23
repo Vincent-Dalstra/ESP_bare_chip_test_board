@@ -1,0 +1,58 @@
+
+So far, only simple intial testing has been done to verify that the board
+'works', withot trying every feature in detail.
+
+# Initial testing #
+
+Boards arrived. Unpacked, look good.
+
+## Power-up test ##
+
+Plugged into USB power outlet w/ current meter
+- 5V and 3v3 LED's light up ok
+- Current draw reads 0.0A (<100mA)
+
+All working as expected.
+
+
+Also, touched both regulator circuits with fingers, thoroughly - no issues
+- Some buck-regulators I've used would be be killed by this!
+
+
+## Test code ##
+
+Plugged into computer - shows up as /dev/ttyACM0
+
+Used idf.py to compile and flash 'blink' sketch, after setting the blink
+pin to IO33 (yellow LED), and setting it to not be an addressable LED!
+- LED blinking ok
+- Serial output ok
+
+## Wifi test code ##
+
+Compile and flashed the examples/wifi/scan to the board
+- Found the local wireless network, from both AP's!
+- Nearest one = single-brick wall + 8 metres
+
+## See details about flash chip ##
+
+Ran esptool.py flash_id
+
+Output:
+
+esptool.py v4.7.0
+Serial port /dev/ttyACM0
+Connecting....
+Detecting chip type... ESP32-S3
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: f0:f5:bd:4a:2d:04
+Uploading stub...
+Running stub...
+Stub running...
+Manufacturer: ef
+Device: 4018
+Detected flash size: 16MB
+Flash type set in eFuse: quad (4 data lines)
+Hard resetting via RTS pin...
