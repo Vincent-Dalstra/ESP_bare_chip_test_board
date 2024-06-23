@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "dec015bb-7e32-41d3-bdc7-42b115fab3df")
 	(paper "A4")
+	(title_block
+		(title "Untitled 4-layer JLCPCB")
+		(date "2024-06-14")
+		(rev "1.0.0")
+		(company "(c) Vincent Dalstra")
+	)
 	(lib_symbols
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
@@ -4338,6 +4344,24 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 93.98 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 93.98 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b8bce991-de93-452b-9acf-6d9b61f8d4e6")
 		)
@@ -4408,6 +4432,24 @@
 			)
 		)
 		(property "LCSC" "C379787"
+			(at 54.61 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 54.61 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_CORRECTION" "0;0;0"
 			(at 54.61 119.38 0)
 			(effects
 				(font
@@ -4498,6 +4540,24 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 116.84 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 116.84 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "47f29ca5-5e38-45a6-956f-d3a570974d42")
 		)
@@ -4568,6 +4628,15 @@
 			)
 		)
 		(property "LCSC" "C1634"
+			(at 48.26 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 48.26 132.08 0)
 			(effects
 				(font
@@ -4650,6 +4719,24 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 102.87 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C203078"
+			(at 102.87 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "089f6266-ba73-45fe-af9a-2426db218298")
 		)
@@ -4720,6 +4807,24 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 127 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15195"
+			(at 127 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "28081649-cf68-4549-83d0-db0c185acc4c")
 		)
@@ -4780,6 +4885,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 102.87 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 102.87 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C203078"
 			(at 102.87 139.7 0)
 			(effects
 				(font
@@ -4867,6 +4990,24 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 116.84 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_CORRECTION" "0;0;270"
+			(at 116.84 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bcd0a67a-77fd-4c3d-bb75-3d389dc92de8")
 		)
@@ -4945,6 +5086,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 102.87 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 102.87 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C203078"
 			(at 102.87 129.54 0)
 			(effects
 				(font
@@ -5096,6 +5255,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 120.65 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f22160a6-ad25-491d-92c4-78c934f2fb49")
 		)
@@ -5224,6 +5392,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 127 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 127 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
 			(at 127 165.1 0)
 			(effects
 				(font
@@ -5508,6 +5694,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 81.28 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "03b88f6d-9f09-4e73-a5aa-21ca939a8d58")
 		)
@@ -5642,6 +5837,24 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 102.87 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C203078"
+			(at 102.87 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "43be9552-2d4c-4ce3-af31-c9d3963f3008")
 		)
@@ -5727,6 +5940,15 @@
 				)
 			)
 		)
+		(property "I2C address" ""
+			(at 74.93 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "69ce3f1a-7602-4ec9-9449-6e4ab9b77e8c")
 		)
@@ -5797,6 +6019,15 @@
 			)
 		)
 		(property "LCSC" "C1634"
+			(at 60.96 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 60.96 132.08 0)
 			(effects
 				(font
@@ -6013,6 +6244,24 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 162.56 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 162.56 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fb073207-2553-43fe-852f-a9efc722c875")
 		)
@@ -6047,7 +6296,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ESP32-S3"
+		(property "Value" "ESP32-S3R8"
 			(at 146.9741 160.02 0)
 			(effects
 				(font
@@ -6075,6 +6324,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 144.78 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 144.78 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2913194"
 			(at 144.78 116.84 0)
 			(effects
 				(font
@@ -6318,6 +6585,24 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 114.3 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 114.3 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b852aabd-ff92-459e-84cc-3773fb5585eb")
 		)
@@ -6378,6 +6663,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 102.87 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 102.87 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C203078"
 			(at 102.87 137.16 0)
 			(effects
 				(font
@@ -6588,6 +6891,24 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 127 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 127 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3a0511b5-9d50-4b44-ad60-5c4c2b9cee95")
 		)
@@ -6658,6 +6979,24 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 162.56 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
+			(at 162.56 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "06e4a60e-6757-45d5-9eb7-2db30af8f30d")
 		)
@@ -6720,6 +7059,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 114.3 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 114.3 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307331"
 			(at 114.3 50.8 0)
 			(effects
 				(font

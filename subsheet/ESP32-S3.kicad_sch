@@ -5,10 +5,10 @@
 	(uuid "5cfbfd58-7460-458a-acb9-b69a59c07eda")
 	(paper "A4")
 	(title_block
-		(title "Environment Controller ESP32-S3-4M")
-		(date "2023-08-16")
-		(rev "1.1.0")
-		(company "(c) Escape This")
+		(title "Untitled 4-layer JLCPCB")
+		(date "2024-06-14")
+		(rev "1.0.0")
+		(company "(c) Vincent Dalstra")
 		(comment 1 "Drawn by: VGD")
 		(comment 2 "Check by:")
 	)
@@ -4075,6 +4075,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 76.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fdce5b77-837b-4da9-9e6e-03d14156f86c")
 		)
@@ -4142,7 +4151,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C72043"
+		(property "LCSC" "C779453"
+			(at 243.84 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 243.84 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_CORRECTION" "0;0;0"
 			(at 243.84 22.86 0)
 			(effects
 				(font
@@ -4343,6 +4370,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 157.48 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 157.48 208.28 0)
 			(effects
 				(font
@@ -4684,6 +4720,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 177.8 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7b4a5349-8a3f-4f00-b6d3-8accdf7aa0ac")
 		)
@@ -4892,6 +4937,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 76.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8ab1cb5f-ed58-41bf-83c7-5d5833f275f3")
 		)
@@ -4960,6 +5014,15 @@
 			)
 		)
 		(property "LCSC" "C720477"
+			(at 63.5 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 63.5 111.76 0)
 			(effects
 				(font
@@ -5046,6 +5109,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 243.84 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "376dd18f-cc8f-4f54-a8fc-74cacf5469e4")
 		)
@@ -5116,6 +5188,15 @@
 			)
 		)
 		(property "LCSC" "C14663"
+			(at 162.56 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 162.56 46.99 0)
 			(effects
 				(font
@@ -5277,6 +5358,24 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;6.35;90"
+			(at 25.4 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 25.4 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
 			(at 25.4 82.55 0)
 			(effects
 				(font
@@ -5497,6 +5596,15 @@
 			)
 		)
 		(property "LCSC" "C720477"
+			(at 63.5 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 63.5 139.7 0)
 			(effects
 				(font

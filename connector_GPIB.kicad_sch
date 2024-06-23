@@ -6,9 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "Untitled 4-layer JLCPCB")
-		(date "1984/04/01")
-		(rev "v1.0.0")
-		(company "(c)")
+		(date "2024-06-14")
+		(rev "1.0.0")
+		(company "(c) Vincent Dalstra")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x12_Top_Bottom"
@@ -886,31 +886,37 @@
 		)
 	)
 	(junction
-		(at 147.32 88.9)
+		(at 147.32 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "41d058db-67a1-48e7-b974-9879bdb0e1dc")
-	)
-	(junction
-		(at 147.32 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "43ec5696-677e-4c14-adb3-113f785b220e")
-	)
-	(junction
-		(at 147.32 96.52)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6a41d808-8f33-4585-8d5e-8968a69f13ca")
+		(uuid "08d59211-367c-40ec-b7be-784e0ecace45")
 	)
 	(junction
 		(at 147.32 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
+		(uuid "41d058db-67a1-48e7-b974-9879bdb0e1dc")
+	)
+	(junction
+		(at 147.32 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43ec5696-677e-4c14-adb3-113f785b220e")
+	)
+	(junction
+		(at 147.32 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a41d808-8f33-4585-8d5e-8968a69f13ca")
+	)
+	(junction
+		(at 147.32 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
 		(uuid "cefed99d-694e-4373-88be-0028374736fd")
 	)
 	(junction
-		(at 147.32 93.98)
+		(at 147.32 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d96e6cd7-fa13-4ebd-9b4a-aca6fe331a4b")
@@ -921,15 +927,9 @@
 		(color 0 0 0 0)
 		(uuid "da69b936-7621-436a-a1bf-22418c0cfcf2")
 	)
-	(junction
-		(at 137.16 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ef7f9bca-b54d-4a23-b03b-cd8990dde95e")
-	)
 	(wire
 		(pts
-			(xy 147.32 83.82) (xy 147.32 81.28)
+			(xy 147.32 88.9) (xy 147.32 91.44)
 		)
 		(stroke
 			(width 0)
@@ -939,7 +939,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 88.9) (xy 147.32 86.36)
+			(xy 147.32 83.82) (xy 147.32 86.36)
 		)
 		(stroke
 			(width 0)
@@ -949,7 +949,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 76.2) (xy 132.08 76.2)
+			(xy 124.46 96.52) (xy 132.08 96.52)
 		)
 		(stroke
 			(width 0)
@@ -959,7 +959,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 96.52) (xy 147.32 93.98)
+			(xy 147.32 76.2) (xy 147.32 78.74)
 		)
 		(stroke
 			(width 0)
@@ -969,7 +969,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 71.12) (xy 144.78 71.12)
+			(xy 152.4 101.6) (xy 144.78 101.6)
 		)
 		(stroke
 			(width 0)
@@ -979,7 +979,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 81.28) (xy 144.78 81.28)
+			(xy 147.32 91.44) (xy 144.78 91.44)
 		)
 		(stroke
 			(width 0)
@@ -989,7 +989,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 101.6) (xy 137.16 101.6)
+			(xy 129.54 71.12) (xy 147.32 71.12)
 		)
 		(stroke
 			(width 0)
@@ -999,7 +999,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 86.36) (xy 147.32 83.82)
+			(xy 147.32 86.36) (xy 147.32 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1009,7 +1009,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 73.66) (xy 144.78 73.66)
+			(xy 152.4 99.06) (xy 144.78 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1019,7 +1019,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 96.52) (xy 132.08 96.52)
+			(xy 129.54 76.2) (xy 132.08 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1029,7 +1029,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 93.98) (xy 147.32 91.44)
+			(xy 147.32 78.74) (xy 147.32 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1039,7 +1039,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 91.44) (xy 147.32 91.44)
+			(xy 144.78 81.28) (xy 147.32 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1049,7 +1049,17 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 73.66) (xy 132.08 73.66)
+			(xy 147.32 71.12) (xy 160.02 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c0417db-2463-4adb-8820-74f17c2be854")
+	)
+	(wire
+		(pts
+			(xy 124.46 99.06) (xy 132.08 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1069,7 +1079,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 71.12) (xy 132.08 71.12)
+			(xy 124.46 101.6) (xy 132.08 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1079,7 +1089,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 83.82) (xy 147.32 83.82)
+			(xy 144.78 88.9) (xy 147.32 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1089,7 +1099,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 96.52) (xy 147.32 96.52)
+			(xy 144.78 76.2) (xy 147.32 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1099,7 +1109,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 93.98) (xy 147.32 93.98)
+			(xy 144.78 78.74) (xy 147.32 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1109,7 +1119,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 68.58) (xy 144.78 68.58)
+			(xy 152.4 104.14) (xy 144.78 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1119,7 +1129,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 101.6) (xy 147.32 96.52)
+			(xy 147.32 71.12) (xy 147.32 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1129,7 +1139,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 76.2) (xy 144.78 76.2)
+			(xy 152.4 96.52) (xy 144.78 96.52)
 		)
 		(stroke
 			(width 0)
@@ -1139,7 +1149,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 91.44) (xy 147.32 88.9)
+			(xy 147.32 81.28) (xy 147.32 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1149,7 +1159,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 101.6) (xy 137.16 104.14)
+			(xy 160.02 71.12) (xy 160.02 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1159,7 +1169,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 88.9) (xy 147.32 88.9)
+			(xy 144.78 83.82) (xy 147.32 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1169,7 +1179,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 68.58) (xy 132.08 68.58)
+			(xy 124.46 104.14) (xy 132.08 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1179,7 +1189,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 96.52) (xy 129.54 101.6)
+			(xy 129.54 76.2) (xy 129.54 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1187,19 +1197,9 @@
 		)
 		(uuid "f5279bb7-b9b3-4433-941e-2114a8b14043")
 	)
-	(wire
-		(pts
-			(xy 137.16 101.6) (xy 147.32 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc1e22e2-8507-430a-bd99-015a02d0e914")
-	)
 	(text "Shield"
 		(exclude_from_sim no)
-		(at 132.08 96.52 0)
+		(at 132.08 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1210,7 +1210,7 @@
 	)
 	(text "LOGIC_GND"
 		(exclude_from_sim no)
-		(at 144.78 96.52 0)
+		(at 144.78 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1233,7 +1233,7 @@
 	)
 	(hierarchical_label "B4"
 		(shape bidirectional)
-		(at 124.46 76.2 180)
+		(at 124.46 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1245,7 +1245,7 @@
 	)
 	(hierarchical_label "B5"
 		(shape bidirectional)
-		(at 152.4 68.58 0)
+		(at 152.4 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1257,7 +1257,7 @@
 	)
 	(hierarchical_label "B7"
 		(shape bidirectional)
-		(at 152.4 73.66 0)
+		(at 152.4 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1269,7 +1269,7 @@
 	)
 	(hierarchical_label "B3"
 		(shape bidirectional)
-		(at 124.46 73.66 180)
+		(at 124.46 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1281,7 +1281,7 @@
 	)
 	(hierarchical_label "DAV"
 		(shape bidirectional)
-		(at 132.08 81.28 180)
+		(at 132.08 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1293,7 +1293,7 @@
 	)
 	(hierarchical_label "B1"
 		(shape bidirectional)
-		(at 124.46 68.58 180)
+		(at 124.46 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1305,7 +1305,7 @@
 	)
 	(hierarchical_label "B8"
 		(shape bidirectional)
-		(at 152.4 76.2 0)
+		(at 152.4 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1317,7 +1317,7 @@
 	)
 	(hierarchical_label "EOI"
 		(shape bidirectional)
-		(at 132.08 78.74 180)
+		(at 132.08 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1329,7 +1329,7 @@
 	)
 	(hierarchical_label "SRQ"
 		(shape bidirectional)
-		(at 132.08 91.44 180)
+		(at 132.08 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1341,7 +1341,7 @@
 	)
 	(hierarchical_label "IFC"
 		(shape bidirectional)
-		(at 132.08 88.9 180)
+		(at 132.08 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1353,7 +1353,7 @@
 	)
 	(hierarchical_label "REN"
 		(shape bidirectional)
-		(at 144.78 78.74 0)
+		(at 144.78 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1365,7 +1365,7 @@
 	)
 	(hierarchical_label "B2"
 		(shape bidirectional)
-		(at 124.46 71.12 180)
+		(at 124.46 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1377,7 +1377,7 @@
 	)
 	(hierarchical_label "B6"
 		(shape bidirectional)
-		(at 152.4 71.12 0)
+		(at 152.4 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1389,7 +1389,7 @@
 	)
 	(hierarchical_label "NRFD"
 		(shape bidirectional)
-		(at 132.08 83.82 180)
+		(at 132.08 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1401,7 +1401,7 @@
 	)
 	(hierarchical_label "ATN"
 		(shape bidirectional)
-		(at 132.08 93.98 180)
+		(at 132.08 78.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1413,7 +1413,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 104.14 0)
+		(at 160.02 73.66 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1421,7 +1422,7 @@
 		(dnp no)
 		(uuid "03a63da4-ec3c-427a-ba28-ae9896d921ef")
 		(property "Reference" "#PWR01201"
-			(at 137.16 110.49 0)
+			(at 160.02 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1430,7 +1431,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.287 108.5342 0)
+			(at 159.893 78.0542 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1438,7 +1439,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 104.14 0)
+			(at 160.02 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1447,7 +1448,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 104.14 0)
+			(at 160.02 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1456,7 +1457,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.16 104.14 0)
+			(at 160.02 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1478,7 +1479,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x12_Top_Bottom")
-		(at 137.16 81.28 0)
+		(at 137.16 91.44 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1486,7 +1488,7 @@
 		(dnp no)
 		(uuid "e35bb319-623d-4e8c-b83b-8f31ab832d5c")
 		(property "Reference" "J1201"
-			(at 138.43 63.0682 0)
+			(at 138.43 109.6518 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1494,7 +1496,7 @@
 			)
 		)
 		(property "Value" "NorComp - 112-024-113RYY1"
-			(at 138.43 65.3796 0)
+			(at 138.43 107.3404 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1502,7 +1504,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Centronics_custom:CENTRONICS-24"
-			(at 137.16 81.28 0)
+			(at 137.16 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1511,7 +1513,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 81.28 0)
+			(at 137.16 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1520,7 +1522,25 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.16 81.28 0)
+			(at 137.16 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 137.16 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_IGNORE" "1"
+			(at 137.16 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)

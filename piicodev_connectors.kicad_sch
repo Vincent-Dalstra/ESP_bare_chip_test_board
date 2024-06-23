@@ -6,9 +6,9 @@
 	(paper "A4")
 	(title_block
 		(title "Untitled 4-layer JLCPCB")
-		(date "1984/04/01")
-		(rev "v1.0.0")
-		(company "(c)")
+		(date "2024-06-14")
+		(rev "1.0.0")
+		(company "(c) Vincent Dalstra")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic_MountingPin:Conn_01x04_MountingPin"
@@ -238,6 +238,141 @@
 						)
 					)
 					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1138,6 +1273,12 @@
 		(uuid "0b9bd796-8f59-4204-b3a1-81e7b1e5f466")
 	)
 	(junction
+		(at 93.98 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26f9f04b-4996-4a26-aa61-f91c76baa06e")
+	)
+	(junction
 		(at 81.28 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1150,10 +1291,32 @@
 		(uuid "47177da7-20db-4e5e-8a4a-cc0648443463")
 	)
 	(junction
+		(at 35.56 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "702e3e27-64a5-40b3-b5b1-3c8c2f351a6d")
+	)
+	(junction
+		(at 76.2 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78090cc0-32e4-45e0-8e29-8b084efebb8f")
+	)
+	(junction
 		(at 81.28 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2b32558-6289-4eee-8bbb-54cfbf4f2f49")
+	)
+	(wire
+		(pts
+			(xy 76.2 101.6) (xy 93.98 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08652b89-a940-46be-ab74-96ee809d5234")
 	)
 	(wire
 		(pts
@@ -1164,6 +1327,16 @@
 			(type default)
 		)
 		(uuid "1144e127-347b-4c3c-86fb-e7911eb8b988")
+	)
+	(wire
+		(pts
+			(xy 35.56 106.68) (xy 35.56 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "180bc1d1-2ba7-4f47-b6c5-2c79f3378c64")
 	)
 	(wire
 		(pts
@@ -1277,7 +1450,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 106.68) (xy 50.8 106.68)
+			(xy 27.94 106.68) (xy 35.56 106.68)
 		)
 		(stroke
 			(width 0)
@@ -1347,6 +1520,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 101.6) (xy 93.98 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a198e02-b09e-4ab8-b247-e5cead6ee326")
+	)
+	(wire
+		(pts
 			(xy 71.12 154.94) (xy 93.98 154.94)
 		)
 		(stroke
@@ -1354,6 +1537,16 @@
 			(type default)
 		)
 		(uuid "9b515965-0ec8-469a-8b3b-ceb60bb4fd82")
+	)
+	(wire
+		(pts
+			(xy 35.56 106.68) (xy 50.8 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a295d347-6b14-4766-a868-a7707635b2b9")
 	)
 	(wire
 		(pts
@@ -1615,6 +1808,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 35.56 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e4c0632-1cf7-4004-aa2b-4183e42e6ad2")
+		(property "Reference" "C1402"
+			(at 37.8968 113.1316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF/6.3V"
+			(at 37.8968 115.443 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 35.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C59461"
+			(at 35.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
+			(at 35.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74ba3c35-08ad-4b36-b8a8-c925de2e99ee")
+		)
+		(pin "2"
+			(uuid "f90fd310-d1a2-4021-b5b3-3461b729ad5d")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/04b60eee-d553-4abe-8b22-3fc74b6351bd"
+					(reference "C1402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
 		(at 99.06 157.48 0)
 		(mirror x)
@@ -1689,6 +1969,15 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;0"
+			(at 99.06 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "I2C address" ""
 			(at 99.06 157.48 0)
 			(effects
 				(font
@@ -1991,10 +2280,10 @@
 		(lib_id "Power_Protection_custom:D1213A-04TS-7")
 		(at 76.2 132.08 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "98a6fa36-183d-491a-a4cd-6c726910c996")
 		(property "Reference" "U1501"
@@ -2060,6 +2349,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 76.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "594fba26-ae94-4190-bbcf-fa506bf2a539")
 		)
@@ -2092,10 +2390,10 @@
 		(at 101.6 114.3 0)
 		(mirror x)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a6b5b103-e1d4-4de7-b314-690426bea9c2")
 		(property "Reference" "J1502"
@@ -2170,6 +2468,15 @@
 				(hide yes)
 			)
 		)
+		(property "I2C address" ""
+			(at 101.6 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9f935ba9-5313-418c-bc9d-56d3e1b2ad5e")
 		)
@@ -2189,6 +2496,72 @@
 			(project "ESP_bare_chip_test_board"
 				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/04b60eee-d553-4abe-8b22-3fc74b6351bd"
 					(reference "J1502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 35.56 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4a33583-f9a9-4f74-8616-b02591461198")
+		(property "Reference" "#PWR01404"
+			(at 35.56 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 35.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 35.56 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d47c06f-9e56-4016-be01-4daabb9f4c8e")
+		)
+		(instances
+			(project "ESP_bare_chip_test_board"
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/04b60eee-d553-4abe-8b22-3fc74b6351bd"
+					(reference "#PWR01404")
 					(unit 1)
 				)
 			)
