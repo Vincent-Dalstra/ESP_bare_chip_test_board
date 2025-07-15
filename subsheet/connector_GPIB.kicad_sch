@@ -1222,7 +1222,6 @@
 	(hierarchical_label "NDAC"
 		(shape bidirectional)
 		(at 132.08 86.36 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1234,7 +1233,6 @@
 	(hierarchical_label "B4"
 		(shape bidirectional)
 		(at 124.46 96.52 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1246,7 +1244,6 @@
 	(hierarchical_label "B5"
 		(shape bidirectional)
 		(at 152.4 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1258,7 +1255,6 @@
 	(hierarchical_label "B7"
 		(shape bidirectional)
 		(at 152.4 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1270,7 +1266,6 @@
 	(hierarchical_label "B3"
 		(shape bidirectional)
 		(at 124.46 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1282,7 +1277,6 @@
 	(hierarchical_label "DAV"
 		(shape bidirectional)
 		(at 132.08 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1294,7 +1288,6 @@
 	(hierarchical_label "B1"
 		(shape bidirectional)
 		(at 124.46 104.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1306,7 +1299,6 @@
 	(hierarchical_label "B8"
 		(shape bidirectional)
 		(at 152.4 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1318,7 +1310,6 @@
 	(hierarchical_label "EOI"
 		(shape bidirectional)
 		(at 132.08 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1330,7 +1321,6 @@
 	(hierarchical_label "SRQ"
 		(shape bidirectional)
 		(at 132.08 81.28 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1342,7 +1332,6 @@
 	(hierarchical_label "IFC"
 		(shape bidirectional)
 		(at 132.08 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1354,7 +1343,6 @@
 	(hierarchical_label "REN"
 		(shape bidirectional)
 		(at 144.78 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1366,7 +1354,6 @@
 	(hierarchical_label "B2"
 		(shape bidirectional)
 		(at 124.46 101.6 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1378,7 +1365,6 @@
 	(hierarchical_label "B6"
 		(shape bidirectional)
 		(at 152.4 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1390,7 +1376,6 @@
 	(hierarchical_label "NRFD"
 		(shape bidirectional)
 		(at 132.08 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1402,7 +1387,6 @@
 	(hierarchical_label "ATN"
 		(shape bidirectional)
 		(at 132.08 78.74 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1421,7 +1405,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03a63da4-ec3c-427a-ba28-ae9896d921ef")
-		(property "Reference" "#PWR01201"
+		(property "Reference" "#PWR1101"
 			(at 160.02 80.01 0)
 			(effects
 				(font
@@ -1466,12 +1450,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e300fcf1-4a68-420a-b67d-fa3b0bcc2378")
+			(uuid "67715416-b0ac-4981-bc49-cca3cdf8393c")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/3ac85730-69ac-49b3-9a57-3b8bd09542e4"
-					(reference "#PWR01201")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/7ccd7424-4ed5-46cc-bfe9-7291525268e5"
+					(reference "#PWR1101")
 					(unit 1)
 				)
 			)
@@ -1487,7 +1471,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e35bb319-623d-4e8c-b83b-8f31ab832d5c")
-		(property "Reference" "J1201"
+		(property "Reference" "J1101"
 			(at 138.43 109.6518 0)
 			(effects
 				(font
@@ -1549,81 +1533,81 @@
 			)
 		)
 		(pin "1"
-			(uuid "01f36bce-a0c4-4d3e-941d-a0c25566032a")
+			(uuid "f63eed23-7003-478b-9f00-2098ec070150")
 		)
 		(pin "10"
-			(uuid "5b6b07c7-5ed3-4719-9fa9-79c2715379c7")
+			(uuid "92dbc82d-aab1-4765-9bcc-a7a7ea5bed08")
 		)
 		(pin "11"
-			(uuid "264454e2-c220-450c-a964-8e54b5cc18f7")
+			(uuid "f8a573a3-9ee1-4a45-94b3-6c73424bd20a")
 		)
 		(pin "12"
-			(uuid "87812e20-d06b-4b9d-898f-3a6197c92ebd")
+			(uuid "c92892fa-6a4f-411b-b4fe-f9c4e169807b")
 		)
 		(pin "13"
-			(uuid "b4166409-4231-4695-a8c5-94a6b50be4cf")
+			(uuid "c8f91d1c-7d4a-4fd2-95d4-1b2749348612")
 		)
 		(pin "14"
-			(uuid "03635a9d-1cf9-450f-88b8-a73334422ab3")
+			(uuid "449bda7a-0fec-4b71-b1eb-e0feb18a475f")
 		)
 		(pin "15"
-			(uuid "e66f90fa-e91e-462a-bb1f-2fdc814f1eba")
+			(uuid "ab35b65f-ed88-426e-8823-1c02d68aba8e")
 		)
 		(pin "16"
-			(uuid "1a7d87b5-ede1-41c2-9aa1-b0cff746023e")
+			(uuid "36bf8939-c5fa-484f-bb4e-58b8597c74b5")
 		)
 		(pin "17"
-			(uuid "7adbb556-c404-4b11-a794-5c3e5e131422")
+			(uuid "849b78a6-24b0-40ce-895b-62c8182e6832")
 		)
 		(pin "18"
-			(uuid "eb300ddc-5d99-4199-b297-939cfecdd70d")
+			(uuid "d3f338b0-3d86-44c0-8e11-b5caf802d4b4")
 		)
 		(pin "19"
-			(uuid "916ba3a3-1532-402f-8a49-2be55a0a9c5f")
+			(uuid "312efe73-7717-40d4-8b89-87e76a598360")
 		)
 		(pin "2"
-			(uuid "d4f1e410-f12e-45a3-af92-9c38cdbeb9e2")
+			(uuid "97e6f25e-295c-43ea-a509-b26dd5e9147e")
 		)
 		(pin "20"
-			(uuid "affafaa1-50f7-4f2e-9db3-c2a277ee2912")
+			(uuid "c19d0ad1-d864-44f3-b4ed-09bd67572a5c")
 		)
 		(pin "21"
-			(uuid "ea2f41c8-3063-4e71-bf8d-c34f626f909c")
+			(uuid "d29aeaee-2d2c-4e44-8efd-823cff9264c0")
 		)
 		(pin "22"
-			(uuid "1e2fdbd3-e37a-46e4-9643-df13f376723a")
+			(uuid "886ea532-fb68-4a1e-945b-37335253b0aa")
 		)
 		(pin "23"
-			(uuid "49adc9ea-79f4-494f-bdb2-6960d592e861")
+			(uuid "5d13f4bf-463f-467e-b404-56e03fc1572d")
 		)
 		(pin "24"
-			(uuid "4ebf6a83-4493-44a7-b23c-ccf48bb8073d")
+			(uuid "25f33f6d-9ef9-463d-a101-8542b3adc00a")
 		)
 		(pin "3"
-			(uuid "861499cf-2dd7-408a-bac5-917d3740b266")
+			(uuid "d7b286a1-ffe3-45e5-92a7-86cec154b972")
 		)
 		(pin "4"
-			(uuid "6f8e2bec-1400-4260-a678-e5bc5ae5f5c1")
+			(uuid "0a7e9bb5-d74c-46d9-9d2e-539d6d87f002")
 		)
 		(pin "5"
-			(uuid "376218af-9891-41a4-8b2a-d924bbe4152b")
+			(uuid "6e5910bc-b655-4213-84fb-a9b4c3bcc588")
 		)
 		(pin "6"
-			(uuid "45c56fbd-8d98-47ac-a4c5-9592f2d0ff9d")
+			(uuid "27cb2238-b18e-4fd7-bd0c-7538684ef2c8")
 		)
 		(pin "7"
-			(uuid "dbce47a8-ae7d-4ddd-bb8f-a95816eab77a")
+			(uuid "c8d1216d-126e-4881-a2e6-6e901c18e43f")
 		)
 		(pin "8"
-			(uuid "3e74c02b-3ccf-4464-b998-724e977f3479")
+			(uuid "57cb8316-273a-4461-b9cc-e07293f00c3d")
 		)
 		(pin "9"
-			(uuid "b6408e41-d39e-4186-8374-ca4101784fc9")
+			(uuid "7c0cef88-e517-4e14-a817-d56d2ae698c0")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/3ac85730-69ac-49b3-9a57-3b8bd09542e4"
-					(reference "J1201")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/7ccd7424-4ed5-46cc-bfe9-7291525268e5"
+					(reference "J1101")
 					(unit 1)
 				)
 			)

@@ -93,6 +93,7 @@
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -544,7 +545,9 @@
     "net_colors": null,
     "netclass_assignments": {
       "/USB_D+": "USB_DIFF",
-      "/USB_D-": "USB_DIFF"
+      "/USB_D-": "USB_DIFF",
+      "/main/USB_D+": "USB_DIFF",
+      "/main/USB_D-": "USB_DIFF"
     },
     "netclass_patterns": []
   },
@@ -564,6 +567,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -718,7 +722,11 @@
       "Root"
     ],
     [
-      "20c7e844-38a5-4683-b2ad-60f2017be075",
+      "95cbd5d6-5cb3-4431-8459-ab3e7dc12be6",
+      "4pin_connector"
+    ],
+    [
+      "2ea5b200-e806-4410-9b0e-386f76508375",
       "ESP32-S3"
     ],
     [
@@ -730,44 +738,44 @@
       "antenna_experimental"
     ],
     [
-      "28425a28-8968-4679-b18b-58814452f93f",
+      "f947886a-5d04-4d2b-83fd-e23ae6b83691",
+      "Ethernet"
+    ],
+    [
+      "1ca534e3-2263-4539-8aa0-ff724a69b5d8",
       "Power"
-    ],
-    [
-      "e324977a-58a1-4f1d-a668-70aacbf37a3e",
-      "USB"
-    ],
-    [
-      "cab84238-ee51-476d-8b41-60559ed008d0",
-      "step-down-5v-3v3_ESP32"
-    ],
-    [
-      "3ac85730-69ac-49b3-9a57-3b8bd09542e4",
-      "connector_GPIB"
     ],
     [
       "a569503a-4f7e-494d-9487-0f55aaa1ce0a",
       "buck-boost-5v"
     ],
     [
-      "55308f0d-6d1f-4d67-a924-a225ca5de0ad",
-      "Ethernet"
+      "cab84238-ee51-476d-8b41-60559ed008d0",
+      "step-down-5v-3v3_ESP32"
     ],
     [
-      "85479e45-442b-480f-b0b0-1d208a9e4cfc",
-      "4pin_connector"
+      "4d0d291b-97b9-4a0d-a83b-67ee582f6b4f",
+      "USB"
     ],
     [
-      "d37d0921-0af2-43fb-b20d-bf592b897b4a",
-      "flash_nor"
+      "7ccd7424-4ed5-46cc-bfe9-7291525268e5",
+      "connector_GPIB"
     ],
     [
-      "46d0c642-89b8-4065-a9ca-91ebde06cf7e",
+      "23fb9360-5d8e-41d6-ba4b-d5d12818d2b1",
       "connector_misc"
     ],
     [
-      "04b60eee-d553-4abe-8b22-3fc74b6351bd",
+      "96546e56-3235-4dd6-8398-850f11be4578",
+      "flash_nor"
+    ],
+    [
+      "2fa57716-ed63-4f9e-9bb4-1ad832d9ecf9",
       "piicodev_connectors"
+    ],
+    [
+      "f48098a1-cacc-4192-b650-2a34a2ba76dc",
+      "main"
     ]
   ],
   "text_variables": {}

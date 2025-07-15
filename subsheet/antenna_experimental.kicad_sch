@@ -1873,7 +1873,6 @@
 	)
 	(label "50Ω ANT"
 		(at 127 86.36 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1885,7 +1884,6 @@
 	(hierarchical_label "FEED"
 		(shape passive)
 		(at 60.96 86.36 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1903,7 +1901,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "068d2bf2-ccec-4196-ba7b-3ce8b47e5a90")
-		(property "Reference" "L301"
+		(property "Reference" "L501"
 			(at 92.964 89.789 0)
 			(effects
 				(font
@@ -1967,21 +1965,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "1f9616d0-3d0a-47ee-80aa-f377f998e2bf")
+			(uuid "41bb7e89-d628-4f7a-ab7e-df4b4159e4cd")
 		)
 		(pin "2"
-			(uuid "fbc1d874-e9f7-4012-9bde-3a28b7ef6f32")
+			(uuid "efbd5132-865e-49ba-90ce-ea53e1e3ef12")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "L301")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "L401")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "L501")
 					(unit 1)
 				)
 			)
@@ -1998,7 +1990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08faed29-221b-4e25-bee5-861e31c29213")
-		(property "Reference" "J401"
+		(property "Reference" "J501"
 			(at 62.23 65.0632 0)
 			(effects
 				(font
@@ -2062,15 +2054,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "9ff80d57-0766-4dd8-bb3d-c2ab009b8a43")
+			(uuid "abdc5e90-206f-4bac-8b97-3391ba109ea6")
 		)
 		(pin "2"
-			(uuid "2aa2f7bf-c863-46be-93dc-fb697ef785c0")
+			(uuid "5f71a510-453e-43dd-a847-083193aadf79")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "J401")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "J501")
 					(unit 1)
 				)
 			)
@@ -2085,7 +2077,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "14239059-bbdf-4e55-a88d-42a11d221c95")
-		(property "Reference" "AE401"
+		(property "Reference" "AE501"
 			(at 190.5 64.77 0)
 			(effects
 				(font
@@ -2149,15 +2141,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "edcc4ec6-3b83-4561-a052-07cb70d4f296")
+			(uuid "d5aa9074-9cee-4fbc-99e5-78d8b516e78d")
 		)
 		(pin "2"
-			(uuid "1d831603-92cc-4c30-99ea-fde532dcdc21")
+			(uuid "1391b49a-8f8a-4e40-9349-a0b26a468824")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "AE401")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "AE501")
 					(unit 1)
 				)
 			)
@@ -2172,7 +2164,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "150538e2-5dcb-4302-810b-39a7f36345b9")
-		(property "Reference" "J405"
+		(property "Reference" "J505"
 			(at 240.03 75.2232 0)
 			(effects
 				(font
@@ -2236,15 +2228,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "cc17e34b-da43-4264-b6d9-d8ac34d57057")
+			(uuid "31371d65-c94a-4bd6-91c2-ca7a6ee765be")
 		)
 		(pin "2"
-			(uuid "cea0c0a7-abfb-4fe9-a6f5-78f50cc3e40c")
+			(uuid "4670b095-74c3-47dc-bdbb-e1c9108f7c21")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "J405")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "J505")
 					(unit 1)
 				)
 			)
@@ -2259,7 +2251,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "29a672ee-6107-4e06-bd9a-450bc9a52ce8")
-		(property "Reference" "L301"
+		(property "Reference" "L502"
 			(at 133.604 91.059 0)
 			(effects
 				(font
@@ -2332,21 +2324,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb175bc7-50cc-4efe-b083-59aebe90be46")
+			(uuid "22f9f826-0053-4ae9-903a-8f265992d5d3")
 		)
 		(pin "2"
-			(uuid "abaff6e3-491d-4756-b39f-0c549a7118de")
+			(uuid "01d3a75e-abde-451f-9a56-3c5f28e8d237")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "L301")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "L402")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "L502")
 					(unit 1)
 				)
 			)
@@ -2361,7 +2347,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "32b63b63-ede5-4e42-adb0-507b3327d79e")
-		(property "Reference" "J402"
+		(property "Reference" "J502"
 			(at 153.67 75.2232 0)
 			(effects
 				(font
@@ -2425,15 +2411,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3900c8a1-2565-439a-bffc-45e6eceab356")
+			(uuid "a90ab583-60c2-4dbd-9f9c-609c0c179486")
 		)
 		(pin "2"
-			(uuid "b508a0ff-dc36-4ac4-b856-0126f12b4971")
+			(uuid "6062b1ba-848f-44a9-b609-0f8ca58159b7")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "J402")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "J502")
 					(unit 1)
 				)
 			)
@@ -2448,7 +2434,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "547b5d3a-3de1-43c8-afc1-bd1c8a4b63fe")
-		(property "Reference" "C301"
+		(property "Reference" "C501"
 			(at 97.155 84.836 0)
 			(effects
 				(font
@@ -2512,21 +2498,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c78b8e55-116b-42e4-ab76-33f4c7d8c8e7")
+			(uuid "c7dc83dc-70c6-49bc-afac-1e567b86a6f6")
 		)
 		(pin "2"
-			(uuid "5ce40155-83a6-4cc5-ab28-22022ba876b9")
+			(uuid "81e546d4-0f64-460d-9288-9a586b67777c")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "C301")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "C401")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "C501")
 					(unit 1)
 				)
 			)
@@ -2543,7 +2523,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "579069e2-e9d9-4168-be9f-32dca4c8f4ee")
-		(property "Reference" "#PWR0302"
+		(property "Reference" "#PWR503"
 			(at 106.68 102.87 0)
 			(effects
 				(font
@@ -2588,18 +2568,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6ba7c646-19d4-4f43-97c6-ecc3f2016ad0")
+			(uuid "e36faa62-de01-436a-83ec-7648f83968fb")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "#PWR0302")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "#PWR0403")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR503")
 					(unit 1)
 				)
 			)
@@ -2614,7 +2588,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b17164d-a6ba-4128-91e4-3ae7af5476c5")
-		(property "Reference" "C302"
+		(property "Reference" "C502"
 			(at 108.204 89.535 0)
 			(effects
 				(font
@@ -2678,21 +2652,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "69d1b414-6780-41fb-a8d8-656cefe3886f")
+			(uuid "86410556-efa9-480c-8b25-aa26d1b79fd8")
 		)
 		(pin "2"
-			(uuid "f4f1ca73-87d2-4a68-9bce-75dd076612b2")
+			(uuid "27a270e6-bf2a-4d68-b207-b4a5ae80e1dc")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "C302")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "C402")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "C502")
 					(unit 1)
 				)
 			)
@@ -2708,7 +2676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6abd0b73-4c53-4dd5-b5c8-6129d02a738d")
-		(property "Reference" "#PWR0401"
+		(property "Reference" "#PWR501"
 			(at 66.04 77.47 0)
 			(effects
 				(font
@@ -2753,12 +2721,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3ba468ed-34bb-45d9-ac42-1a38512f2117")
+			(uuid "d5de419f-213c-46a9-90cd-9beae7598053")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "#PWR0401")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR501")
 					(unit 1)
 				)
 			)
@@ -2775,7 +2743,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77a83459-03d7-4dbb-9484-062cbc5cbbf7")
-		(property "Reference" "#PWR0301"
+		(property "Reference" "#PWR502"
 			(at 91.44 102.87 0)
 			(effects
 				(font
@@ -2820,18 +2788,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3aa14642-7704-4e5d-9126-060c0c357360")
+			(uuid "ee1ccb07-ce52-48b2-9f9f-11e5d21b9907")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "#PWR0301")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "#PWR0402")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR502")
 					(unit 1)
 				)
 			)
@@ -2848,7 +2810,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a7a7836-fbdc-403d-82e4-c428be62c63e")
-		(property "Reference" "#PWR0303"
+		(property "Reference" "#PWR506"
 			(at 187.96 95.25 0)
 			(effects
 				(font
@@ -2893,18 +2855,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "9c0c5323-ceac-4903-af92-5d2b46fd973a")
+			(uuid "aa6ec88b-852a-425e-821d-0ca91aa2dcfc")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "#PWR0303")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "#PWR0406")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR506")
 					(unit 1)
 				)
 			)
@@ -2919,7 +2875,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8cb882a4-e0ef-47a9-a872-aad2a486df27")
-		(property "Reference" "J403"
+		(property "Reference" "J503"
 			(at 199.39 75.2232 0)
 			(effects
 				(font
@@ -2983,15 +2939,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "18d44298-2886-4bb4-87c7-84739054f33c")
+			(uuid "cf1e13fb-f34c-4d6d-ac5a-6ad2d7e8816e")
 		)
 		(pin "2"
-			(uuid "2c3ba938-b311-41a4-b61a-b1268ba45034")
+			(uuid "699306be-0285-4a26-aa84-293fbd1bb32e")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "J403")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "J503")
 					(unit 1)
 				)
 			)
@@ -3008,7 +2964,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d67be49-e74d-40f4-a65b-b1c991febd98")
-		(property "Reference" "#PWR0303"
+		(property "Reference" "#PWR507"
 			(at 228.6 95.25 0)
 			(effects
 				(font
@@ -3053,18 +3009,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "bae0817d-8e0b-4590-b316-c0a877691fc3")
+			(uuid "54055355-8a97-41c9-960e-0fbe59361bf6")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "#PWR0303")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "#PWR0407")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR507")
 					(unit 1)
 				)
 			)
@@ -3079,7 +3029,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "a6f64be2-876d-44eb-a9d1-9daa355afd4f")
-		(property "Reference" "C302"
+		(property "Reference" "C503"
 			(at 133.604 99.695 0)
 			(effects
 				(font
@@ -3152,21 +3102,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c246c95a-922b-4e5a-b3eb-a895b3135137")
+			(uuid "83c267f8-f613-429b-b5e7-15bcedb9281d")
 		)
 		(pin "2"
-			(uuid "164e2af0-bcdb-4d1e-b67b-e4ce6939bf62")
+			(uuid "8ac37ec0-ad6c-4b10-9536-b72b5adc1e9c")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "C302")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "C403")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "C503")
 					(unit 1)
 				)
 			)
@@ -3182,7 +3126,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "c928383c-f974-46a0-92c3-87587039e0fc")
-		(property "Reference" "U401"
+		(property "Reference" "U501"
 			(at 99.06 118.11 0)
 			(effects
 				(font
@@ -3235,27 +3179,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "c1b5dc23-8e5f-4360-a7a4-68c0d7102925")
+			(uuid "9cd48c86-aca7-46a5-91c7-4644babb2962")
 		)
 		(pin "2"
-			(uuid "a8c14de4-70c4-4b9d-83c7-4cf92992a7df")
+			(uuid "c6b85ca2-46bb-4b05-b9c9-bbc00ba01db1")
 		)
 		(pin "3"
-			(uuid "35407155-8be3-47ce-989e-c0193ce99e2f")
+			(uuid "a82187fe-f5f1-4714-941b-3f21784a31fb")
 		)
 		(pin "4"
-			(uuid "411357e1-7ee3-4706-aa16-75278427a88e")
+			(uuid "49ba1324-e23b-4b16-84d0-2fc45af786d7")
 		)
 		(pin "5"
-			(uuid "63d93af1-5ad4-43c5-b796-e5f684d6262f")
+			(uuid "9c8afca4-c310-40eb-8d5a-27de66ade007")
 		)
 		(pin "6"
-			(uuid "52127bc5-28da-4def-8f86-4680686eaf23")
+			(uuid "93b7f58b-45a9-4dd6-a2d3-eea6683380ff")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "U401")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "U501")
 					(unit 1)
 				)
 			)
@@ -3271,7 +3215,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c989320a-9e8b-4ef9-b63c-4bd2f799f9e0")
-		(property "Reference" "J404"
+		(property "Reference" "J504"
 			(at 232.41 65.0632 0)
 			(effects
 				(font
@@ -3335,15 +3279,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "65e4f704-4818-4d28-b8f9-b0817ceadb9d")
+			(uuid "29575119-abf4-4c74-9f38-af42129f2258")
 		)
 		(pin "2"
-			(uuid "4e704ddf-9ea3-4a8c-973e-823ac4e69085")
+			(uuid "f0446f70-ddff-4c06-b94e-70a91337516e")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "J404")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "J504")
 					(unit 1)
 				)
 			)
@@ -3360,7 +3304,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dcdb2f13-849d-406f-8208-8ef0b9147216")
-		(property "Reference" "#PWR0303"
+		(property "Reference" "#PWR505"
 			(at 142.24 95.25 0)
 			(effects
 				(font
@@ -3405,18 +3349,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e418c473-49da-49f1-a0eb-9af949ee9c4f")
+			(uuid "492360db-aa2e-4baf-b0e9-367226afc9db")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "#PWR0303")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "#PWR0405")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR505")
 					(unit 1)
 				)
 			)
@@ -3433,7 +3371,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb0006e6-00af-4595-97b1-1f5da6dcdfa0")
-		(property "Reference" "#PWR0302"
+		(property "Reference" "#PWR504"
 			(at 132.08 110.49 0)
 			(effects
 				(font
@@ -3478,18 +3416,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "329759ca-d51d-45df-8ce2-1fd8a7c6ebd3")
+			(uuid "e2c0fb1b-443c-4f58-8025-1dd77835b4d0")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "#PWR0302")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "#PWR0404")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "#PWR504")
 					(unit 1)
 				)
 			)
@@ -3504,7 +3436,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ff525cce-a4db-4b5c-8adc-4ca5bb86cfbb")
-		(property "Reference" "E301"
+		(property "Reference" "E501"
 			(at 142.748 73.66 0)
 			(effects
 				(font
@@ -3569,21 +3501,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "6003c9a5-344a-4b2a-8b94-1f5ba44cb317")
+			(uuid "7e2dffb8-0d97-4c59-b3b8-827769da5aab")
 		)
 		(pin "2"
-			(uuid "15c29b7d-70f4-4968-b385-d0fbf818ac79")
+			(uuid "a6173967-3e8d-417e-bf88-ccfeae8d6b25")
 		)
 		(instances
-			(project "Nokia-3310-ESP32"
-				(path "/1b0b2d77-639c-42d7-8c01-0ca0be561a47/fe82100a-898c-40e2-bfc5-68765bf8951a/b0035db9-3792-4d74-87e3-f0b8671a8da0"
-					(reference "E301")
-					(unit 1)
-				)
-			)
 			(project "ESP_bare_chip_test_board"
-				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/20c7e844-38a5-4683-b2ad-60f2017be075/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
-					(reference "E401")
+				(path "/45b6f84a-e69b-48be-a49b-bc68872e2c15/f48098a1-cacc-4192-b650-2a34a2ba76dc/2ea5b200-e806-4410-9b0e-386f76508375/9bb4ff3e-4004-4254-bcfb-868020000c68/58a0f016-f08d-4983-b5f0-9d58482a8d99"
+					(reference "E501")
 					(unit 1)
 				)
 			)
