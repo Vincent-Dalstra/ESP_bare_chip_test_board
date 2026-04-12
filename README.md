@@ -2,7 +2,7 @@
 
 This board primarily served as a practice design, to see if I could make a functioning esp32-s3 chip based circuit (not module!).
 However, I prefer my boards to have a useful purpose rather than just being a paperweight, so decided to combine it with something else I was working on, which was to make an integrated verison of the boards in
-https://github.com/Vincent-Dalstra/ESP32-GPIB-pcb/tree/master?tab=License-1-ov-file, which saves having to use dev boards for this.
+https://github.com/Vincent-Dalstra/ESP32-GPIB-pcb, which saves having to use dev boards for this.
 
 The code that it's expected to run can be found at https://github.com/douardda/AR488-ESP32
 It is a very useful project, which allows an ESP32 to control various old (and new!) test-equipment.
