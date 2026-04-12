@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "3cac52c7-243a-41f8-9485-f1aac23e9a4e")
 	(paper "A4")
 	(title_block
@@ -12,7 +12,9 @@
 	)
 	(lib_symbols
 		(symbol "Connector:Barrel_Jack_MountingPin"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -90,10 +92,10 @@
 						(type background)
 					)
 				)
-				(arc
-					(start -3.302 3.175)
-					(mid -3.9343 2.54)
-					(end -3.302 1.905)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -103,8 +105,31 @@
 					)
 				)
 				(arc
-					(start -3.302 3.175)
+					(start -3.302 1.905)
 					(mid -3.9343 2.54)
+					(end -3.302 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.302 1.905)
+					(mid -3.9343 2.54)
+					(end -3.302 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 3.683 3.175)
 					(end -3.302 1.905)
 					(stroke
 						(width 0.254)
@@ -126,29 +151,6 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.683 3.175)
-					(end -3.302 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 			)
 			(symbol "Barrel_Jack_MountingPin_1_1"
 				(polyline
@@ -168,6 +170,24 @@
 					(effects
 						(font
 							(size 0.381 0.381)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
 						)
 					)
 				)
@@ -207,29 +227,14 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 3.048)
-					(name "MountPin"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -306,9 +311,10 @@
 						(type background)
 					)
 				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -331,7 +337,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
 					)
 					(stroke
 						(width 0.1524)
@@ -353,10 +359,9 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -0.3556 0.508) (xy 0.508 -0.3302)
-					)
+				(circle
+					(center 0 0)
+					(radius 0.635)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -366,7 +371,7 @@
 					)
 				)
 				(circle
-					(center 0 0)
+					(center 0 -2.54)
 					(radius 0.635)
 					(stroke
 						(width 0.1524)
@@ -413,11 +418,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -487,10 +497,10 @@
 			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.3302)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -499,10 +509,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.3048)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -548,11 +558,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:D_Schottky"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -620,10 +635,10 @@
 			(symbol "D_Schottky_0_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -644,10 +659,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -693,11 +708,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -765,10 +785,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -789,7 +821,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -801,22 +833,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -862,11 +882,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small_US"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -936,7 +961,7 @@
 			(symbol "R_Small_US_1_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -948,7 +973,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -995,11 +1020,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Diode:SMF5V0A"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1128,6 +1158,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+12V"
 			(power)
@@ -1205,7 +1236,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1217,7 +1248,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1231,7 +1262,8 @@
 			(symbol "+12V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+12V"
 						(effects
 							(font
@@ -1248,6 +1280,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V3"
 			(power)
@@ -1325,7 +1358,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1337,7 +1370,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1351,7 +1384,8 @@
 			(symbol "+3V3_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V3"
 						(effects
 							(font
@@ -1368,6 +1402,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
@@ -1445,7 +1480,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1457,7 +1492,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1471,7 +1506,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+5V"
 						(effects
 							(font
@@ -1488,6 +1524,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -1567,7 +1604,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1584,12 +1622,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1680,7 +1723,127 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "For a USB-C Sink, C_{VBUS} <= 10uF\n- Another 90uF is allowed after the\n	over-voltage protection switch.\n"
+		(exclude_from_sim no)
+		(at 15.24 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "02ddaf3e-0ef4-4236-bfb2-ec236195c019")
+	)
+	(text "Terminal Plug: C560212"
+		(exclude_from_sim no)
+		(at 15.24 134.62 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0a5053bb-f0cb-4af5-8de9-ec240dcfe82b")
+	)
+	(text "One regulator provides powe to the ESP32 and the\nEthernet module. It also supplies the Piicodev\nconnectors (via a load-switch with 1.1A limit).\n\nThe other regulator supplies 3v3 to the IO connectors,\nso that overload/noise will not interfere with the ESP32.\nIt also makes routing simpler."
+		(exclude_from_sim no)
+		(at 226.06 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "16a3e483-1112-4009-95f7-7e9f2728c341")
+	)
+	(text "TPS2552\n- 5V 1.5A load switch (7.0V absMAX)\n- overcurrent protection (programmable)\n- short circuit protection \n- Reverse-voltage protection"
+		(exclude_from_sim no)
+		(at 88.9 -2.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "32b24cdb-f02d-43a1-9b1a-7b18bb5db7dc")
+	)
+	(text "Inefficient, but simple"
+		(exclude_from_sim no)
+		(at 101.6 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "32d95c74-4b84-4f9f-8e15-5a273792968e")
+	)
+	(text "Todo: add 28V OVP load-switch AW32905FCR (C401023)\nto protect the TPS2552 from voltages greater than 6.5V\n- Also provides ESD/surge protection (up to 120V)\n- OTG functionality allows 0V drop in reverse (like a P-mosfet)\n	- First the internal body diode conducts to 2.5V\n	- Then the mosfet is driven high to remove the voltage drop\n"
+		(exclude_from_sim no)
+		(at -2.54 7.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "342b40c1-a7b5-4511-91d4-562bee7955de")
+	)
+	(text "V_{IN} 2-16V\n(20V abs. max.)"
+		(exclude_from_sim no)
+		(at 127 127 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3f64be3a-0c0a-4b73-9fdb-6badb960656d")
+	)
+	(text "Override names"
+		(exclude_from_sim no)
+		(at 10.16 213.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "811c7a39-b035-49f7-b811-73c219b5bff9")
+	)
+	(text "Todo: replace with SS54 or SS34\n(Lower reverse-breakdown, but gain\nlower forward-voltage in return)"
+		(exclude_from_sim no)
+		(at 81.28 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ad81a2d0-5cc2-46ad-80c3-14bb46cfaa94")
+	)
+	(text "Resistors target for\napprox. 0.1mA"
+		(exclude_from_sim no)
+		(at 129.54 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ae1b9fe0-e5fd-4d48-8f65-a640b1cbc93d")
+	)
+	(text "PGOOD is\nopen-drain"
+		(exclude_from_sim no)
+		(at 160.02 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ff32b3f3-54b8-4e15-9b3f-7e10727c95eb")
 	)
 	(junction
 		(at 60.96 127)
@@ -2355,125 +2518,6 @@
 			(type default)
 		)
 		(uuid "fbbf7b00-c645-4b6a-9148-3ca5321a3190")
-	)
-	(text "For a USB-C Sink, C_{VBUS} <= 10uF\n- Another 90uF is allowed after the\n	over-voltage protection switch.\n"
-		(exclude_from_sim no)
-		(at 15.24 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "02ddaf3e-0ef4-4236-bfb2-ec236195c019")
-	)
-	(text "Terminal Plug: C560212"
-		(exclude_from_sim no)
-		(at 15.24 134.62 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0a5053bb-f0cb-4af5-8de9-ec240dcfe82b")
-	)
-	(text "One regulator provides powe to the ESP32 and the\nEthernet module. It also supplies the Piicodev\nconnectors (via a load-switch with 1.1A limit).\n\nThe other regulator supplies 3v3 to the IO connectors,\nso that overload/noise will not interfere with the ESP32.\nIt also makes routing simpler."
-		(exclude_from_sim no)
-		(at 226.06 114.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "16a3e483-1112-4009-95f7-7e9f2728c341")
-	)
-	(text "TPS2552\n- 5V 1.5A load switch (7.0V absMAX)\n- overcurrent protection (programmable)\n- short circuit protection \n- Reverse-voltage protection"
-		(exclude_from_sim no)
-		(at 88.9 -2.54 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "32b24cdb-f02d-43a1-9b1a-7b18bb5db7dc")
-	)
-	(text "Inefficient, but simple"
-		(exclude_from_sim no)
-		(at 101.6 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "32d95c74-4b84-4f9f-8e15-5a273792968e")
-	)
-	(text "Todo: add 28V OVP load-switch AW32905FCR (C401023)\nto protect the TPS2552 from voltages greater than 6.5V\n- Also provides ESD/surge protection (up to 120V)\n- OTG functionality allows 0V drop in reverse (like a P-mosfet)\n	- First the internal body diode conducts to 2.5V\n	- Then the mosfet is driven high to remove the voltage drop\n"
-		(exclude_from_sim no)
-		(at -2.54 7.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "342b40c1-a7b5-4511-91d4-562bee7955de")
-	)
-	(text "V_{IN} 2-16V\n(20V abs. max.)"
-		(exclude_from_sim no)
-		(at 127 127 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "3f64be3a-0c0a-4b73-9fdb-6badb960656d")
-	)
-	(text "Override names"
-		(exclude_from_sim no)
-		(at 10.16 213.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "811c7a39-b035-49f7-b811-73c219b5bff9")
-	)
-	(text "Todo: replace with SS54 or SS34\n(Lower reverse-breakdown, but gain\nlower forward-voltage in return)"
-		(exclude_from_sim no)
-		(at 81.28 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ad81a2d0-5cc2-46ad-80c3-14bb46cfaa94")
-	)
-	(text "Resistors target for\napprox. 0.1mA"
-		(exclude_from_sim no)
-		(at 129.54 181.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ae1b9fe0-e5fd-4d48-8f65-a640b1cbc93d")
-	)
-	(text "PGOOD is\nopen-drain"
-		(exclude_from_sim no)
-		(at 160.02 142.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ff32b3f3-54b8-4e15-9b3f-7e10727c95eb")
 	)
 	(label "V_{IN}"
 		(at 106.68 132.08 0)
@@ -4547,6 +4591,10 @@
 	(sheet
 		(at 144.78 129.54)
 		(size 12.7 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4576,33 +4624,33 @@
 		)
 		(pin "5v" output
 			(at 157.48 132.08 0)
+			(uuid "a2f22897-69aa-4f70-9d37-eab1843d5a95")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a2f22897-69aa-4f70-9d37-eab1843d5a95")
 		)
 		(pin "V_{IN}" input
 			(at 144.78 132.08 180)
+			(uuid "c5bf05b1-6ced-4f2b-bd00-557b639a1f49")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c5bf05b1-6ced-4f2b-bd00-557b639a1f49")
 		)
 		(pin "PGOOD" output
 			(at 157.48 137.16 0)
+			(uuid "671343f6-cc6f-4663-9eed-46f30d749ca5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "671343f6-cc6f-4663-9eed-46f30d749ca5")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
@@ -4615,6 +4663,10 @@
 	(sheet
 		(at 233.68 144.78)
 		(size 15.24 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -4644,23 +4696,23 @@
 		)
 		(pin "5v" input
 			(at 233.68 147.32 180)
+			(uuid "349d3dd1-cef9-41f0-9364-22749fe876fa")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "349d3dd1-cef9-41f0-9364-22749fe876fa")
 		)
 		(pin "3v3" output
 			(at 248.92 147.32 0)
+			(uuid "c7f16999-1c63-4f18-920f-0de00c3ee918")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c7f16999-1c63-4f18-920f-0de00c3ee918")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"

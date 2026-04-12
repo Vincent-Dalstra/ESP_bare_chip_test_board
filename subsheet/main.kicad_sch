@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "01faa74e-b9e7-4c63-a8e1-88f417508c9a")
 	(paper "A4")
 	(title_block
@@ -12,9 +12,13 @@
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -112,11 +116,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -184,10 +193,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -208,7 +229,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -220,22 +241,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -281,11 +290,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small_US"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -355,7 +369,7 @@
 			(symbol "R_Small_US_1_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -367,7 +381,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -414,6 +428,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -493,7 +508,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -510,7 +526,85 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "${TITLE}"
+		(exclude_from_sim no)
+		(at 180.34 7.62 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e7ab83d-d0dc-480c-988d-23d4e65a6368")
+	)
+	(text "Todo list:\n\n[] - Replace 5v buck-regulator with newer type\n[] - Devise a protection circuit so that a high voltage on USB will not\n	kill the 5v buck-regulator (see lighting-controller-8M [2.0.0]\n	- 2 ideal-diodes to mux the 5v?\n	- ideal diode from Vbus to Vin?\n	- Comparator to detect when VBus > 5V?\n	- Turn off USB load-switch (input) whenever 5V regulator is active?\n		- Be careful of the load switch (output)! Don't want that turning on if\n		output is higher! Software can check, but is that trustworthy enough?\n	- [BEST OPTION] Replace the 5V buck regulator with a buck-boost regulator!\n		- e.g. TPS63070 (4sw, ~ $0.50)\n			- 4th switch means it can block reverse voltages!\n			- Also means it can operate with a much lower voltage - 2.0V\n				- 3-4V when accounting for the input bridge rectifier\n\n[] - Replace 0603 0.1uF with 0402 version (already on board)"
+		(exclude_from_sim no)
+		(at 2.54 215.9 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "12cc2192-359a-4f45-86af-05c6bb808517")
+	)
+	(text "~~ GPIO count ~~\nUnrestricted = 31\nSpecial = 6s (0, 45, 46, Tx, Rx)\nUnused if possible = 1u (26)\n\nGPIB = 16\n\nI2C-internal = 2s (Rx, Tx)\n- FUSB302 = 1s (45)\n- INT (TBD) = 1s (IO46)\n\nUSB-PD = 2\n\nSPI common = 3\n- Ethernet CS/INT/RST = 3\n- NOR flash (16MB) = 1\n\nTotal (remaining) = 25 + 4s (6 +2s)\n\n?? USB alt mode = 2-10\n?? Piicodev connector = 2 each\n?? 4pin JST connector = 2 each\n  "
+		(exclude_from_sim no)
+		(at 144.78 7.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b320f3f-5098-48cb-9bda-b949c6c83e80")
+	)
+	(text "Some pins are used for bootstrapping, and thus\nthey must have the correct state when booting:\nGPIO- state - reason\n0   - FLOAT - Allows code to be downloaded\n46  - LOW/FLOAT - Download boot mode\n		- Only checked if 0 is LOW\n45  - LOW/FLOAT - Flash voltage\n		- Can be disabled using by an eFuse\n\nWeak pull-down on IO0, IO45, IO46 (strapping pins)\nWeak pull-up on IO43, IO44 (UART0 pins)\n\nADC1 (10 channels) available on GPIO's 1-10\nADC2 on GPIO's 11-18. Not available with WiFi\n\nNo DAC"
+		(exclude_from_sim no)
+		(at 101.6 116.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e82d361-3244-4ec6-a929-3fca344ead9e")
+	)
+	(text "For fast SPI, use GPIO's 9-14\nDefault SPI pins for FSPI:\nCS0 = 10\nSCK = 12\nMISO = 13\nMOSI = 35  ?\n(last one is strange. Hardware\nimplies it should be 11, but\nthe IDF uses 35...)"
+		(exclude_from_sim no)
+		(at 101.6 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6b5b885b-86cf-4f57-a3ef-3528122d2519")
+	)
+	(text "Avoid using GPIO 26\n(unavailable when PSRAM is used)"
+		(exclude_from_sim no)
+		(at 101.6 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb463fd0-9f80-4a1d-8330-6de312f01ca7")
+	)
+	(text "Todo (old)\n\n- Finish USB-C PD circuit\n- Add Current measurement IC\n- Add temperature measurment IC\nAll of the above as I2C devices :)\n- Debug MUX on USB port?\n- Add ESP32-C3 co-processor?\n- W5500 Ethernet.\n- RS485?\n- Audio?"
+		(exclude_from_sim no)
+		(at 175.26 279.4 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8adde1c-a814-4d89-83fe-2d80a21bf865")
 	)
 	(junction
 		(at 198.12 106.68)
@@ -1540,83 +1634,6 @@
 		)
 		(uuid "f99f0c42-ac36-44ee-9ef4-4df9f7007132")
 	)
-	(text "${TITLE}"
-		(exclude_from_sim no)
-		(at 180.34 7.62 0)
-		(effects
-			(font
-				(size 5.08 5.08)
-			)
-			(justify left bottom)
-		)
-		(uuid "0e7ab83d-d0dc-480c-988d-23d4e65a6368")
-	)
-	(text "Todo list:\n\n[] - Replace 5v buck-regulator with newer type\n[] - Devise a protection circuit so that a high voltage on USB will not\n	kill the 5v buck-regulator (see lighting-controller-8M [2.0.0]\n	- 2 ideal-diodes to mux the 5v?\n	- ideal diode from Vbus to Vin?\n	- Comparator to detect when VBus > 5V?\n	- Turn off USB load-switch (input) whenever 5V regulator is active?\n		- Be careful of the load switch (output)! Don't want that turning on if\n		output is higher! Software can check, but is that trustworthy enough?\n	- [BEST OPTION] Replace the 5V buck regulator with a buck-boost regulator!\n		- e.g. TPS63070 (4sw, ~ $0.50)\n			- 4th switch means it can block reverse voltages!\n			- Also means it can operate with a much lower voltage - 2.0V\n				- 3-4V when accounting for the input bridge rectifier\n\n[] - Replace 0603 0.1uF with 0402 version (already on board)"
-		(exclude_from_sim no)
-		(at 2.54 215.9 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left top)
-		)
-		(uuid "12cc2192-359a-4f45-86af-05c6bb808517")
-	)
-	(text "~~ GPIO count ~~\nUnrestricted = 31\nSpecial = 6s (0, 45, 46, Tx, Rx)\nUnused if possible = 1u (26)\n\nGPIB = 16\n\nI2C-internal = 2s (Rx, Tx)\n- FUSB302 = 1s (45)\n- INT (TBD) = 1s (IO46)\n\nUSB-PD = 2\n\nSPI common = 3\n- Ethernet CS/INT/RST = 3\n- NOR flash (16MB) = 1\n\nTotal (remaining) = 25 + 4s (6 +2s)\n\n?? USB alt mode = 2-10\n?? Piicodev connector = 2 each\n?? 4pin JST connector = 2 each\n  "
-		(exclude_from_sim no)
-		(at 144.78 7.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1b320f3f-5098-48cb-9bda-b949c6c83e80")
-	)
-	(text "Some pins are used for bootstrapping, and thus\nthey must have the correct state when booting:\nGPIO- state - reason\n0   - FLOAT - Allows code to be downloaded\n46  - LOW/FLOAT - Download boot mode\n		- Only checked if 0 is LOW\n45  - LOW/FLOAT - Flash voltage\n		- Can be disabled using by an eFuse\n\nWeak pull-down on IO0, IO45, IO46 (strapping pins)\nWeak pull-up on IO43, IO44 (UART0 pins)\n\nADC1 (10 channels) available on GPIO's 1-10\nADC2 on GPIO's 11-18. Not available with WiFi\n\nNo DAC"
-		(exclude_from_sim no)
-		(at 101.6 116.84 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2e82d361-3244-4ec6-a929-3fca344ead9e")
-	)
-	(text "For fast SPI, use GPIO's 9-14\nDefault SPI pins for FSPI:\nCS0 = 10\nSCK = 12\nMISO = 13\nMOSI = 35  ?\n(last one is strange. Hardware\nimplies it should be 11, but\nthe IDF uses 35...)"
-		(exclude_from_sim no)
-		(at 101.6 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6b5b885b-86cf-4f57-a3ef-3528122d2519")
-	)
-	(text "Avoid using GPIO 26\n(unavailable when PSRAM is used)"
-		(exclude_from_sim no)
-		(at 101.6 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cb463fd0-9f80-4a1d-8330-6de312f01ca7")
-	)
-	(text "Todo (old)\n\n- Finish USB-C PD circuit\n- Add Current measurement IC\n- Add temperature measurment IC\nAll of the above as I2C devices :)\n- Debug MUX on USB port?\n- Add ESP32-C3 co-processor?\n- W5500 Ethernet.\n- RS485?\n- Audio?"
-		(exclude_from_sim no)
-		(at 175.26 279.4 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left bottom)
-		)
-		(uuid "f8adde1c-a814-4d89-83fe-2d80a21bf865")
-	)
 	(label "USB_D+"
 		(at 48.26 20.32 0)
 		(effects
@@ -2474,6 +2491,10 @@
 	(sheet
 		(at 20.32 160.02)
 		(size 22.86 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2503,33 +2524,33 @@
 		)
 		(pin "USB_VBUS" bidirectional
 			(at 20.32 162.56 180)
+			(uuid "c17ffbc9-77fd-462a-9178-e3225f547fd5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c17ffbc9-77fd-462a-9178-e3225f547fd5")
 		)
 		(pin "~{USB_SRC}" input
 			(at 43.18 165.1 0)
+			(uuid "eb7d403d-db12-41cc-8186-24893df240cd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "eb7d403d-db12-41cc-8186-24893df240cd")
 		)
 		(pin "~{USB_SNK}_{PD}" input
 			(at 43.18 167.64 0)
+			(uuid "8af37961-d19f-4a3b-ba61-0ae9c4dd39fb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8af37961-d19f-4a3b-ba61-0ae9c4dd39fb")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
@@ -2542,6 +2563,10 @@
 	(sheet
 		(at 238.76 93.98)
 		(size 17.78 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2571,83 +2596,83 @@
 		)
 		(pin "J0_pin10" bidirectional
 			(at 238.76 114.3 180)
+			(uuid "7e53f0e0-6e28-46b1-b820-78d8b3e3b95d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7e53f0e0-6e28-46b1-b820-78d8b3e3b95d")
 		)
 		(pin "J0_pin7" bidirectional
 			(at 238.76 106.68 180)
+			(uuid "64dc5658-1c88-4d05-9a72-28b6737fbabb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "64dc5658-1c88-4d05-9a72-28b6737fbabb")
 		)
 		(pin "J0_pin6" bidirectional
 			(at 238.76 104.14 180)
+			(uuid "303dfb11-10bf-4c62-9d2e-d55a0f68f93a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "303dfb11-10bf-4c62-9d2e-d55a0f68f93a")
 		)
 		(pin "J0_pin4" bidirectional
 			(at 238.76 99.06 180)
+			(uuid "fdd7f60c-a56b-4c05-a886-a96b40b11262")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fdd7f60c-a56b-4c05-a886-a96b40b11262")
 		)
 		(pin "J0_pin3" bidirectional
 			(at 238.76 96.52 180)
+			(uuid "c31f64ac-ac8c-44b9-a147-7d0dba68df69")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c31f64ac-ac8c-44b9-a147-7d0dba68df69")
 		)
 		(pin "J0_pin9" bidirectional
 			(at 238.76 111.76 180)
+			(uuid "af80fc9c-54a6-4e85-9975-012048e97d9a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "af80fc9c-54a6-4e85-9975-012048e97d9a")
 		)
 		(pin "J0_pin5" bidirectional
 			(at 238.76 101.6 180)
+			(uuid "ce835b5a-c8d9-4165-ba20-1363e06f1d32")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ce835b5a-c8d9-4165-ba20-1363e06f1d32")
 		)
 		(pin "J0_pin8" bidirectional
 			(at 238.76 109.22 180)
+			(uuid "f87c871f-4590-480b-9022-de3b04e1b0c3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f87c871f-4590-480b-9022-de3b04e1b0c3")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
@@ -2660,6 +2685,10 @@
 	(sheet
 		(at 86.36 30.48)
 		(size 73.66 96.52)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2689,393 +2718,393 @@
 		)
 		(pin "IO12" bidirectional
 			(at 86.36 96.52 180)
+			(uuid "33b5ea42-6258-43a2-ab2b-c6594823bcaf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "33b5ea42-6258-43a2-ab2b-c6594823bcaf")
 		)
 		(pin "IO13" bidirectional
 			(at 86.36 93.98 180)
+			(uuid "0b102352-b2f5-4cae-a7c5-24a05ab7d6f4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0b102352-b2f5-4cae-a7c5-24a05ab7d6f4")
 		)
 		(pin "IO14" bidirectional
 			(at 160.02 50.8 0)
+			(uuid "aad1f966-5581-42ce-b44d-89d60d4f8f22")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "aad1f966-5581-42ce-b44d-89d60d4f8f22")
 		)
 		(pin "IO17" bidirectional
 			(at 86.36 66.04 180)
+			(uuid "fa7c8527-1532-4467-a16f-5655dbe37f51")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fa7c8527-1532-4467-a16f-5655dbe37f51")
 		)
 		(pin "IO18" bidirectional
 			(at 86.36 60.96 180)
+			(uuid "da9eaaf2-b7e4-42fa-9d68-2ee4023303b4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "da9eaaf2-b7e4-42fa-9d68-2ee4023303b4")
 		)
 		(pin "IO7" bidirectional
 			(at 160.02 99.06 0)
+			(uuid "96d9d523-2a92-45f6-872a-821d7ab2278b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "96d9d523-2a92-45f6-872a-821d7ab2278b")
 		)
 		(pin "IO8" bidirectional
 			(at 160.02 96.52 0)
+			(uuid "a6f491f2-b941-4570-9b48-ce063c013fbc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a6f491f2-b941-4570-9b48-ce063c013fbc")
 		)
 		(pin "IO9" bidirectional
 			(at 86.36 116.84 180)
+			(uuid "faa20f91-3c79-4a67-9ac9-ef700db267b8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "faa20f91-3c79-4a67-9ac9-ef700db267b8")
 		)
 		(pin "IO10" bidirectional
 			(at 86.36 101.6 180)
+			(uuid "4ca98f89-ccbb-4dbf-9c92-de22e9013762")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4ca98f89-ccbb-4dbf-9c92-de22e9013762")
 		)
 		(pin "IO11" bidirectional
 			(at 86.36 91.44 180)
+			(uuid "829175fc-8f35-4c86-9b7c-43c291239ee6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "829175fc-8f35-4c86-9b7c-43c291239ee6")
 		)
 		(pin "IO2" bidirectional
 			(at 160.02 111.76 0)
+			(uuid "e7521a15-f3b1-4548-893c-c5e9847de629")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e7521a15-f3b1-4548-893c-c5e9847de629")
 		)
 		(pin "IO3" bidirectional
 			(at 160.02 109.22 0)
+			(uuid "89b2f6f2-1453-4bbd-ac5a-68e2c48df38a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "89b2f6f2-1453-4bbd-ac5a-68e2c48df38a")
 		)
 		(pin "IO4" bidirectional
 			(at 160.02 106.68 0)
+			(uuid "913eb6ee-31d3-4e99-9023-50c6aa77fca0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "913eb6ee-31d3-4e99-9023-50c6aa77fca0")
 		)
 		(pin "IO5" bidirectional
 			(at 160.02 104.14 0)
+			(uuid "aeb7bb9c-1f62-4a2d-81c2-702846bb46ea")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "aeb7bb9c-1f62-4a2d-81c2-702846bb46ea")
 		)
 		(pin "IO6" bidirectional
 			(at 160.02 101.6 0)
+			(uuid "bee99bc6-8708-4159-b9d5-17b1b4ecd5a5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bee99bc6-8708-4159-b9d5-17b1b4ecd5a5")
 		)
 		(pin "IO1" bidirectional
 			(at 160.02 114.3 0)
+			(uuid "ac8eb9ae-de37-4945-8ab6-190114d69a4a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ac8eb9ae-de37-4945-8ab6-190114d69a4a")
 		)
 		(pin "IO0" output
 			(at 127 127 270)
+			(uuid "e04aee45-fbee-4514-b9f5-d6d4193dced3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e04aee45-fbee-4514-b9f5-d6d4193dced3")
 		)
 		(pin "IO47" bidirectional
 			(at 160.02 60.96 0)
+			(uuid "06f8eb12-64b3-44e0-8998-425dad1c4572")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "06f8eb12-64b3-44e0-8998-425dad1c4572")
 		)
 		(pin "IO21" bidirectional
 			(at 86.36 58.42 180)
+			(uuid "02b4ba09-9d69-4b53-93d7-c3d0a443ae57")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "02b4ba09-9d69-4b53-93d7-c3d0a443ae57")
 		)
 		(pin "IO38" bidirectional
 			(at 160.02 83.82 0)
+			(uuid "93e4a08c-f2a0-4b92-970c-993e4a2da650")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "93e4a08c-f2a0-4b92-970c-993e4a2da650")
 		)
 		(pin "IO46" output
 			(at 86.36 104.14 180)
+			(uuid "da834697-cf39-46aa-9bcc-f9acc36d7e4b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "da834697-cf39-46aa-9bcc-f9acc36d7e4b")
 		)
 		(pin "IO45" output
 			(at 86.36 109.22 180)
+			(uuid "498e3018-2094-4b5a-a6d6-5cbda63079ff")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "498e3018-2094-4b5a-a6d6-5cbda63079ff")
 		)
 		(pin "IO15" bidirectional
 			(at 160.02 48.26 0)
+			(uuid "6fc1ab05-37e5-4d5b-95f8-8029d3b75805")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6fc1ab05-37e5-4d5b-95f8-8029d3b75805")
 		)
 		(pin "IO16" bidirectional
 			(at 86.36 68.58 180)
+			(uuid "34313472-67cb-4de2-b03f-fbb116d4cb2a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "34313472-67cb-4de2-b03f-fbb116d4cb2a")
 		)
 		(pin "IO39" bidirectional
 			(at 160.02 81.28 0)
+			(uuid "2904c122-3c16-4d42-879d-45f479993753")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2904c122-3c16-4d42-879d-45f479993753")
 		)
 		(pin "IO37" bidirectional
 			(at 160.02 86.36 0)
+			(uuid "22f70a57-8ffe-4047-b8c9-116a3b4ea279")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "22f70a57-8ffe-4047-b8c9-116a3b4ea279")
 		)
 		(pin "IO34" bidirectional
 			(at 160.02 121.92 0)
+			(uuid "97383304-5b2f-43f9-9242-df520b948721")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "97383304-5b2f-43f9-9242-df520b948721")
 		)
 		(pin "IO35" bidirectional
 			(at 160.02 91.44 0)
+			(uuid "5123b30d-3ae0-4473-829b-faeada36b3b4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5123b30d-3ae0-4473-829b-faeada36b3b4")
 		)
 		(pin "IO36" bidirectional
 			(at 160.02 88.9 0)
+			(uuid "1b959da0-0c39-4ac3-925b-5a2bbcba8052")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1b959da0-0c39-4ac3-925b-5a2bbcba8052")
 		)
 		(pin "IO48" bidirectional
 			(at 160.02 63.5 0)
+			(uuid "865a740b-67c0-4e16-9465-2d3dbb79a9ba")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "865a740b-67c0-4e16-9465-2d3dbb79a9ba")
 		)
 		(pin "IO40" bidirectional
 			(at 160.02 78.74 0)
+			(uuid "004e3544-a086-4aa0-b8c2-0b271d0de76f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "004e3544-a086-4aa0-b8c2-0b271d0de76f")
 		)
 		(pin "IO41" bidirectional
 			(at 160.02 76.2 0)
+			(uuid "8b2d891a-523b-452e-8527-eadcc2ffbeb1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8b2d891a-523b-452e-8527-eadcc2ffbeb1")
 		)
 		(pin "IO42" bidirectional
 			(at 160.02 73.66 0)
+			(uuid "0f47d4ad-a439-42e8-9314-4be90643cf52")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0f47d4ad-a439-42e8-9314-4be90643cf52")
 		)
 		(pin "IO33" bidirectional
 			(at 160.02 124.46 0)
+			(uuid "63b97a8e-2aab-4204-a90f-bf5480824fb9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "63b97a8e-2aab-4204-a90f-bf5480824fb9")
 		)
 		(pin "IO26" passive
 			(at 121.92 30.48 90)
+			(uuid "3f72d089-cd50-44c4-904a-acd08f780b4c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3f72d089-cd50-44c4-904a-acd08f780b4c")
 		)
 		(pin "GPIO20{slash}USB_D+" bidirectional
 			(at 86.36 33.02 180)
+			(uuid "534e71b3-b554-4a35-8e58-851d3012dcd1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "534e71b3-b554-4a35-8e58-851d3012dcd1")
 		)
 		(pin "GPIO19{slash}USB_D-" bidirectional
 			(at 86.36 35.56 180)
+			(uuid "7d221f1f-f270-4bad-b054-c7a054c06203")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7d221f1f-f270-4bad-b054-c7a054c06203")
 		)
 		(pin "GPIO44{slash}UART0.Rx" bidirectional
 			(at 160.02 35.56 0)
+			(uuid "28a5bba2-25d1-4639-80ce-32e97f62b571")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "28a5bba2-25d1-4639-80ce-32e97f62b571")
 		)
 		(pin "GPIO43{slash}UART0.Tx" bidirectional
 			(at 160.02 33.02 0)
+			(uuid "6881bda3-18e1-4c30-997e-1600ce84e2ad")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6881bda3-18e1-4c30-997e-1600ce84e2ad")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
@@ -3088,6 +3117,10 @@
 	(sheet
 		(at 180.34 33.02)
 		(size 17.78 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3117,43 +3150,43 @@
 		)
 		(pin "J0_pin3" bidirectional
 			(at 180.34 50.8 180)
+			(uuid "efcb945b-a2bb-498d-aac9-cf9dbad842d2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "efcb945b-a2bb-498d-aac9-cf9dbad842d2")
 		)
 		(pin "J0_pin4" bidirectional
 			(at 180.34 48.26 180)
+			(uuid "80ab80ea-60f5-4653-bee9-c31144184c06")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "80ab80ea-60f5-4653-bee9-c31144184c06")
 		)
 		(pin "J1_pin3" bidirectional
 			(at 180.34 43.18 180)
+			(uuid "fd67c393-2686-477c-926e-1c65edc7f28d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fd67c393-2686-477c-926e-1c65edc7f28d")
 		)
 		(pin "J1_pin4" bidirectional
 			(at 180.34 40.64 180)
+			(uuid "b44d3df2-f9b3-4b1b-8ac9-01aedf77cc54")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b44d3df2-f9b3-4b1b-8ac9-01aedf77cc54")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
@@ -3166,6 +3199,10 @@
 	(sheet
 		(at 17.78 17.78)
 		(size 20.32 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3195,53 +3232,53 @@
 		)
 		(pin "D+" bidirectional
 			(at 38.1 20.32 0)
+			(uuid "f89a4693-da57-4b16-a914-5927c1bdaa88")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f89a4693-da57-4b16-a914-5927c1bdaa88")
 		)
 		(pin "D-" bidirectional
 			(at 38.1 22.86 0)
+			(uuid "23295556-f828-40e2-ba51-a99ac3a8dff4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "23295556-f828-40e2-ba51-a99ac3a8dff4")
 		)
 		(pin "VBUS" bidirectional
 			(at 17.78 33.02 180)
+			(uuid "5fe337f3-3760-4aa8-9b2a-339e4ec66b23")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5fe337f3-3760-4aa8-9b2a-339e4ec66b23")
 		)
 		(pin "CC1" output
 			(at 38.1 30.48 0)
+			(uuid "b0597ff2-abbe-44fb-a6d2-d381d3177c08")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b0597ff2-abbe-44fb-a6d2-d381d3177c08")
 		)
 		(pin "CC2" output
 			(at 38.1 33.02 0)
+			(uuid "b25a254d-fb17-4c75-95ee-9c9bccd9b615")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b25a254d-fb17-4c75-95ee-9c9bccd9b615")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
@@ -3254,6 +3291,10 @@
 	(sheet
 		(at 198.12 71.12)
 		(size 22.86 45.72)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3283,163 +3324,163 @@
 		)
 		(pin "ATN" bidirectional
 			(at 198.12 114.3 180)
+			(uuid "de06b2dc-b1f9-4f1d-91f2-04694187a83c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "de06b2dc-b1f9-4f1d-91f2-04694187a83c")
 		)
 		(pin "NRFD" bidirectional
 			(at 198.12 104.14 180)
+			(uuid "27e5bc54-eee8-46d3-9ebb-6848ca34312c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "27e5bc54-eee8-46d3-9ebb-6848ca34312c")
 		)
 		(pin "IFC" bidirectional
 			(at 198.12 109.22 180)
+			(uuid "7b8c3866-b3f2-4a83-b9cc-337c99d797fe")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7b8c3866-b3f2-4a83-b9cc-337c99d797fe")
 		)
 		(pin "NDAC" bidirectional
 			(at 198.12 106.68 180)
+			(uuid "76b5609a-79b2-4204-94d4-f8ef0dadfa59")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "76b5609a-79b2-4204-94d4-f8ef0dadfa59")
 		)
 		(pin "SRQ" bidirectional
 			(at 198.12 111.76 180)
+			(uuid "1ac59426-10c5-4f7b-bb0e-6036e90d44f0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1ac59426-10c5-4f7b-bb0e-6036e90d44f0")
 		)
 		(pin "EOI" bidirectional
 			(at 198.12 99.06 180)
+			(uuid "01777c45-447c-40b3-9eb9-69ef6f72dba3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "01777c45-447c-40b3-9eb9-69ef6f72dba3")
 		)
 		(pin "DAV" bidirectional
 			(at 198.12 101.6 180)
+			(uuid "ea32d519-f72f-48b3-a51e-7a232db7f9d4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ea32d519-f72f-48b3-a51e-7a232db7f9d4")
 		)
 		(pin "REN" bidirectional
 			(at 198.12 96.52 180)
+			(uuid "548de1d1-82b4-42b6-8788-697118a804c8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "548de1d1-82b4-42b6-8788-697118a804c8")
 		)
 		(pin "B6" bidirectional
 			(at 198.12 83.82 180)
+			(uuid "2d2fb932-77af-4b0a-83cf-c3f5dae9083d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2d2fb932-77af-4b0a-83cf-c3f5dae9083d")
 		)
 		(pin "B7" bidirectional
 			(at 198.12 76.2 180)
+			(uuid "fb98eb11-daff-4272-9d11-915a3b9531f2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fb98eb11-daff-4272-9d11-915a3b9531f2")
 		)
 		(pin "B5" bidirectional
 			(at 198.12 78.74 180)
+			(uuid "ec43d74d-aa6e-40f4-85f4-26f4defa3989")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ec43d74d-aa6e-40f4-85f4-26f4defa3989")
 		)
 		(pin "B8" bidirectional
 			(at 198.12 73.66 180)
+			(uuid "876d18f6-0d58-4bae-bcf0-330eb879cff5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "876d18f6-0d58-4bae-bcf0-330eb879cff5")
 		)
 		(pin "B4" bidirectional
 			(at 198.12 86.36 180)
+			(uuid "b413635b-d3f7-40d3-8f73-ab7531158892")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b413635b-d3f7-40d3-8f73-ab7531158892")
 		)
 		(pin "B2" bidirectional
 			(at 198.12 91.44 180)
+			(uuid "12eee2cc-f893-43a6-abae-d052dcb612c2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "12eee2cc-f893-43a6-abae-d052dcb612c2")
 		)
 		(pin "B3" bidirectional
 			(at 198.12 88.9 180)
+			(uuid "b25ceeb8-6df7-41a7-a2a5-1633856d4d04")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b25ceeb8-6df7-41a7-a2a5-1633856d4d04")
 		)
 		(pin "B1" bidirectional
 			(at 198.12 81.28 180)
+			(uuid "bea1f066-4172-4331-b233-e8beee62e00f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bea1f066-4172-4331-b233-e8beee62e00f")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
@@ -3452,6 +3493,10 @@
 	(sheet
 		(at 231.14 33.02)
 		(size 20.32 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3481,43 +3526,43 @@
 		)
 		(pin "J0_pin3" bidirectional
 			(at 231.14 50.8 180)
+			(uuid "9d145055-f941-4df3-9fed-bc53a802ede1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9d145055-f941-4df3-9fed-bc53a802ede1")
 		)
 		(pin "J0_pin4" bidirectional
 			(at 231.14 48.26 180)
+			(uuid "2c36a58a-1a88-479b-aba2-ea0daa9f9b67")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2c36a58a-1a88-479b-aba2-ea0daa9f9b67")
 		)
 		(pin "J1_pin3" bidirectional
 			(at 231.14 43.18 180)
+			(uuid "010d2f6e-aae8-4276-ab77-69d403295a02")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "010d2f6e-aae8-4276-ab77-69d403295a02")
 		)
 		(pin "J1_pin4" bidirectional
 			(at 231.14 40.64 180)
+			(uuid "92262873-2411-46f0-83ec-31aad0cdbe7d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "92262873-2411-46f0-83ec-31aad0cdbe7d")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
@@ -3530,6 +3575,10 @@
 	(sheet
 		(at 27.94 119.38)
 		(size 17.78 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3559,43 +3608,43 @@
 		)
 		(pin "CLK" input
 			(at 45.72 127 0)
+			(uuid "2948239c-6d78-4652-a15e-71a50304e010")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2948239c-6d78-4652-a15e-71a50304e010")
 		)
 		(pin "~{FLASH_CS}" input
 			(at 45.72 132.08 0)
+			(uuid "ebc65990-65c0-481c-9dc2-ed1a38bdcf07")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ebc65990-65c0-481c-9dc2-ed1a38bdcf07")
 		)
 		(pin "MOSI{slash}IO0" input
 			(at 45.72 121.92 0)
+			(uuid "0c5bde0d-44c7-4b3c-8a92-3ec2e00f0bfa")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0c5bde0d-44c7-4b3c-8a92-3ec2e00f0bfa")
 		)
 		(pin "MISO{slash}IO1" output
 			(at 45.72 124.46 0)
+			(uuid "2644625f-3e49-4e26-a921-296be33e09f5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2644625f-3e49-4e26-a921-296be33e09f5")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
@@ -3608,6 +3657,10 @@
 	(sheet
 		(at 27.94 88.9)
 		(size 17.78 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3637,63 +3690,63 @@
 		)
 		(pin "MISO" output
 			(at 45.72 93.98 0)
+			(uuid "462a2e18-2afb-4d60-b61a-ca661d245214")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "462a2e18-2afb-4d60-b61a-ca661d245214")
 		)
 		(pin "MOSI" input
 			(at 45.72 91.44 0)
+			(uuid "f417ff59-bf0e-4798-b9ab-ad94d9e5850e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f417ff59-bf0e-4798-b9ab-ad94d9e5850e")
 		)
 		(pin "CLK" input
 			(at 45.72 96.52 0)
+			(uuid "3b070135-71b3-4c31-b1ad-8228357ebd5a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3b070135-71b3-4c31-b1ad-8228357ebd5a")
 		)
 		(pin "ETH_~{INT}" input
 			(at 45.72 109.22 0)
+			(uuid "416f3e2c-1263-4601-89b8-7e7b75d63029")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "416f3e2c-1263-4601-89b8-7e7b75d63029")
 		)
 		(pin "ETH_~{CS}" input
 			(at 45.72 101.6 0)
+			(uuid "85b80d95-be96-4485-8654-b8eb1834bbbe")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "85b80d95-be96-4485-8654-b8eb1834bbbe")
 		)
 		(pin "ETH_~{RST}" input
 			(at 45.72 104.14 0)
+			(uuid "48961894-9e28-4700-b748-d3eb2c974b0a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "48961894-9e28-4700-b748-d3eb2c974b0a")
 		)
 		(instances
 			(project "ESP_bare_chip_test_board"
