@@ -18,6 +18,10 @@ board-files += ${gout}/${prj}.drl
 board-files += ${gout}/${prj}-drl_map.pdf
 
 
+rendered-files := pinion/spec.json
+rendered-files += pinion/rendered/front.png
+rendered-files += pinion/rendered/back.png
+
 
 ass-opts := --missingError --assembly
 ass-opts += --field LCSC
@@ -25,9 +29,22 @@ ass-opts += --ignore JLCPCB_IGNORE
 ass-opts += --corrections JLCPCB_CORRECTION
 
 
-# All: creates everything needed for fabrication.
+################################################################
+
 .PHONY: all 
-all: ${prj}.zip ${out}/bom.csv ${out}/pos.csv
+all: all-fab all-doc
+
+# Files needed by JLCPCB
+.PHONY: all-fab
+all-fab: ${out}/${prj}.zip ${out}/bom.csv ${out}/pos.csv
+
+# Documentation (pdf for techs, 3d-model for case-designer)
+.PHONY: all-doc
+all-doc: ${out}/${prj}.pdf ${out}/${prj}.step
+
+# Just PCB, no component placements
+.PHONY: pcb-only
+pcb-only: ${prj}.zip
 
 # clean: Deletes all generated files.
 .PHONY: clean
@@ -39,8 +56,10 @@ clean:
 trim:
 	rm -r ${gout}
 
-${prj}.zip : ${board-files}
-	zip ${out}/${prj}.zip ${out}/gerber/*
+################################################################
+
+#${out}/${prj}.zip : ${board-files}
+#	zip ${out}/${prj}.zip ${out}/gerber/* -v
 
 
 # Create the Gerbers; checking for DRC ERRORS (not warnings though) before we make it
@@ -49,8 +68,20 @@ ${board-files}&: ${prj}.kicad_pcb
 
 # The Bill-of-materials is based on every schematic combined. The Position file is based on
 # the pcb. Both are generated in a single command; hence the combined-target recipe.
-${out}/bom.csv ${out}/pos.csv&: *.kicad_sch ${prj}.kicad_pcb
+# Also generates gerbers!
+${out}/bom.csv ${out}/pos.csv ${out}/${prj}.zip &: *.kicad_sch ${prj}.kicad_pcb
 	kikit fab jlcpcb ${ass-opts} --schematic ${prj}.kicad_sch ${prj}.kicad_pcb ${out}/
+	mv ${out}/gerbers.zip ${out}/${prj}.zip 
+	rm -r ${gout}
+
+
+# Export PDF of the schematic
+${out}/${prj}.pdf: *.kicad_sch
+	kicad-cli sch export pdf -o ${out}/${prj}.pdf ${prj}.kicad_sch
+
+# Export 3D model of the PCB, and components
+${out}/${prj}.step: *.kicad_pcb
+	kicad-cli pcb export step -o ${out}/${prj}.step ${prj}.kicad_pcb --subst-models
 
 
 # ----
@@ -69,12 +100,17 @@ pinion/plotted/spec.json: pinion/spec.yaml
 
 # pinion: Use rendered image instead (slower, but usually more accurate)
 .PHONY: view-rendered
-view-rendered: pinion/rendered/spec.json
+view-rendered: ${rendered-files}
 	pinion serve -b --directory pinion/rendered/
 	
 # Renders the board image.
 # - Only works if KiCAD isn't running!
 # - Takes a LOT of CPU and time, so we decrease its process priority
-pinion/rendered/spec.json: pinion/spec.yaml
+${rendered-files}&: pinion/spec.yaml ${prj}.kicad_pcb
 	pgrep kicad || nice -n5 pinion generate rendered --board ${prj}.kicad_pcb --specification pinion/spec.yaml pinion/rendered --pack --renderer raytrace
 
+
+# Create a template .yaml file with all components & pins
+.PHONY: pinion-template view-template
+pinion-template view-template pinion/template&:
+	pinion template -b puzzle-shield-ESP32.kicad_pcb -o pinion/template.yaml
