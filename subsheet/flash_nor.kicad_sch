@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "dd03d0a5-9013-484e-a4b7-f07b4f789513")
-	(paper "A5")
+	(paper "A4")
 	(title_block
 		(title "Untitled 4-layer JLCPCB")
 		(date "2024-06-14")
